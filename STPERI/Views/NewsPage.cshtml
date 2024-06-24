@@ -1,0 +1,27 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.NewsPage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+  </header>
+
+    <div class="innerbanner fitlayout">
+
+        <h3 class="px-3 aos-item" data-aos="fade-up">@Model.Title</h3>
+        <span class="px-3 aos-item" data-aos="fade-up">
+         @Model.Subtitle
+        </span>
+        <img alt="" src="@Model.BannerImage.Url()" />
+    </div>
+
+
+
+@Html.GetBlockListHtml(Model,"MainContentLatestNews")
+             
+           
+           </div>
+      </div>
+
+    </div>

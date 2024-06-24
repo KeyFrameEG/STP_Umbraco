@@ -1,0 +1,27 @@
+   @inherits UmbracoViewPage<BlockListItem>
+    @{
+      var row = (CentralLabsDetailsRow)Model.Content;
+      var settings = (CentralLabsDetailsRowSettings)Model.Settings;
+      if(settings?.Hide ?? false){return;}
+      if(row.CentralLabsDetailsItems == null || !row.CentralLabsDetailsItems.Any()) return;   
+    }
+
+
+             <div class="col-lg-10 my-5 aos-item" data-aos="fade-up">
+              <h2 class="migatitle mb-4">@row.Title</h2>
+            </div>
+
+             
+           
+             <div class="col-lg-12 mb-4 aos-item" data-aos="fade-right">
+              <div class="locationdata halflist">
+
+                <ul>
+                  @foreach(var item in row.CentralLabsDetailsItems)
+                  {
+                     var rowItem = (CentralLabsDetailsItem)item.Content;
+                    <li>@rowItem.Title</li>
+                  }
+                </ul>
+              </div>
+             </div>

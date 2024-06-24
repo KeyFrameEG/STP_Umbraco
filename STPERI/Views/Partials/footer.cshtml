@@ -1,0 +1,48 @@
+    @inherits UmbracoViewPage
+    @{
+      var homePage = Model.AncestorOrSelf<HomePage>();
+    }
+    <footer class="fitlayout">
+
+    <!--  <button class="chatbtn">
+        <img alt="Chat with Us" src="assets/images/robbot.svg" />
+        <span>Chat with Us</span>
+      </button> -->
+        <div class="container-fluid">
+            <div class="row">
+
+              <div class="col-md-4  align-self-center mb-3">
+
+                <img alt="" src="assets/images/logo-footer.svg" />
+              </div>
+
+                <div class="col-md-4 align-self-center text-center">
+                   
+
+                 
+                  @if(homePage.FooterSocialLinks!=null)
+                  {
+                    <ul class="socialfooter">
+                      @foreach(var social in homePage.FooterSocialLinks)
+                      {
+                       <li>
+                          <a href="@social.Url">
+                            <i class="fa fa-@social.Network"></i>
+                          </a>
+                        </li>    
+                      }
+
+                    </ul>              
+                  }
+
+                </div>
+            
+                <div class="col-md-4 align-self-center endside">
+                  ©  @DateTime.Now.Year @Umbraco.GetDictionaryValue("Footer.CopyRightTitle")
+                </div>
+               
+
+
+            </div>
+        </div>
+    </footer>

@@ -1,0 +1,33 @@
+   @inherits UmbracoViewPage<BlockListItem>
+    @{
+      var row = (LatestNewsRow)Model.Content;
+      var settings = (LatestNewsRowSettings)Model.Settings;
+      if(settings?.Hide ?? false){return;}
+      if(row.LatestNewsItems == null || !row.LatestNewsItems.Any()) return;   
+    }
+    <div class="w-bg fitlayout pt-4 mb-4 paddingabove">
+
+      <div class="container-fluid">
+           
+           <div class="row">
+
+            <div class="col-lg-12 aos-item" data-aos="fade-down">
+              <h2 class="migatitle">@row.Title</h2>
+            </div>
+
+          @foreach(var item in row.LatestNewsItems)
+          {
+               var rowItem = (LatestNewsItem)item.Content;
+            <div class="col-md-6 mb-3 aos-item" data-aos="zoom-in">
+                 <div class="newslist d-flex align-items-end">
+                      <a href="/newspaperdetails"></a>
+                      <strong>@rowItem.Date</strong>
+                      <div class="overlaynewslist">
+                          <h4>@rowItem.Title</h4>
+                          <span>@rowItem.Description</span>
+                          <small>Read more</small>
+                      </div>
+                     <img alt="News Title" src="@rowItem.Image.Url()" />
+                 </div>
+            </div>
+          }

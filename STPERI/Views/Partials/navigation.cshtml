@@ -1,0 +1,124 @@
+@inherits UmbracoViewPage
+@{
+    var homePage = Umbraco.AssignedContentItem.AncestorOrSelf<HomePage>();
+    var children = homePage.MainNavigations;
+}
+<nav class="navbar navbar-expand-lg navbar-light nav-essal">
+  <div class="container-fluid px-0">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse justify-content-end navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto flex-nowrap">
+
+          @if(children !=null && children.Any())
+          {
+              foreach(var item in children)
+              {
+              <li class="nav-item"><a class="nav-link" href="@item.Url">@item.Name</a></li>
+              }
+              
+          }
+          <li class="nav-item"><a class="nav-link" type="button" href="innovate/" data-bs-toggle="modal" data-bs-target="#exampleModal">Innovate</a></li>
+
+      </ul>
+      
+      </div>
+  </div>
+</nav>
+  <div class="modal fade megamenuu" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog shadow-sm">
+      <div class="modal-content">
+        <button type="button" class="btn-close btmmenu" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-md-3">
+                      <h4>Labs</h4>
+                      <ul>
+                        <li><a href="/centrallabs">Central Labs</a></li>
+                        <li><a href="labs.html">Research departments</a></li>
+                        <li><a href="/centrallabs">Specialized labs</a></li>
+                      </ul>
+                  </div>
+
+                  <div class="col-md-4">
+                    <h4>Training</h4>
+                    <ul>
+                        <li><a href="service-details.html">Training Title</a></li>
+                        <li><a href="service-details.html">Training Title</a></li>
+                        <li><a href="service-details.html">Training Title</a></li>
+                        <li><a href="service-details.html">Training Title</a></li>
+                        <li><a href="service-details.html">Training Title</a></li>
+                        <li><a href="service-details.html">Training Title</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="col-md-2">
+                      <h4>Featured</h4>
+                      <ul>
+                        <li><a href="#">Startups</a></li>
+                        <li><a href="#">Incubators</a></li>
+                        <li><a href="#">Take a tour</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="col-md-3">
+                      <h4>Events</h4>
+
+                      <div class="carsulholder">
+                        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          </div>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                              <div class="eventsmenu">
+                                <a href="#"></a>
+                                <div class="eventimg">                             
+                                  <img alt="" src="assets/images/activity1.jpg" />                            
+                                </div>
+                                <h5>Piece of news title will be placed here</h5>
+                                <span>03 . 06 . 2024</span>
+                              
+                              </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                              <div class="eventsmenu">
+                                <a href="#"></a>
+                                <div class="eventimg">                             
+                                  <img alt="" src="assets/images/activity2.jpg" />                            
+                                </div>
+                                <h5>Piece of news title will be placed here</h5>
+                                <span>04 . 06 . 2024</span>
+                              
+                              </div>
+                            </div>
+                            <div class="carousel-item">
+                              <div class="eventsmenu">
+                                <a href="#"></a>
+                                <div class="eventimg">                             
+                                  <img alt="" src="assets/images/activity3.jpg" />                            
+                                </div>
+                                <h5>Piece of news title will be placed here</h5>
+                                <span>06 . 06 . 2024</span>
+                              
+                              </div>
+                            </div>
+                          </div>
+                        
+                        
+                        </div>
+                      
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,42 @@
+   @inherits UmbracoViewPage<BlockListItem>
+    @{
+      var row = (TrainingRow)Model.Content;
+      var settings = (TrainingRowSettings)Model.Settings;
+      if(settings?.Hide ?? false){return;}
+      if(row.TrainingItems == null || !row.TrainingItems.Any()) return;   
+    }
+    <div class="w-bg fitlayout pt-4 mb-4 paddingabove">
+
+      <div class="container-fluid">
+           
+           <div class="row">
+
+            <div class="col-lg-10 mb-4 aos-item" data-aos="fade-down">
+              <h2 class="migatitle mb-4">@row.Title</h2>
+            </div>
+
+
+          @foreach(var item in row.TrainingItems)
+          {
+           var rowItem = (TrainingItem)item.Content;
+            <div class="col-lg-6 mb-4 aos-item" data-aos="fade-right">
+              <div class="training">
+                <a href="/trainingdetails"></a>
+              
+                
+                  <img alt="News title" class="mewsimg" src="@rowItem.Image.Url()" />
+              </div>
+              <div class="newsinfo">
+               <h3>@rowItem.Title</h3>
+               <span>@rowItem.Description</span>
+               <a href="/trainingdetails">read more</a>
+            
+              </div>
+             </div>
+          }
+
+           </div>
+      </div>
+
+    </div>
+

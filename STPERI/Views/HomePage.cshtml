@@ -1,0 +1,43 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.HomePage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+  <!-- Modal -->
+
+
+  </header>
+
+    <div class="homebanner">
+        <img alt="" src="@Model.BannerImage.Url()" />
+    </div>
+
+
+@await Html.PartialAsync("~/Views/Partials/Gateway.cshtml")
+
+    <div class="w-bg fitlayout py-4">
+
+      <div class="container-fluid">
+       
+
+@Html.GetBlockListHtml(Model,"MainContent")
+@Html.GetBlockListHtml(Model,"MainContentOurPark")
+@await Html.PartialAsync("~/Views/Partials/Statistics.cshtml")
+@Html.GetBlockListHtml(Model,"MainContentServices")
+@await Html.PartialAsync("~/Views/Partials/OurLabs.cshtml")
+    <div class="w-bg fitlayout py-4">
+      <div class="container-fluid">
+       @Html.GetBlockListHtml(Model,"MainContentLatestActivities")
+       @Html.GetBlockListHtml(Model,"MainContentSuccessStories")
+       @await Html.PartialAsync("~/Views/Partials/LatestActivities.cshtml")
+        </div>
+    </div>
+@Html.GetBlockListHtml(Model,"MainContentPartners") 
+@await Html.PartialAsync("~/Views/Partials/BeUpdated.cshtml")
+
+
+
+
+

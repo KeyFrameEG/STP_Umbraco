@@ -1,0 +1,35 @@
+   @inherits UmbracoViewPage<BlockListItem>
+    @{
+      var row = (NewspaperRow)Model.Content;
+      var settings = (NewspaperRowSettings)Model.Settings;
+      if(settings?.Hide ?? false){return;}
+      if(row.NewspaperItems == null || !row.NewspaperItems.Any()) return;   
+    }
+     <div class="row">
+              <div class="col-lg-12 mt-4">
+            <h2 class="migatitle">@row.Title</h2>
+          </div>
+      @foreach(var item in row.NewspaperItems)
+          {
+          var rowItem = (NewspaperItem)item.Content;
+              
+
+          <div class="col-lg-4 mb-md-3 mb-4">
+            <div class="newsimg">
+              <a href="/newspaperdetails"></a>
+              <span>@rowItem.Date</span>
+              <i>N</i>
+              <h5>@rowItem.Title</h5>
+              
+                <img alt="News title" class="mewsimg" src="@rowItem.Image.Url()" />
+            </div>
+            <div class="newsinfo">
+             <h3>@rowItem.Subtitle</h3>
+             <span>@rowItem.Description</span>
+             <a href="/newspaperdetails">read more</a>
+          
+            </div>
+          </div>
+
+          }
+</div>

@@ -1,0 +1,29 @@
+   @inherits UmbracoViewPage
+    @{
+      var homePage = Model.AncestorOrSelf<HomePage>();
+    }
+
+
+    <div class="w-bg fitlayout text-center pt-4 paddingabove">
+
+      <div class="container-fluid">
+           
+           <div class="row">
+
+            <div class="col-lg-2"></div>
+
+            <div class="col-lg-8">
+
+              <h2 class="migatitle mb-3">@homePage.BeUpdatedTitle</h2>
+              <h6 class="mb-5">@homePage.BeUpdatedDescription</h6>
+
+              <div class="newsletter">
+                <input type="text" placeholder="Write your Email Here.." />
+                <button><span>@homePage.BeUpdatedSubscribe</span><i class="feather icon-arrow-right"></i></button>
+              </div>
+            </div>
+
+          </div>
+      </div>
+    </div>
+

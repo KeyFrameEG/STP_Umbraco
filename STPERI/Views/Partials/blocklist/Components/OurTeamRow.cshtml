@@ -1,0 +1,44 @@
+   @inherits UmbracoViewPage<BlockListItem>
+    @{
+      var row = (OurTeamRow)Model.Content;
+      var settings = (OurTeamRowSettings)Model.Settings;
+      if(settings?.Hide ?? false){return;}
+      if(row.OurTeamItems == null || !row.OurTeamItems.Any()) return;   
+    }
+    <div class="w-bg fitlayout pt-4 paddingabove">
+
+      <div class="container-fluid">
+           
+           <div class="row">
+
+            <div class="col-lg-12 mt-3 aos-item" data-aos="fade-up">
+              <h2 class="migatitle mb-2">@row.Title</h2>
+            </div>
+
+            <div class="col-lg-12 mb-4 aos-item" data-aos="flip-up">
+
+              <div class="carsulholder">
+                <div class="owl-carouselss">
+                   @foreach(var item in row.OurTeamItems)
+                  {
+                   var rowItem = (OurTeamItem)item.Content;
+                    <div class="item">
+                      <div class="membertram">
+                        <img alt="Employee Name" src="@rowItem.Image.Url()" />
+                        <h4>@rowItem.Title</h4>
+                        <h6> @rowItem.Description</h6>
+                       </div>
+                    </div>
+                  }
+                </div>
+              </div>
+                 
+            </div>
+
+
+       
+
+          </div>
+         
+     </div>
+ </div>

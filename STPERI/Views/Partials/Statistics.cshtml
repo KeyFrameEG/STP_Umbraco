@@ -1,0 +1,76 @@
+   @inherits UmbracoViewPage
+    @{
+      var homePage = Model.AncestorOrSelf<HomePage>();
+    }
+
+    <div class="w-bg py-4">
+
+      <div class="container">
+           
+           <div class="row">
+
+                   <div class="col-lg-12">
+
+
+                      <div class="statiscsbg">
+                        
+                            <div class="row flexstat" id="counter">
+                                 <div class="col-lg-3 mb-5">
+                                     <h2 data-count="@homePage.FirstValue" class="counter-value">0</h2>
+                                     <sup>+</sup>
+                                     <span>@homePage.FirstTextValue</span>
+                                 </div>
+                                 <div class="col-lg-3 mb-5">
+                                  <h2 data-count="@homePage.SecondValue" class="counter-value">0</h2>
+                                  <sup>+</sup>
+                                  <span>@homePage.SecondTextValue</span>
+                              </div>
+
+                              <div class="col-lg-3 mb-5">
+                                <h2 data-count="@homePage.ThirdValue" class="counter-value">0</h2>
+                                <sup>+</sup>
+                                <span>@homePage.ThirdTextValue</span>
+                            </div>
+
+                            <div class="col-lg-3 mb-5">
+                              <h2 data-count="@homePage.ForthValue" class="counter-value">0<span>K</span></h2>
+                              <sup>+</sup>
+                              <span>@homePage.ForthTextValue</span>
+                          </div>
+                            </div>
+                            <span id="dots"></span>
+                            <div class="row" style="display: none;" id="more">
+                              <div class="col-lg-3 mb-5">
+                                <h2>@homePage.FirstValue</h2>
+                                <sup>+</sup>
+                                <span>@homePage.FirstTextValue</span>
+                            </div>
+                            <div class="col-lg-3 mb-5">
+                             <h2>@homePage.SecondValue</h2>
+                             <sup>+</sup>
+                             <span>@homePage.SecondTextValue</span>
+                         </div>
+
+                         <div class="col-lg-3 mb-5">
+                           <h2>@homePage.ThirdValue</h2>
+                           <sup>+</sup>
+                           <span>@homePage.ThirdTextValue</span>
+                       </div>
+
+                       <div class="col-lg-3 mb-5">
+                         <h2>@homePage.ForthValue</h2>
+                         <sup>+</sup>
+                         <span>@homePage.ForthTextValue</span>
+                     </div>
+                            </div>
+                            <button onclick="myFunction()" id="myBtn">Read more</button>
+                      
+                          </div>
+
+                     
+
+                   </div>
+                 
+             </div>
+        </div>
+    </div>

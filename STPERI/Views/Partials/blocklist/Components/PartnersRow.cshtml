@@ -1,0 +1,44 @@
+   @inherits UmbracoViewPage<BlockListItem>
+    @{
+      var row = (PartnersRow)Model.Content;
+      var settings = (PartnersRowSettings)Model.Settings;
+      if(settings?.Hide ?? false){return;}
+      if(row.PartnersItems == null || !row.PartnersItems.Any()) return;   
+    }
+
+
+    <div class="w-bg fitlayout py-4">
+
+      <div class="container-fluid">
+           
+           <div class="row">
+                
+            <div class="col-lg-12 mt-4 aos-item" data-aos="fade-down">
+              <h2 class="migatitle mb-0">@row.Title</h2>
+            </div>
+
+
+            <div class="col-lg-12 mt-4 aos-item" data-aos="fade-right">
+
+              <div class="carsulholder">
+                <div class="owl-carouselpartner">
+                  @foreach(var item in row.PartnersItems)
+                   {
+                    var rowItem = (PartnersItem)item.Content;
+                      <div class="item">
+                           <div class="imgpartner">
+                              <a href="#" target="_blank"></a>
+                               <img alt="" src="@rowItem.Image.Url()" />
+                           </div>
+                      </div>
+                   }
+
+                  </div>
+              </div>
+                
+            </div>
+
+
+             </div>
+         </div>
+    </div>

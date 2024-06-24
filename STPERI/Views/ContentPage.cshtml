@@ -1,0 +1,56 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.ContentPage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+  <!-- Modal -->
+
+
+  </header>
+
+    <div class="innerbanner fitlayout">
+
+        <h3 class="px-3 aos-item" data-aos="fade-up">@Model.AboutUs</h3>
+        <span class="px-3 aos-item" data-aos="fade-up">
+          @Model.BodyText
+        </span>
+
+        <div class="clearfix"></div>
+        <a href="/contact" class="linkbanner mx-3 aos-item" data-aos="fade-up">
+            <b>Contact us</b>
+            <i class="feather icon-arrow-right"></i>
+        </a>
+        <img alt="" src="@Model.Image.Url()" />
+    </div>
+
+
+@await Html.PartialAsync("~/Views/Partials/Gateway.cshtml")  
+@await Html.PartialAsync("~/Views/Partials/Statistics.cshtml")
+
+
+    <div class="w-bg fitlayout py-3">
+
+      <div class="container-fluid">
+           
+@Html.GetBlockListHtml(Model,"MainContent")
+
+          </div>
+        </div>
+    </div>
+
+@Html.GetBlockListHtml(Model,"MainContentOurTeam")
+</div>
+
+
+          </div>
+        </div>
+    </div>
+
+
+
+      </div>
+         
+     </div>
+ </div>
