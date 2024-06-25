@@ -20,7 +20,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 {
 	/// <summary>Home page</summary>
 	[PublishedModel("homePage")]
-	public partial class HomePage : PublishedContentModel, IBeUpdatedProperties, IFeaturedProperties, IFooterProperties, IHeaderProperties, ILatestActivitiesProperties, INavigationProperties, INewspaperQuotesProperties, IOurFeaturedLocationProperties, IOurLabsProperties, IOurPark, IPartnersProperties, IServicesProperty, IStatisticsProperties, ISuccessStoriesProperty
+	public partial class HomePage : PublishedContentModel, IBeUpdatedProperties, IFeaturedProperties, IFooterProperties, IHeaderProperties, ILatestActivitiesProperties, IModalContentProperties, INavigationProperties, INewspaperQuotesProperties, IOurFeaturedLocationProperties, IOurLabsProperties, IOurPark, IPartnersProperties, IServicesProperty, IStatisticsProperties, ISuccessStoriesProperty
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -184,6 +184,206 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("mainContentLatestActivities")]
 		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentLatestActivities => global::Umbraco.Cms.Web.Common.PublishedModels.LatestActivitiesProperties.GetMainContentLatestActivities(this, _publishedValueFallback);
+
+		///<summary>
+		/// Events
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("events")]
+		public virtual string Events => global::Umbraco.Cms.Web.Common.PublishedModels.ModalContentProperties.GetEvents(this, _publishedValueFallback);
+
+		///<summary>
+		/// Featured
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("featured")]
+		public virtual string Featured => global::Umbraco.Cms.Web.Common.PublishedModels.ModalContentProperties.GetFeatured(this, _publishedValueFallback);
+
+		///<summary>
+		/// FifthTraning
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("fifthTraning")]
+		public virtual string FifthTraning => global::Umbraco.Cms.Web.Common.PublishedModels.ModalContentProperties.GetFifthTraning(this, _publishedValueFallback);
+
+		///<summary>
+		/// FirstEventDate
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("firstEventDate")]
+		public virtual string FirstEventDate => global::Umbraco.Cms.Web.Common.PublishedModels.ModalContentProperties.GetFirstEventDate(this, _publishedValueFallback);
+
+		///<summary>
+		/// FirstEventImage
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("firstEventImage")]
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops FirstEventImage => global::Umbraco.Cms.Web.Common.PublishedModels.ModalContentProperties.GetFirstEventImage(this, _publishedValueFallback);
+
+		///<summary>
+		/// FirstEventTitle
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("firstEventTitle")]
+		public virtual string FirstEventTitle => global::Umbraco.Cms.Web.Common.PublishedModels.ModalContentProperties.GetFirstEventTitle(this, _publishedValueFallback);
+
+		///<summary>
+		/// FirstFeatured
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("firstFeatured")]
+		public virtual string FirstFeatured => global::Umbraco.Cms.Web.Common.PublishedModels.ModalContentProperties.GetFirstFeatured(this, _publishedValueFallback);
+
+		///<summary>
+		/// FirstLab
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("firstLab")]
+		public virtual string FirstLab => global::Umbraco.Cms.Web.Common.PublishedModels.ModalContentProperties.GetFirstLab(this, _publishedValueFallback);
+
+		///<summary>
+		/// FirstTraning
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("firstTraning")]
+		public virtual string FirstTraning => global::Umbraco.Cms.Web.Common.PublishedModels.ModalContentProperties.GetFirstTraning(this, _publishedValueFallback);
+
+		///<summary>
+		/// ForthTraning
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("forthTraning")]
+		public virtual string ForthTraning => global::Umbraco.Cms.Web.Common.PublishedModels.ModalContentProperties.GetForthTraning(this, _publishedValueFallback);
+
+		///<summary>
+		/// Lab
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("lab")]
+		public virtual string Lab => global::Umbraco.Cms.Web.Common.PublishedModels.ModalContentProperties.GetLab(this, _publishedValueFallback);
+
+		///<summary>
+		/// SecondEventDate
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("secondEventDate")]
+		public virtual string SecondEventDate => global::Umbraco.Cms.Web.Common.PublishedModels.ModalContentProperties.GetSecondEventDate(this, _publishedValueFallback);
+
+		///<summary>
+		/// SecondEventImage
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("secondEventImage")]
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops SecondEventImage => global::Umbraco.Cms.Web.Common.PublishedModels.ModalContentProperties.GetSecondEventImage(this, _publishedValueFallback);
+
+		///<summary>
+		/// SecondEventTitle
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("secondEventTitle")]
+		public virtual string SecondEventTitle => global::Umbraco.Cms.Web.Common.PublishedModels.ModalContentProperties.GetSecondEventTitle(this, _publishedValueFallback);
+
+		///<summary>
+		/// SecondFeatured
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("secondFeatured")]
+		public virtual string SecondFeatured => global::Umbraco.Cms.Web.Common.PublishedModels.ModalContentProperties.GetSecondFeatured(this, _publishedValueFallback);
+
+		///<summary>
+		/// SecondLab
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("secondLab")]
+		public virtual string SecondLab => global::Umbraco.Cms.Web.Common.PublishedModels.ModalContentProperties.GetSecondLab(this, _publishedValueFallback);
+
+		///<summary>
+		/// SecondTraning
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("secondTraning")]
+		public virtual string SecondTraning => global::Umbraco.Cms.Web.Common.PublishedModels.ModalContentProperties.GetSecondTraning(this, _publishedValueFallback);
+
+		///<summary>
+		/// SixTraning
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("sixTraning")]
+		public virtual string SixTraning => global::Umbraco.Cms.Web.Common.PublishedModels.ModalContentProperties.GetSixTraning(this, _publishedValueFallback);
+
+		///<summary>
+		/// ThirdEventDate
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("thirdEventDate")]
+		public virtual string ThirdEventDate => global::Umbraco.Cms.Web.Common.PublishedModels.ModalContentProperties.GetThirdEventDate(this, _publishedValueFallback);
+
+		///<summary>
+		/// ThirdEventImage
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("thirdEventImage")]
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops ThirdEventImage => global::Umbraco.Cms.Web.Common.PublishedModels.ModalContentProperties.GetThirdEventImage(this, _publishedValueFallback);
+
+		///<summary>
+		/// ThirdEventTitle
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("thirdEventTitle")]
+		public virtual string ThirdEventTitle => global::Umbraco.Cms.Web.Common.PublishedModels.ModalContentProperties.GetThirdEventTitle(this, _publishedValueFallback);
+
+		///<summary>
+		/// ThirdFeatured
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("thirdFeatured")]
+		public virtual string ThirdFeatured => global::Umbraco.Cms.Web.Common.PublishedModels.ModalContentProperties.GetThirdFeatured(this, _publishedValueFallback);
+
+		///<summary>
+		/// ThirdLab
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("thirdLab")]
+		public virtual string ThirdLab => global::Umbraco.Cms.Web.Common.PublishedModels.ModalContentProperties.GetThirdLab(this, _publishedValueFallback);
+
+		///<summary>
+		/// ThirdTraning
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("thirdTraning")]
+		public virtual string ThirdTraning => global::Umbraco.Cms.Web.Common.PublishedModels.ModalContentProperties.GetThirdTraning(this, _publishedValueFallback);
+
+		///<summary>
+		/// Training
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("training")]
+		public virtual string Training => global::Umbraco.Cms.Web.Common.PublishedModels.ModalContentProperties.GetTraining(this, _publishedValueFallback);
 
 		///<summary>
 		/// LogoIcon: Enter the logo icon

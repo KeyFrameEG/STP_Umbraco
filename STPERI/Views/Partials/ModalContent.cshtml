@@ -1,0 +1,100 @@
+@inherits UmbracoViewPage
+@{
+    var homePage = Umbraco.AssignedContentItem.AncestorOrSelf<HomePage>();
+}
+
+  <div class="modal fade megamenuu" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog shadow-sm">
+      <div class="modal-content">
+        <button type="button" class="btn-close btmmenu" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-md-3">
+                    <h4>@homePage.Lab</h4>
+                      <ul>
+                        <li><a href="/centrallabs">@homePage.FirstLab</a></li>
+                        <li><a href="labs.html">@homePage.SecondLab</a></li>
+                        <li><a href="/centrallabs">@homePage.ThirdLab</a></li>
+                      </ul>
+                  </div>
+
+                  <div class="col-md-4">
+                    <h4>@homePage.Training</h4>
+                    <ul>
+                        <li><a href="service-details.html">@homePage.FirstTraning</a></li>
+                        <li><a href="service-details.html">@homePage.SecondTraning</a></li>
+                        <li><a href="service-details.html">@homePage.ThirdTraning</a></li>
+                        <li><a href="service-details.html">@homePage.ForthTraning</a></li>
+                        <li><a href="service-details.html">@homePage.FifthTraning</a></li>
+                        <li><a href="service-details.html">@homePage.SixTraning</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="col-md-2">
+                      <h4>@homePage.Featured</h4>
+                      <ul>
+                        <li><a href="#">@homePage.FirstFeatured</a></li>
+                        <li><a href="#">@homePage.SecondFeatured</a></li>
+                        <li><a href="#">@homePage.ThirdFeatured</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="col-md-3">
+                      <h4>@homePage.Events</h4>
+
+                      <div class="carsulholder">
+                        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          </div>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                              <div class="eventsmenu">
+                                <a href="#"></a>
+                                <div class="eventimg">                             
+                                  <img alt="" src="@homePage.FirstEventImage.Url()" />                            
+                                </div>
+                                <h5>@homePage.FirstEventTitle</h5>
+                                <span>@homePage.FirstEventDate</span>
+                              
+                              </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                              <div class="eventsmenu">
+                                <a href="#"></a>
+                                <div class="eventimg">                             
+                                  <img alt="" src="@homePage.SecondEventImage.Url()" />                            
+                                </div>
+                                <h5>@homePage.SecondEventTitle</h5>
+                                <span>@homePage.SecondEventDate</span>
+                              
+                              </div>
+                            </div>
+                            <div class="carousel-item">
+                              <div class="eventsmenu">
+                                <a href="#"></a>
+                                <div class="eventimg">                             
+                                  <img alt="" src="@homePage.ThirdEventImage.Url()" />                            
+                                </div>
+                                <h5>@homePage.ThirdEventTitle</h5>
+                                <span>@homePage.ThirdEventDate</span>
+                              
+                              </div>
+                            </div>
+                          </div>
+                        
+                        
+                        </div>
+                      
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+  </div>

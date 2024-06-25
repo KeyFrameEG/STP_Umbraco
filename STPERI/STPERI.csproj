@@ -13,6 +13,15 @@
     <PackageReference Include="Umbraco.Forms" Version="13.0.0" /> <!-- Use a compatible version -->
     <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="13.3.2" />
   </ItemGroup>
+
+
+
+  <ItemGroup>
+    <Content Update="Views\Partials\ModalContent.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
   <PropertyGroup>
     <!-- Razor files are needed for the backoffice to work correctly -->
     <CopyRazorGenerateFilesToPublishDirectory>true</CopyRazorGenerateFilesToPublishDirectory>
