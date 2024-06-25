@@ -136,7 +136,7 @@
   z-index: 2;
 }
 
-[dir="rtl"] .owl-carouselss .owl-controls .owl-nav {
+.rtl .owl-carouselss .owl-controls .owl-nav {
   right: auto; left: 0;
 }
 .owl-carouselss .owl-controls .owl-nav [class*="owl-"] {
@@ -380,7 +380,7 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-[dir="rtl"] .owl-carouselsteps .owl-controls {
+.rtl .owl-carouselsteps .owl-controls {
  right:auto;
   left: 4vw;
 }
@@ -500,7 +500,7 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-[dir="rtl"] .owl-carouselpartner .owl-controls {
+.rtl .owl-carouselpartner .owl-controls {
  right:auto;
   left: 4vw;
 }
@@ -745,7 +745,7 @@ display: inline-block;
   -webkit-tap-highlight-color: transparent;
 }
 
-[dir="rtl"] .owl-carouselstepsar .owl-controls {
+.rtl .owl-carouselstepsar .owl-controls {
  right:auto;
   left: 4vw;
 }
