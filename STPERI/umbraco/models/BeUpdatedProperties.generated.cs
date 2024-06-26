@@ -36,6 +36,11 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		string BeUpdatedTitle { get; }
+
+		/// <summary>WriteEmail</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		string WriteEmail { get; }
 	}
 
 	/// <summary>BeUpdated Properties</summary>
@@ -107,5 +112,18 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		public static string GetBeUpdatedTitle(IBeUpdatedProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "beUpdatedTitle");
+
+		///<summary>
+		/// WriteEmail
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("writeEmail")]
+		public virtual string WriteEmail => GetWriteEmail(this, _publishedValueFallback);
+
+		/// <summary>Static getter for WriteEmail</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		public static string GetWriteEmail(IBeUpdatedProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "writeEmail");
 	}
 }

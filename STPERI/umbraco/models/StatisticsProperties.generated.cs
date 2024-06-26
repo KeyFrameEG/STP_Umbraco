@@ -42,6 +42,11 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		string ForthValue { get; }
 
+		/// <summary>ReadMore</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		string ReadMore { get; }
+
 		/// <summary>SecondTextValue</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
@@ -145,6 +150,19 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		public static string GetForthValue(IStatisticsProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "forthValue");
+
+		///<summary>
+		/// ReadMore
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("readMore")]
+		public virtual string ReadMore => GetReadMore(this, _publishedValueFallback);
+
+		/// <summary>Static getter for ReadMore</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		public static string GetReadMore(IStatisticsProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "readMore");
 
 		///<summary>
 		/// SecondTextValue

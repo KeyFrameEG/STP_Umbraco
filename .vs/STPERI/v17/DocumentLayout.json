@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "F:\\Work\\UmbracoGit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\partials\\modalcontent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\partials\\modalcontent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\partials\\beupdated.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\partials\\beupdated.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\partials\\navigation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\partials\\navigation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\partials\\blocklist\\components\\newspaperrow.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\partials\\blocklist\\components\\newspaperrow.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\partials\\statistics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\partials\\statistics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\newspaperquotespage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\newspaperquotespage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,27 +39,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ModalContent.cshtml",
-              "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Partials\\ModalContent.cshtml",
-              "RelativeDocumentMoniker": "STPERI\\Views\\Partials\\ModalContent.cshtml",
-              "ToolTip": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Partials\\ModalContent.cshtml",
-              "RelativeToolTip": "STPERI\\Views\\Partials\\ModalContent.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAABSAAAA",
+              "Title": "BeUpdated.cshtml",
+              "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Partials\\BeUpdated.cshtml",
+              "RelativeDocumentMoniker": "STPERI\\Views\\Partials\\BeUpdated.cshtml",
+              "ToolTip": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Partials\\BeUpdated.cshtml",
+              "RelativeToolTip": "STPERI\\Views\\Partials\\BeUpdated.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-25T16:39:06.651Z",
+              "WhenOpened": "2024-06-26T11:15:58.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NewspaperRow.cshtml",
+              "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Partials\\blocklist\\Components\\NewspaperRow.cshtml",
+              "RelativeDocumentMoniker": "STPERI\\Views\\Partials\\blocklist\\Components\\NewspaperRow.cshtml",
+              "ToolTip": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Partials\\blocklist\\Components\\NewspaperRow.cshtml",
+              "RelativeToolTip": "STPERI\\Views\\Partials\\blocklist\\Components\\NewspaperRow.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T10:56:39.996Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "navigation.cshtml",
-              "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Partials\\navigation.cshtml",
-              "RelativeDocumentMoniker": "STPERI\\Views\\Partials\\navigation.cshtml",
-              "ToolTip": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Partials\\navigation.cshtml",
-              "RelativeToolTip": "STPERI\\Views\\Partials\\navigation.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAA3AAAA",
+              "Title": "HomePage.cshtml",
+              "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\HomePage.cshtml",
+              "RelativeDocumentMoniker": "STPERI\\Views\\HomePage.cshtml",
+              "ToolTip": "F:\\Work\\UmbracoGit\\STPERI\\Views\\HomePage.cshtml",
+              "RelativeToolTip": "STPERI\\Views\\HomePage.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-25T16:32:10.348Z",
+              "WhenOpened": "2024-06-26T10:55:53.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NewspaperquotesPage.cshtml",
+              "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\NewspaperquotesPage.cshtml",
+              "RelativeDocumentMoniker": "STPERI\\Views\\NewspaperquotesPage.cshtml",
+              "ToolTip": "F:\\Work\\UmbracoGit\\STPERI\\Views\\NewspaperquotesPage.cshtml",
+              "RelativeToolTip": "STPERI\\Views\\NewspaperquotesPage.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T10:55:46.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Statistics.cshtml",
+              "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Partials\\Statistics.cshtml",
+              "RelativeDocumentMoniker": "STPERI\\Views\\Partials\\Statistics.cshtml",
+              "ToolTip": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Partials\\Statistics.cshtml",
+              "RelativeToolTip": "STPERI\\Views\\Partials\\Statistics.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T10:27:32.402Z",
               "EditorCaption": ""
             }
           ]

@@ -20,7 +20,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 {
 	/// <summary>Newspaper Row</summary>
 	[PublishedModel("newspaperRow")]
-	public partial class NewspaperRow : PublishedElementModel, ITitleProperty
+	public partial class NewspaperRow : PublishedElementModel, ISubtitleProperty, ITitleProperty
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -56,6 +56,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("newspaperItems")]
 		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel NewspaperItems => this.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(_publishedValueFallback, "newspaperItems");
+
+		///<summary>
+		/// Subtitle
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("subtitle")]
+		public virtual string Subtitle => global::Umbraco.Cms.Web.Common.PublishedModels.SubtitleProperty.GetSubtitle(this, _publishedValueFallback);
 
 		///<summary>
 		/// Title

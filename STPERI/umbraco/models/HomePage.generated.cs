@@ -130,6 +130,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string BeUpdatedTitle => global::Umbraco.Cms.Web.Common.PublishedModels.BeUpdatedProperties.GetBeUpdatedTitle(this, _publishedValueFallback);
 
 		///<summary>
+		/// WriteEmail
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("writeEmail")]
+		public virtual string WriteEmail => global::Umbraco.Cms.Web.Common.PublishedModels.BeUpdatedProperties.GetWriteEmail(this, _publishedValueFallback);
+
+		///<summary>
 		/// Main Content
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
@@ -768,6 +776,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("forthValue")]
 		public virtual string ForthValue => global::Umbraco.Cms.Web.Common.PublishedModels.StatisticsProperties.GetForthValue(this, _publishedValueFallback);
+
+		///<summary>
+		/// ReadMore
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("readMore")]
+		public virtual string ReadMore => global::Umbraco.Cms.Web.Common.PublishedModels.StatisticsProperties.GetReadMore(this, _publishedValueFallback);
 
 		///<summary>
 		/// SecondTextValue
