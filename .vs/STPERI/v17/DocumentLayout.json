@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "F:\\Work\\UmbracoGit\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\master.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\master.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\partials\\footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\partials\\footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -23,12 +27,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Master.cshtml",
+              "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Master.cshtml",
+              "RelativeDocumentMoniker": "STPERI\\Views\\Master.cshtml",
+              "ToolTip": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Master.cshtml",
+              "RelativeToolTip": "STPERI\\Views\\Master.cshtml",
+              "ViewState": "AQIAAMAAAAAAAAAAAAAAAPoAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-29T09:46:44.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "footer.cshtml",
               "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Partials\\footer.cshtml",
               "RelativeDocumentMoniker": "STPERI\\Views\\Partials\\footer.cshtml",
               "ToolTip": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Partials\\footer.cshtml",
               "RelativeToolTip": "STPERI\\Views\\Partials\\footer.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-26T19:41:00.357Z",
               "EditorCaption": ""

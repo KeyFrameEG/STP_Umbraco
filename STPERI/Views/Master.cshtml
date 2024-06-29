@@ -73,6 +73,7 @@ var homePage = Umbraco.AssignedContentItem.AncestorOrSelf<HomePage>();
     <select class="form-select" id="languageSelector" onchange="changeLanguage()">
         <option value="en" selected>En</option>
         <option value="ar">Ar</option>
+        <option value="fr">Fr</option>
     </select>
 </div>
 
@@ -190,49 +191,64 @@ var homePage = Umbraco.AssignedContentItem.AncestorOrSelf<HomePage>();
         element.classList.remove("mystyle");
       }
 </script>
-<script>
-    function changeLanguage() {
-        var lang = document.getElementById("languageSelector").value;
-        var currentUrl = window.location.href;
+    <script>
+        function changeLanguage() {
+            var lang = document.getElementById("languageSelector").value;
+            var currentUrl = window.location.href;
+            var baseUrl = window.location.origin;
 
-        if (lang === "ar") {
-            if (!currentUrl.includes('/ar/')) {
-                window.location.href = currentUrl.replace(window.location.origin, window.location.origin + '/ar');
+            if (lang === "ar") {
+                if (!currentUrl.includes('/ar/')) {
+                    window.location.href = currentUrl.replace(baseUrl, baseUrl + '/ar');
+                } else {
+                    applyRtlStyles();
+                }
+            } else if (lang === "fr") {
+                if (!currentUrl.includes('/fr/')) {
+                    window.location.href = currentUrl.includes('/ar/') ?
+                        currentUrl.replace('/ar/', '/fr/') :
+                        currentUrl.replace(baseUrl, baseUrl + '/fr');
+                } else {
+                    applyLtrStyles();
+                }
             } else {
-                applyRtlStyles();
+                if (currentUrl.includes('/ar/')) {
+                    window.location.href = currentUrl.replace('/ar/', '/');
+                } else if (currentUrl.includes('/fr/')) {
+                    window.location.href = currentUrl.replace('/fr/', '/');
+                } else {
+                    applyLtrStyles();
+                }
             }
-        } else {
+        }
+
+        function applyRtlStyles() {
+            // Add logic to switch to RTL CSS
+            document.body.classList.add('rtl');
+            document.body.classList.remove('ltr');
+        }
+
+        function applyLtrStyles() {
+            // Add logic to switch to LTR CSS
+            document.body.classList.add('ltr');
+            document.body.classList.remove('rtl');
+        }
+
+        // Initial load to apply correct styles based on URL
+        document.addEventListener("DOMContentLoaded", function () {
+            var currentUrl = window.location.href;
             if (currentUrl.includes('/ar/')) {
-                window.location.href = currentUrl.replace('/ar/', '/');
+                document.getElementById("languageSelector").value = "ar";
+                applyRtlStyles();
+            } else if (currentUrl.includes('/fr/')) {
+                document.getElementById("languageSelector").value = "fr";
+                applyLtrStyles();
             } else {
+                document.getElementById("languageSelector").value = "en";
                 applyLtrStyles();
             }
-        }
-    }
-
-    function applyRtlStyles() {
-        // Add logic to switch to RTL CSS
-        document.body.classList.add('rtl');
-        document.body.classList.remove('ltr');
-    }
-
-    function applyLtrStyles() {
-        // Add logic to switch to LTR CSS
-        document.body.classList.add('ltr');
-        document.body.classList.remove('rtl');
-    }
-
-    // Initial load to apply correct styles based on URL
-    document.addEventListener("DOMContentLoaded", function() {
-        if (window.location.href.includes('/ar/')) {
-            document.getElementById("languageSelector").value = "ar";
-            applyRtlStyles();
-        } else {
-            document.getElementById("languageSelector").value = "en";
-            applyLtrStyles();
-        }
-    });
-</script>
+        });
+    </script>
     <script>
         function newFunction() {
             var element = document.getElementById("myDIV");
