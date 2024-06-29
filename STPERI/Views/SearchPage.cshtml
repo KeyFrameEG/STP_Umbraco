@@ -1,0 +1,62 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.SearchPage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    Layout = "Master.cshtml";
+    var SearchTerm = string.Empty;
+
+    var qSearchTerm = Context?.Request?.Query["q"].ToString()!;
+    var querySearchTerm = Context?.Request?.Query["query"].ToString()!;
+
+    if (!string.IsNullOrWhiteSpace(qSearchTerm))
+    {
+        SearchTerm = qSearchTerm;
+    }
+    if (!string.IsNullOrWhiteSpace(querySearchTerm))
+    {
+        SearchTerm = querySearchTerm;
+    }
+}
+
+  </header>
+
+<div class="innerbanner fitlayout">
+
+    <h3 class="px-3 aos-item" data-aos="fade-up">@Model.Title</h3>
+    <span class="px-3 aos-item" data-aos="fade-up">
+        @Model.Subtitle
+    </span>
+    <img alt="" src="@Model.BannerImage.Url()" />
+</div>
+
+
+
+<div class="w-bg fitlayout pt-4 mb-4 paddingabove">
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-lg-12 aos-item" data-aos="fade-down">
+                <h2 class="migatitle">@Model.Title</h2>
+            </div>
+
+            <main class="mb-4">
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-md-10 col-lg-8 col-xl-7">
+                            @if (string.IsNullOrWhiteSpace(SearchTerm))
+                            {
+                                <p>Enter Search Term</p>
+                            }
+                            <partial name="SearchUmbraco" model="(SearchTerm,Umbraco)" />
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+
+           </div>
+      </div>
+
+    </div>
