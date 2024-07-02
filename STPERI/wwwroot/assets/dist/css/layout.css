@@ -1293,10 +1293,23 @@ transform: translateX(-50%) translateY(-50%);
 .cobtactform .form-control  {
   background: transparent !important; border: none !important; border-radius: 0 !important; color: rgba(255,255,255,0.5);
   border-bottom: 1px rgba(255,255,255,0.3) solid !important; padding: .375rem .75rem .375rem 3rem;
-} 
-
-.rtl .cobtactform .form-control  {
- padding: .375rem 3rem .375rem .75rem; text-align: right;
+}
+.cobtactform .text {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    color: rgba(255,255,255,0.5);
+    border-bottom: 1px rgba(255,255,255,0.3) solid !important;
+    padding: .375rem .75rem .375rem 3rem;
+    width:100%;
+}
+.cobtactform .col-sm-10 {
+    width: 100% !important;
+    position:relative;
+}
+.rtl .cobtactform .form-control {
+    padding: .375rem 3rem .375rem .75rem;
+    text-align: right;
 } 
 
 .cobtactform .form-select  {
@@ -1638,8 +1651,19 @@ ul.listbenner li::before  {
 .applyform .form-control  {
   background: transparent !important; border: none !important; border-radius: 0 !important; color: var(--colordarkblue);
   border-bottom: 1px solid rgba(31, 30, 79, 0.2) !important; padding: .375rem .75rem .375rem 3rem;
-} 
-
+}
+.applyform .text {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    color: var(--colordarkblue);
+    border-bottom: 1px solid rgba(31, 30, 79, 0.2) !important;
+    padding: .375rem .75rem .375rem 3rem;
+}
+.applyform .col-sm-10 {
+    width: 100% !important;
+    position: relative;
+}
 .rtl .applyform .form-control  {
  padding: .375rem 3rem .375rem .75rem; text-align: right;
 } 

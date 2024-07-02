@@ -197,30 +197,18 @@ var homePage = Umbraco.AssignedContentItem.AncestorOrSelf<HomePage>();
             var lang = document.getElementById("languageSelector").value;
             var currentUrl = window.location.href;
             var baseUrl = window.location.origin;
-
+            var cleanedUrl = currentUrl.replace(/\/(ar|fr)\//, '/');
             if (lang === "ar") {
-                if (!currentUrl.includes('/ar/')) {
-                    window.location.href = currentUrl.replace(baseUrl, baseUrl + '/ar');
-                } else {
-                    applyRtlStyles();
-                }
+                window.location.href = baseUrl + '/ar' + cleanedUrl.replace(baseUrl, '');
+                applyRtlStyles();
             } else if (lang === "fr") {
-                if (!currentUrl.includes('/fr/')) {
-                    window.location.href = currentUrl.includes('/ar/') ?
-                        currentUrl.replace('/ar/', '/fr/') :
-                        currentUrl.replace(baseUrl, baseUrl + '/fr');
-                } else {
-                    applyLtrStyles();
-                }
+                window.location.href = baseUrl + '/fr' + cleanedUrl.replace(baseUrl, '');
+                applyLtrStyles();
             } else {
-                if (currentUrl.includes('/ar/')) {
-                    window.location.href = currentUrl.replace('/ar/', '/');
-                } else if (currentUrl.includes('/fr/')) {
-                    window.location.href = currentUrl.replace('/fr/', '/');
-                } else {
-                    applyLtrStyles();
-                }
+                window.location.href = cleanedUrl;
+                applyLtrStyles();
             }
+
         }
 
         function applyRtlStyles() {
@@ -266,6 +254,10 @@ var homePage = Umbraco.AssignedContentItem.AncestorOrSelf<HomePage>();
             element.classList.remove("mystyle");
         }
     </script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.0.0.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/mvc/5.2.3/jquery.validate.unobtrusive.min.js"></script>
+
 </body>
 
 </html>

@@ -4,6 +4,7 @@
 @using Umbraco.Forms.Web
 @{
 	Layout = null;
+    @Html.SetFormFieldClass("form-control")
 }
 
 <!doctype html>
@@ -72,14 +73,15 @@
             <img alt="SCIENCE & TECHNOLOGY PARK FOR ELECTRONICS RESEARCH & INDUSTRY" class="logotext" src="/assets/images/logo-text.svg" />
         </a>
     </div>
-  
-  
-<div class="form-group lang">
-    <select class="form-select" id="languageSelector" onchange="changeLanguage()">
-        <option value="en" selected>En</option>
-        <option value="ar">Ar</option>
-    </select>
-</div>
+
+
+                <div class="form-group lang">
+                    <select class="form-select" id="languageSelector" onchange="changeLanguage()">
+                        <option value="en" selected>En</option>
+                        <option value="ar">Ar</option>
+                        <option value="fr">Fr</option>
+                    </select>
+                </div>
   
   
     <button onclick="newFunction()" class="searchbtn"><i class="feather icon-search"></i></button>
@@ -203,49 +205,67 @@
      element.classList.remove("mystyle");
   }
   </script>
-  <script>
-    function changeLanguage() {
-        var lang = document.getElementById("languageSelector").value;
-        var currentUrl = window.location.href;
+    <script>
+        function changeLanguage() {
+            var lang = document.getElementById("languageSelector").value;
+            var currentUrl = window.location.href;
+            var baseUrl = window.location.origin;
 
-        if (lang === "ar") {
-            if (!currentUrl.includes('/ar/')) {
-                window.location.href = currentUrl.replace(window.location.origin, window.location.origin + '/ar');
+            if (lang === "ar") {
+                if (!currentUrl.includes('/ar/')) {
+                    window.location.href = currentUrl.replace(baseUrl, baseUrl + '/ar');
+                } else {
+                    applyRtlStyles();
+                }
+            } else if (lang === "fr") {
+                if (!currentUrl.includes('/fr/')) {
+                    window.location.href = currentUrl.includes('/ar/') ?
+                        currentUrl.replace('/ar/', '/fr/') :
+                        currentUrl.replace(baseUrl, baseUrl + '/fr');
+                } else {
+                    applyLtrStyles();
+                }
             } else {
-                applyRtlStyles();
+                if (currentUrl.includes('/ar/')) {
+                    window.location.href = currentUrl.replace('/ar/', '/');
+                } else if (currentUrl.includes('/fr/')) {
+                    window.location.href = currentUrl.replace('/fr/', '/');
+                } else {
+                    applyLtrStyles();
+                }
             }
-        } else {
+        }
+
+        function applyRtlStyles() {
+            // Add logic to switch to RTL CSS
+            document.body.classList.add('rtl');
+            document.body.classList.remove('ltr');
+        }
+
+        function applyLtrStyles() {
+            // Add logic to switch to LTR CSS
+            document.body.classList.add('ltr');
+            document.body.classList.remove('rtl');
+        }
+
+        // Initial load to apply correct styles based on URL
+        document.addEventListener("DOMContentLoaded", function () {
+            var currentUrl = window.location.href;
             if (currentUrl.includes('/ar/')) {
-                window.location.href = currentUrl.replace('/ar/', '/');
+                document.getElementById("languageSelector").value = "ar";
+                applyRtlStyles();
+            } else if (currentUrl.includes('/fr/')) {
+                document.getElementById("languageSelector").value = "fr";
+                applyLtrStyles();
             } else {
+                document.getElementById("languageSelector").value = "en";
                 applyLtrStyles();
             }
-        }
-    }
-
-    function applyRtlStyles() {
-        // Add logic to switch to RTL CSS
-        document.body.classList.add('rtl');
-        document.body.classList.remove('ltr');
-    }
-
-    function applyLtrStyles() {
-        // Add logic to switch to LTR CSS
-        document.body.classList.add('ltr');
-        document.body.classList.remove('rtl');
-    }
-
-    // Initial load to apply correct styles based on URL
-    document.addEventListener("DOMContentLoaded", function() {
-        if (window.location.href.includes('/ar/')) {
-            document.getElementById("languageSelector").value = "ar";
-            applyRtlStyles();
-        } else {
-            document.getElementById("languageSelector").value = "en";
-            applyLtrStyles();
-        }
-    });
-</script>
+        });
+    </script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.0.0.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/mvc/5.2.3/jquery.validate.unobtrusive.min.js"></script>
 </body>
 
 </html>

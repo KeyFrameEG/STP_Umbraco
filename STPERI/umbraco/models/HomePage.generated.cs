@@ -402,6 +402,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string Training => global::Umbraco.Cms.Web.Common.PublishedModels.ModalContentProperties.GetTraining(this, _publishedValueFallback);
 
 		///<summary>
+		/// Innovate
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("innovate")]
+		public virtual string Innovate => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetInnovate(this, _publishedValueFallback);
+
+		///<summary>
 		/// LogoIcon: Enter the logo icon
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
