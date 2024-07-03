@@ -3345,6 +3345,10 @@ ul.listbenner {
         width: 400px;
         font-size: 18px;
     }
+    .innerbanner strong.companywork  {
+        display: inline-block; position: relative; z-index: 3; width: 600px; max-width: 100%; color: #fff; font-size: 16px; 
+       font-weight: 600; line-height: 24px;
+       }
 }
 
 @media (min-width: 1800px) {

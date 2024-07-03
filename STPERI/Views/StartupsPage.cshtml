@@ -1,0 +1,145 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.StartupsPage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+  </header>
+
+<div class="innerbanner fitlayout">
+
+    <div class="logonewsholder mx-3 aos-item" data-aos="fade-up">
+        <img alt="اليوم السابع" src="@Model.LogoImage.Url()" />
+    </div>
+    <div class="clearfix"></div>
+    <h3 class="px-3 aos-item" data-aos="fade-up">@Model.Title</h3>
+    <div class="clearfix"></div>
+    <span class="px-3 enside aos-item" data-aos="fade-up">
+        @Model.Subtitle
+
+    </span>
+
+    <div class="clearfix"></div>
+    <strong class="px-3 mt-3 companywork enside aos-item" data-aos="fade-up">
+        @Model.Gateway
+    </strong>
+
+    <img alt="" src="@Model.BannerImage.Url()" />
+</div>
+
+
+<div class="w-bg fitlayout paddingabove pt-4 mb-4">
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-lg-2 col-4">
+                <img alt="CEO" class="w-100" src="@Model.CeoImage.Url()" />
+            </div>
+
+
+            <div class="col-lg-4 col-8">
+                <h4 class="my-3 fw-bold">@Model.CeoName</h4>
+                <h5 class="mb-3">@Model.CeoRole</h5>
+                <a href="https://Rnker.app" target="_blank">@Model.Rnkerapp</a>
+                <div class="clearfix"></div>
+                <a href="mailto:mes1.rnker@gmail.com">@Model.RnkerEmail</a>
+            </div>
+
+            <div class="col-lg-6 mb-4 aos-item" data-aos="fade-down">
+                <h2 class="migatitle enside mb-4">@Model.AboutCompany</h2>
+                <div class="quoatline enside">
+@Model.CompanyDescription <br /><br />
+                    @Model.CompanySecondDescription
+                </div>
+            </div>
+
+
+            <div class="col-lg-6 mt-4 mb-4 aos-item" data-aos="fade-right">
+
+                <h2 class="migatitle enside mb-4">
+                    @Model.Vision
+                </h2>
+
+                <span class="enside">
+                    @Model.FirstVision<br /><br />
+                    @Model.SecondVision
+                </span>
+
+            </div>
+
+            <div class="col-lg-6 mb-4 aos-item" data-aos="fade-right">
+                <h2 class="migatitle enside mb-4">@Model.Message</h2>
+                <div class="clearfix"></div>
+                <span class="enside">
+                    @Model.MessageTitle
+
+                </span>
+
+            </div>
+
+
+            <div class="col-lg-6 mb-4 aos-item" data-aos="fade-right">
+
+                <h2 class="migatitle enside mb-4">@Model.Goals</h2>
+                <div class="locationdata">
+
+                    <ul>
+                        <li class="enside">
+                            @Model.FirstGoal
+                        </li>
+
+                        <li class="enside">
+                            @Model.SecondGoal
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-6 mb-4 aos-item" data-aos="fade-right">
+
+                <h2 class="migatitle enside mb-4">@Model.ServicesProvided</h2>
+                <div class="locationdata">
+
+                    <ul>
+                        <li class="enside">@Model.FirstService</li>
+                        <li class="enside">@Model.SecondService</li>
+                        <li class="enside">@Model.ThirdService</li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-12 mt-4 aos-item" data-aos="fade-right">
+
+                <h2 class="migatitle enside mb-4">@Model.Products</h2>
+
+            </div>
+
+            <div class="col-md-6 mb-3 aos-item" data-aos="fade-right">
+                <img alt="" src="@Model.FirstImageProduct.Url()" class="w-100" />
+            </div>
+
+            <div class="col-md-6 mb-3 aos-item" data-aos="fade-left">
+                <img alt="" src="@Model.SecondImageProduct.Url()" class="w-100" />
+            </div>
+
+            <div class="col-lg-10 mb-3 mt-4 aos-item" data-aos="fade-up">
+                <h2 class="migatitle enside mb-4">@Model.PreviousClients</h2>
+                <div class="clearfix"></div>
+                <span class="enside">
+                   @Model.PreviousClientsTitle
+                </span>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+</div>
