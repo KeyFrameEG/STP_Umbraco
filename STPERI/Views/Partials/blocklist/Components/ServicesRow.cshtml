@@ -22,13 +22,13 @@
             <div class="col-lg-4 col-md-6 mt-4">
                  <div class="serviceblock">
                      <div class="imgsrvices">
-                      <a href="/servicedetails"></a>
+                      <a href="@rowItem.RedirectUrl"></a>
                         <img alt="Service Name" class="custumimg" src="@rowItem.Image.Url()" />
                      </div>
                      <div class="servicedata">
                          <h4>@rowItem.Title</h4>
                          <span>@rowItem.Description</span>
-                         <a href="service-details.html">
+                            <a href="@rowItem.RedirectUrl">
                             <i class="feather icon-arrow-right"></i>
                          </a>
                      </div>

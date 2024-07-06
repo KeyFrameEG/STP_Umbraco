@@ -1,0 +1,21 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.AllStartupsPage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+  </header>
+
+<div class="innerbanner fitlayout">
+
+    <h3 class="px-3 enside aos-item" data-aos="fade-up">@Model.Title</h3>
+    <div class="clearfix"></div>
+    <span class="px-3 enside aos-item" data-aos="fade-up">
+        @Model.Subtitle
+    </span>
+
+    <img alt="" src="@Model.BannerImage.Url()" />
+</div>
+
+@Html.GetBlockListHtml(Model, "MainContentAllstartups")
+</div>

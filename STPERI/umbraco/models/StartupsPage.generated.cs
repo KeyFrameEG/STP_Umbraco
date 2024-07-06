@@ -18,7 +18,7 @@ using Umbraco.Extensions;
 
 namespace Umbraco.Cms.Web.Common.PublishedModels
 {
-	/// <summary>Startups page</summary>
+	/// <summary>StartupsRnker page</summary>
 	[PublishedModel("startupsPage")]
 	public partial class StartupsPage : PublishedContentModel, IHeaderProperties, IStartupProperties
 	{

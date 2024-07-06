@@ -19,7 +19,7 @@ using Umbraco.Extensions;
 namespace Umbraco.Cms.Web.Common.PublishedModels
 {
 	// Mixin Content Type with alias "startupProperties"
-	/// <summary>Startup properties</summary>
+	/// <summary>StartupsRnker  properties</summary>
 	public partial interface IStartupProperties : IPublishedContent
 	{
 		/// <summary>AboutCompany</summary>
@@ -153,7 +153,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		string Vision { get; }
 	}
 
-	/// <summary>Startup properties</summary>
+	/// <summary>StartupsRnker  properties</summary>
 	[PublishedModel("startupProperties")]
 	public partial class StartupProperties : PublishedContentModel, IStartupProperties
 	{
