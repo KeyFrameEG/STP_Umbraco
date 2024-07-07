@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "F:\\Work\\UmbracoGit\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\contactpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\contactpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\contentpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\contentpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\partials\\ourlabs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\partials\\ourlabs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\master.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\master.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -18,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,7 +42,58 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ContactPage.cshtml",
+              "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\ContactPage.cshtml",
+              "RelativeDocumentMoniker": "STPERI\\Views\\ContactPage.cshtml",
+              "ToolTip": "F:\\Work\\UmbracoGit\\STPERI\\Views\\ContactPage.cshtml",
+              "RelativeToolTip": "STPERI\\Views\\ContactPage.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-07T16:37:04.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ContentPage.cshtml",
+              "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\ContentPage.cshtml",
+              "RelativeDocumentMoniker": "STPERI\\Views\\ContentPage.cshtml",
+              "ToolTip": "F:\\Work\\UmbracoGit\\STPERI\\Views\\ContentPage.cshtml",
+              "RelativeToolTip": "STPERI\\Views\\ContentPage.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-07T16:37:01.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OurLabs.cshtml",
+              "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Partials\\OurLabs.cshtml",
+              "RelativeDocumentMoniker": "STPERI\\Views\\Partials\\OurLabs.cshtml",
+              "ToolTip": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Partials\\OurLabs.cshtml",
+              "RelativeToolTip": "STPERI\\Views\\Partials\\OurLabs.cshtml",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAAAJsAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-07T12:21:55.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomePage.cshtml",
+              "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\HomePage.cshtml",
+              "RelativeDocumentMoniker": "STPERI\\Views\\HomePage.cshtml",
+              "ToolTip": "F:\\Work\\UmbracoGit\\STPERI\\Views\\HomePage.cshtml",
+              "RelativeToolTip": "STPERI\\Views\\HomePage.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-07T12:21:48.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "layout.css",
               "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\wwwroot\\assets\\dist\\css\\layout.css",
               "RelativeDocumentMoniker": "STPERI\\wwwroot\\assets\\dist\\css\\layout.css",
@@ -34,12 +101,11 @@
               "RelativeToolTip": "STPERI\\wwwroot\\assets\\dist\\css\\layout.css",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-07T11:00:29.552Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-07T11:00:29.552Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Master.cshtml",
               "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Master.cshtml",
               "RelativeDocumentMoniker": "STPERI\\Views\\Master.cshtml",
@@ -47,8 +113,7 @@
               "RelativeToolTip": "STPERI\\Views\\Master.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-07T10:51:28.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-07T10:51:28.26Z"
             }
           ]
         }
