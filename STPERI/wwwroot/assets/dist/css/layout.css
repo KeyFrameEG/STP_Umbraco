@@ -2,6 +2,43 @@
 @import url(font-awesome.css);
 @import url(feather.css);
 
+@font-face {
+    font-family: "Cairo-bold";
+    src: url("../fonts/Cairo-Bold.ttf")
+        format("truetype")
+  }
+  @font-face {
+    font-family: "Cairo";
+    src: url("../fonts/Cairo-Regular.ttf")
+        format("truetype")
+  }
+  .cairo-bold {
+    font-family: "Cairo-bold", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+  }
+  @font-face {
+    font-family: "Poppins-Bold";
+    src: url("../fonts/Poppins-Bold.ttf")
+        format("truetype")
+  }
+  @font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.ttf")
+        format("truetype")
+  }
+  .Poppins-bold {
+    font-family: "Poppins-bold", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+  }
+
 body.ltr {
     direction: ltr;
     /* Add more LTR specific styles here */
@@ -355,12 +392,12 @@ header.sticky {
 .migatitle {
     color: var(--colordarkblue);
     font-size: 42px;
-    font-weight: 700;
+    font-family: "Poppins-bold", sans-serif;
     margin-bottom: 40px;
 }
 
 .rtl .migatitle {
-    font-family: "Cairo", sans-serif;
+    font-family: "Cairo-bold", sans-serif;
 }
 
 .cardabout {
@@ -374,13 +411,14 @@ header.sticky {
         position: relative;
         color: var(--colordarkblue);
         font-size: 22px;
-        font-weight: 700;
+        font-family: "Poppins-bold", sans-serif;
         margin: 0 0 15px;
     }
 
 .rtl .cardabout h4 {
     padding-left: 55px;
     padding-right: unset;
+    font-family: "Cairo-bold", sans-serif;
 }
 
 .cardabout h4::before {
@@ -412,13 +450,14 @@ header.sticky {
     position: relative;
     padding: 0 32px 0 0;
     color: var(--colordarkblue) !important;
-    font-weight: 700;
+    font-family: "Poppins-bold", sans-serif;
     font-size: 16px;
     text-decoration: none !important;
 }
 
 .rtl .cardabout a {
     padding: 0 0 0 32px;
+    font-family: "Cairo-bold", sans-serif;
 }
 
 .cardabout a::before {
@@ -521,12 +560,13 @@ header.sticky {
     display: inline-block;
     width: 100%;
     font-size: 22px;
-    font-weight: 700;
+    font-family: "Poppins-bold", sans-serif;
     color: var(--colordarkblue);
-    font-weight: 700;
     margin: 0 0 15px;
 }
-
+.rtl .cardfeather h3 {
+    font-family: "Cairo-bold", sans-serif;
+}
 .cardfeather:hover h3 {
     color: var(--colororange);
 }
@@ -602,13 +642,14 @@ header.sticky {
     width: 100%;
     color: #fff;
     font-size: 42px;
-    font-weight: 700;
+    font-family: "Poppins-bold", sans-serif;
     margin: 0 0 20px;
     min-height: 151px;
 }
 
 .rtl .tourpart h3 {
     text-align: right;
+    font-family: "Cairo-bold", sans-serif;
 }
 
 .tourpart:hover h3 {
@@ -724,27 +765,31 @@ header.sticky {
         display: inline-block;
         color: #fff;
         font-size: 45px;
-        font-weight: 700;
-        font-family: "Poppins", sans-serif;
+        font-family: "Poppins-bold", sans-serif;
         margin-left: 10px;
     }
-
+    .rtl .statiscsbg h2 {
+        font-family: "Cairo-bold", sans-serif;
+    }
     .statiscsbg sup {
         display: inline-block;
         color: #fff;
         font-size: 45px;
-        font-weight: 700;
-        font-family: "Poppins", sans-serif;
+        font-family: "Poppins-bold", sans-serif;
     }
-
+    .rtl .statiscsbg sup {
+        font-family: "Cairo-bold", sans-serif;
+    }
     .statiscsbg span {
         display: inline-block;
         width: 100%;
         color: #fff;
         font-size: 25px;
-        font-weight: 700;
+        font-family: "Poppins-bold", sans-serif;
     }
-
+    .rtl .statiscsbg span {
+        font-family: "Cairo-bold", sans-serif;
+    }
     .statiscsbg button {
         position: absolute;
         bottom: 0;
@@ -755,8 +800,7 @@ header.sticky {
         border: none;
         padding: 0;
         font-size: 18px;
-        font-family: "Poppins", sans-serif;
-        font-weight: 700;
+        font-family: "Poppins-bold", sans-serif;
         height: 42px;
         line-height: 42px;
         background: rgba(255,255,255,0.4);
@@ -769,7 +813,7 @@ header.sticky {
     .rtl .statiscsbg button::before {
         font-size: 18px;
         content: 'شاهد الكل';
-        font-family: 'Cairo', sans-serif !important;
+        font-family: "Cairo-bold", sans-serif;
     }
 
     .rtl .statiscsbg button.readless::before {
@@ -859,9 +903,11 @@ header.sticky {
         margin: 0 0 10px;
         color: var(--colordarkblue);
         font-size: 22px;
-        font-weight: 700;
+        font-family: "Poppins-bold", sans-serif;
     }
-
+    .rtl .servicedata h4 {
+        font-family: "Cairo-bold", sans-serif;
+    }
 .serviceblock:hover .servicedata h4 {
     color: var(--colororange);
     text-decoration: underline;
@@ -953,9 +999,11 @@ header.sticky {
     margin: 0 0 10px;
     color: var(--colordarkblue);
     font-size: 22px;
-    font-weight: 700;
+    font-family: "Poppins-bold", sans-serif;
 }
-
+.rtl .labsblock h5 {
+    font-family: "Cairo-bold", sans-serif;
+}
 .labsblock span {
     display: inline-block;
     width: 100%;
@@ -1086,7 +1134,7 @@ header.sticky {
         padding: 0 30px;
         color: #fff;
         z-index: 3;
-        font-weight: 700;
+        font-family: "Poppins-bold", sans-serif;
         font-size: 22px;
         line-height: 32px;
         margin: 0;
@@ -1096,32 +1144,35 @@ header.sticky {
         -ms-transition: all ease-in-out 0.3s;
         transition: all ease-in-out 0.3s;
     }
-
+.rtl .activityblock h3 {
+    font-family: "Cairo-bold", sans-serif;
+}
     .activityblock:hover h3 {
         bottom: 60px;
     }
 
-    .activityblock a {
-        position: absolute;
-        bottom: -30px;
-        left: 30px;
-        padding: 0 32px 0 0;
-        text-decoration: none !important;
-        z-index: 3;
-        color: var(--colororange) !important;
-        font-size: 16px;
-        font-weight: 700;
-        -webkit-transition: all ease-in-out 0.3s;
-        -moz-transition: all ease-in-out 0.3s;
-        -o-transition: all ease-in-out 0.3s;
-        -ms-transition: all ease-in-out 0.3s;
-        transition: all ease-in-out 0.3s;
-    }
+.activityblock a {
+    position: absolute;
+    bottom: -30px;
+    left: 30px;
+    padding: 0 32px 0 0;
+    text-decoration: none !important;
+    z-index: 3;
+    color: var(--colororange) !important;
+    font-size: 16px;
+    font-family: "Poppins-bold", sans-serif;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
 
 .rtl .activityblock a {
     left: unset;
     right: 30px;
     padding: 0 0 0 32px;
+    font-family: "Cairo-bold", sans-serif;
 }
 
 .activityblock a::before {
@@ -1153,7 +1204,7 @@ header.sticky {
         display: inline-block;
         width: 100%;
         margin: 0 0 12px;
-        font-weight: 700;
+        font-family: "Poppins-bold", sans-serif;
         font-size: 22px;
         line-height: 32px;
     }
@@ -1172,13 +1223,14 @@ header.sticky {
         position: relative;
         padding: 0 32px 0 0;
         color: var(--colordarkblue) !important;
-        font-weight: 700;
+        font-family: "Poppins-bold", sans-serif;
         font-size: 16px;
         text-decoration: none !important;
     }
 
 .rtl .newsinfo a {
     padding: 0 0 0 32px;
+    font-family: "Cairo-bold", sans-serif;
 }
 
 .newsinfo a::before {
@@ -1319,7 +1371,7 @@ header.sticky {
         display: inline-block;
         width: 100%;
         font-size: 42px;
-        font-weight: 700;
+        font-family: "Poppins-bold", sans-serif;
         margin-bottom: 40px;
     }
 
@@ -1338,12 +1390,13 @@ header.sticky {
             position: relative;
             font-size: 16px;
             line-height: 24px;
-            font-weight: 700;
+            font-family: "Poppins-bold", sans-serif;
             color: var(--colordarkblue);
         }
 
 .rtl .locationdata ul li {
     padding: 0 40px 0 0;
+    font-family: "Cairo-bold", sans-serif;
 }
 
 .locationdata.halflist ul li {
@@ -1353,6 +1406,7 @@ header.sticky {
 
 .rtl .locationdata.halflist ul li {
     margin: 0 0 20px 1%;
+    font-family: "Cairo-bold", sans-serif;
 }
 
 
@@ -1370,12 +1424,13 @@ header.sticky {
     font-family: feather;
     content: "\e83f";
     border-radius: 50%;
-    font-weight: 700;
+    font-family: "Poppins-bold", sans-serif;
 }
 
 .rtl .locationdata ul li::before {
     right: 0;
-    left: auto
+    left: auto;
+    font-family: "Cairo-bold", sans-serif;
 }
 
 .mapframe {
@@ -1608,10 +1663,12 @@ ul.socialfooter {
         z-index: 3;
         color: #fff;
         font-size: 30px;
-        font-weight: 700;
+        font-family: "Poppins-bold", sans-serif;
         margin-bottom: 20px;
     }
-
+    .rtl .innerbanner h3 {
+        font-family: "Cairo-bold", sans-serif;
+    }
     .innerbanner span {
         display: inline-block;
         position: relative;
@@ -1737,7 +1794,7 @@ ul.socialfooter {
         display: inline-block;
         width: 100%;
         margin: 0 0 8px;
-        font-weight: 700;
+        font-family: "Poppins-bold", sans-serif;
         color: var(--colordarkblue);
     }
 
@@ -1837,7 +1894,7 @@ ul.socialfooter {
     display: inline-block;
     width: 100%;
     margin: 0 0 15px;
-    font-weight: 700;
+    font-family: "Poppins-bold", sans-serif;
     font-size: 20px;
     line-height: 30px;
     max-height: 60px;
@@ -1871,7 +1928,7 @@ ul.socialfooter {
     font-family: feather;
     color: var(--colororange);
     font-size: 16px;
-    font-weight: 700;
+    font-family: "Poppins-bold", sans-serif;
     content: "\e829";
 }
 
@@ -1879,6 +1936,7 @@ ul.socialfooter {
     left: 0;
     right: auto;
     content: "\e828";
+    font-family: "Cairo-bold", sans-serif;
 }
 
 .quoatline {
@@ -2168,12 +2226,13 @@ ul.socialfooter {
     display: inline-block;
     color: var(--colordarkblue);
     font-size: 18px;
-    font-weight: 700;
+    font-family: "Poppins-bold", sans-serif;
     margin: 0 0 10px;
 }
 
 .rtl .megamenuu h4 {
     padding: 0 0 0 50px;
+    font-family: "Cairo-bold", sans-serif;
 }
 
 .megamenuu h4::before {
@@ -2609,7 +2668,7 @@ ul.listbenner {
     .formholder h3 {
         display: inline-block;
         width: 100%;
-        font-weight: 700;
+        font-family: "Poppins-bold", sans-serif;
         font-size: 24px;
         margin: 20px 0;
     }
@@ -3008,7 +3067,7 @@ ul.listbenner {
     display: inline-block;
     width: 100%;
     color: #fff;
-    font-weight: 700;
+    font-family: "Poppins-bold", sans-serif;
     margin-top: 200px;
     padding-left: 4vw;
     margin-bottom: 15px;
@@ -3158,12 +3217,13 @@ ul.listbenner {
     display: inline-block;
     width: 100%;
     font-size: 22px;
-    font-weight: 700;
+    font-family: "Poppins-bold", sans-serif;
     color: var(--colordarkblue);
-    font-weight: 700;
     margin: 0 0 15px;
 }
-
+.rtl .cardstartup h3 {
+    font-family: "Cairo-bold", sans-serif;
+}
 .cardstartup:hover h3 {
     color: var(--colororange);
 }
@@ -3186,22 +3246,25 @@ a.morestartup {
     z-index: 3;
     color: var(--colororange) !important;
     font-size: 16px;
-    font-weight: 700;
+    font-family: "Poppins-bold", sans-serif;
 }
 
 .rtl a.morestartup {
     left: auto;
-    right: 25px
+    right: 25px;
+    font-family: "Cairo-bold", sans-serif;
 }
 .rtl .applyform .form-check {
     padding-right: 1.5em;
     padding-left: unset;
+    font-family: "Cairo-bold", sans-serif;
 }
 
     .rtl .applyform .form-check .form-check-input {
         float: right;
         margin-right: -1.5em;
         margin-left: unset;
+        font-family: "Cairo-bold", sans-serif;
     }
 
 @media (min-width: 1440px) {
