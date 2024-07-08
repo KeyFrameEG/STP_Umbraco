@@ -20,7 +20,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 {
 	/// <summary>Allstartups Item</summary>
 	[PublishedModel("allstartupsItem")]
-	public partial class AllstartupsItem : PublishedElementModel, IDescriptionProperty, IImageProperty, IRedirectUrlProperty, ITitleProperty
+	public partial class AllstartupsItem : PublishedElementModel, IDescriptionProperty, IImageProperty, IRedirectUrlProperty, ISubtitleProperty, ITitleProperty
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -72,6 +72,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("redirectUrl")]
 		public virtual string RedirectUrl => global::Umbraco.Cms.Web.Common.PublishedModels.RedirectUrlProperty.GetRedirectUrl(this, _publishedValueFallback);
+
+		///<summary>
+		/// Subtitle
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("subtitle")]
+		public virtual string Subtitle => global::Umbraco.Cms.Web.Common.PublishedModels.SubtitleProperty.GetSubtitle(this, _publishedValueFallback);
 
 		///<summary>
 		/// Title
