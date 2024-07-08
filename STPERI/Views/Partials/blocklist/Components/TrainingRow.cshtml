@@ -21,7 +21,7 @@
            var rowItem = (TrainingItem)item.Content;
             <div class="col-lg-6 mb-4 aos-item" data-aos="fade-right">
               <div class="training">
-                <a href="/trainingdetails"></a>
+                <a href="@rowItem.RedirectUrl"></a>
               
                 
                   <img alt="News title" class="mewsimg" src="@rowItem.Image.Url()" />
@@ -29,7 +29,7 @@
               <div class="newsinfo">
                <h3>@rowItem.Title</h3>
                <span>@rowItem.Description</span>
-               <a href="/trainingdetails">read more</a>
+                        <a href="@rowItem.RedirectUrl">read more</a>
             
               </div>
              </div>

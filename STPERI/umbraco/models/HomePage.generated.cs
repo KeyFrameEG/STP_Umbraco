@@ -762,6 +762,38 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentServices => global::Umbraco.Cms.Web.Common.PublishedModels.ServicesProperty.GetMainContentServices(this, _publishedValueFallback);
 
 		///<summary>
+		/// EightTextValue
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("eightTextValue")]
+		public virtual string EightTextValue => global::Umbraco.Cms.Web.Common.PublishedModels.StatisticsProperties.GetEightTextValue(this, _publishedValueFallback);
+
+		///<summary>
+		/// EightValue
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("eightValue")]
+		public virtual string EightValue => global::Umbraco.Cms.Web.Common.PublishedModels.StatisticsProperties.GetEightValue(this, _publishedValueFallback);
+
+		///<summary>
+		/// FifthTextValue
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("fifthTextValue")]
+		public virtual string FifthTextValue => global::Umbraco.Cms.Web.Common.PublishedModels.StatisticsProperties.GetFifthTextValue(this, _publishedValueFallback);
+
+		///<summary>
+		/// FifthValue
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("fifthValue")]
+		public virtual string FifthValue => global::Umbraco.Cms.Web.Common.PublishedModels.StatisticsProperties.GetFifthValue(this, _publishedValueFallback);
+
+		///<summary>
 		/// FirstTextValue
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
@@ -816,6 +848,38 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("secondValue")]
 		public virtual string SecondValue => global::Umbraco.Cms.Web.Common.PublishedModels.StatisticsProperties.GetSecondValue(this, _publishedValueFallback);
+
+		///<summary>
+		/// SevenTextValue
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("sevenTextValue")]
+		public virtual string SevenTextValue => global::Umbraco.Cms.Web.Common.PublishedModels.StatisticsProperties.GetSevenTextValue(this, _publishedValueFallback);
+
+		///<summary>
+		/// SevenValue
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("sevenValue")]
+		public virtual string SevenValue => global::Umbraco.Cms.Web.Common.PublishedModels.StatisticsProperties.GetSevenValue(this, _publishedValueFallback);
+
+		///<summary>
+		/// SexTextValue
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("sexTextValue")]
+		public virtual string SexTextValue => global::Umbraco.Cms.Web.Common.PublishedModels.StatisticsProperties.GetSexTextValue(this, _publishedValueFallback);
+
+		///<summary>
+		/// SixValue
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("sixValue")]
+		public virtual string SixValue => global::Umbraco.Cms.Web.Common.PublishedModels.StatisticsProperties.GetSixValue(this, _publishedValueFallback);
 
 		///<summary>
 		/// ThirdTextValue

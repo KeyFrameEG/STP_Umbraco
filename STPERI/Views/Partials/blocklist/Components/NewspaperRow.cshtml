@@ -16,7 +16,6 @@
 
           <div class="col-lg-4 mb-md-3 mb-4">
             <div class="newsimg">
-              <a href="/newspaperdetails"></a>
               <span>@rowItem.Date</span>
               <i>N</i>
               <h5>@rowItem.Title</h5>
@@ -26,10 +25,14 @@
             <div class="newsinfo">
              <h3>@rowItem.Subtitle</h3>
              <span>@rowItem.Description</span>
-                <a href="/newspaperdetails">@row.Subtitle</a>
+
           
             </div>
           </div>
 
           }
+    <div class="newsinfo">
+        <a href="/news">@row.Subtitle</a>
+    </div>
+    
 </div>

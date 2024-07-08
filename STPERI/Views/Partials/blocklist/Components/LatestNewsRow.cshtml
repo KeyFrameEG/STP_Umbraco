@@ -20,7 +20,7 @@
                var rowItem = (LatestNewsItem)item.Content;
             <div class="col-md-6 mb-3 aos-item" data-aos="zoom-in">
                  <div class="newslist d-flex align-items-end">
-                      <a href="/newspaperdetails"></a>
+                      <a href="@rowItem.RedirectUrl"></a>
                       <strong>@rowItem.Date</strong>
                       <div class="overlaynewslist">
                           <h4>@rowItem.Title</h4>
