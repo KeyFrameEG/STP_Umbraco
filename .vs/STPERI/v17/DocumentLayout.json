@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "F:\\Work\\UmbracoGit\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\partials\\navigation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\partials\\navigation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\allstartupspage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\allstartupspage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\partials\\blocklist\\components\\allstartupsrow.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\partials\\blocklist\\components\\allstartupsrow.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,50 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "navigation.cshtml",
-              "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Partials\\navigation.cshtml",
-              "RelativeDocumentMoniker": "STPERI\\Views\\Partials\\navigation.cshtml",
-              "ToolTip": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Partials\\navigation.cshtml",
-              "RelativeToolTip": "STPERI\\Views\\Partials\\navigation.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-08T10:58:58.846Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AllStartupsPage.cshtml",
-              "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\AllStartupsPage.cshtml",
-              "RelativeDocumentMoniker": "STPERI\\Views\\AllStartupsPage.cshtml",
-              "ToolTip": "F:\\Work\\UmbracoGit\\STPERI\\Views\\AllStartupsPage.cshtml",
-              "RelativeToolTip": "STPERI\\Views\\AllStartupsPage.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-08T10:44:20.928Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AllstartupsRow.cshtml",
-              "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Partials\\blocklist\\Components\\AllstartupsRow.cshtml",
-              "RelativeDocumentMoniker": "STPERI\\Views\\Partials\\blocklist\\Components\\AllstartupsRow.cshtml",
-              "ToolTip": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Partials\\blocklist\\Components\\AllstartupsRow.cshtml",
-              "RelativeToolTip": "STPERI\\Views\\Partials\\blocklist\\Components\\AllstartupsRow.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAABaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-08T10:40:41.116Z",
-              "EditorCaption": ""
             }
           ]
         }
