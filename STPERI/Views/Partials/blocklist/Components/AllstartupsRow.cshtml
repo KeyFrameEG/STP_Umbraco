@@ -1,9 +1,26 @@
    @inherits UmbracoViewPage<BlockListItem>
+   @using Microsoft.AspNetCore.Http
+   @inject IHttpContextAccessor HttpContextAccessor
     @{
     var row = (AllstartupsRow)Model.Content;
     var settings = (AllstartupsRowSettings)Model.Settings;
       if(settings?.Hide ?? false){return;}
     if (row.AllstartupsItems == null || !row.AllstartupsItems.Any()) return;
+
+
+    // Pagination settings
+    var pageSize = 6; // Number of items to display per page
+    var currentPage = 1;
+    var queryStringPage = HttpContextAccessor.HttpContext.Request.Query["page"];
+    if (!string.IsNullOrEmpty(queryStringPage) && int.TryParse(queryStringPage, out currentPage))
+    {
+        currentPage = Math.Max(currentPage, 1);
+    }
+    var totalItems = row.AllstartupsItems.Count();
+    var totalPages = (int)Math.Ceiling((double)totalItems / pageSize);
+
+    // Get the items for the current page
+    var itemsForPage = row.AllstartupsItems.Skip((currentPage - 1) * pageSize).Take(pageSize).ToList();
     }
     <div class="w-bg fitlayout pt-4 mb-4 paddingabove">
 
@@ -14,7 +31,7 @@
                 <div class="col-lg-10 mb-4 aos-item" data-aos="fade-down">
                     <h2 class="migatitle mb-4">@row.Title</h2>
                 </div>
-                    @foreach (var item in row.AllstartupsItems)
+                 @foreach (var item in itemsForPage)
                  {
                    var rowItem = (AllstartupsItem)item.Content;
                 <div class="col-lg-4 col-md-6 aos-item" data-aos="flip-left">
@@ -30,7 +47,20 @@
                     </div>
                 </div>
                 }
-
+            <div class="row">
+                <div class="col-12 text-center">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-center">
+                            @for (int i = 1; i <= totalPages; i++)
+                            {
+                                <li class="page-item @(i == currentPage ? "active" : "")">
+                                    <a class="page-link" href="?page=@i">@i</a>
+                                </li>
+                            }
+                        </ul>
+                    </nav>
+                </div>
+            </div>
             </div>
         </div>
 
