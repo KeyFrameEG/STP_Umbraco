@@ -20,7 +20,10 @@
     var totalPages = (int)Math.Ceiling((double)totalItems / pageSize);
 
     // Get the items for the current page
-    var itemsForPage = row.AllstartupsItems.Skip((currentPage - 1) * pageSize).Take(pageSize).ToList();
+    var itemsForPage = row.AllstartupsItems
+        .Skip((currentPage - 1) * pageSize)
+        .Take(pageSize)
+        .ToList();
     }
     <div class="w-bg fitlayout pt-4 mb-4 paddingabove">
 

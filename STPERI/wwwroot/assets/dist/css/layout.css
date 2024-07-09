@@ -3266,7 +3266,20 @@ a.morestartup {
         margin-left: unset;
         font-family: "Cairo-bold", sans-serif;
     }
-
+.page-link {
+    color: rgba(31, 30, 79, 1) !important;
+    border: 1px solid rgba(124, 124, 148, 0.1) !important;
+    border-radius: 0 !important;
+}
+.page-item {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+ .page-item.active .page-link {
+        background-color: var(--colororange) !important;
+        border-color: var(--colororange) !important;
+        color:#fff !important;
+ }
 @media (min-width: 1440px) {
 }
 
