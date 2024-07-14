@@ -41,6 +41,16 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		global::System.Collections.Generic.IEnumerable<global::Umbraco.Cms.Core.Models.Link> MainNavigations { get; }
+
+		/// <summary>SearchButton</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		string SearchButton { get; }
+
+		/// <summary>SearchErrorMessage</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		string SearchErrorMessage { get; }
 	}
 
 	/// <summary>Navigation Properties</summary>
@@ -125,5 +135,31 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		public static global::System.Collections.Generic.IEnumerable<global::Umbraco.Cms.Core.Models.Link> GetMainNavigations(INavigationProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Cms.Core.Models.Link>>(publishedValueFallback, "mainNavigations");
+
+		///<summary>
+		/// SearchButton
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("searchButton")]
+		public virtual string SearchButton => GetSearchButton(this, _publishedValueFallback);
+
+		/// <summary>Static getter for SearchButton</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		public static string GetSearchButton(INavigationProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "searchButton");
+
+		///<summary>
+		/// SearchErrorMessage
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("searchErrorMessage")]
+		public virtual string SearchErrorMessage => GetSearchErrorMessage(this, _publishedValueFallback);
+
+		/// <summary>Static getter for SearchErrorMessage</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		public static string GetSearchErrorMessage(INavigationProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "searchErrorMessage");
 	}
 }

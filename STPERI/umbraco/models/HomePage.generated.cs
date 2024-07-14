@@ -434,6 +434,22 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual global::System.Collections.Generic.IEnumerable<global::Umbraco.Cms.Core.Models.Link> MainNavigations => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetMainNavigations(this, _publishedValueFallback);
 
 		///<summary>
+		/// SearchButton
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("searchButton")]
+		public virtual string SearchButton => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetSearchButton(this, _publishedValueFallback);
+
+		///<summary>
+		/// SearchErrorMessage
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("searchErrorMessage")]
+		public virtual string SearchErrorMessage => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetSearchErrorMessage(this, _publishedValueFallback);
+
+		///<summary>
 		/// Main Content Newspaper
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
