@@ -106,6 +106,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops STpvisionImage => this.Value<global::Umbraco.Cms.Core.Models.MediaWithCrops>(_publishedValueFallback, "sTPVisionImage");
 
 		///<summary>
+		/// SubscribedForm
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("subscribedForm")]
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString SubscribedForm => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "subscribedForm");
+
+		///<summary>
 		/// BeUpdatedDescription
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
@@ -728,30 +736,6 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("specializedLabsSecondTitle")]
 		public virtual string SpecializedLabsSecondTitle => global::Umbraco.Cms.Web.Common.PublishedModels.OurLabsProperties.GetSpecializedLabsSecondTitle(this, _publishedValueFallback);
-
-		///<summary>
-		/// SpecializedLabsThirdDescription
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("specializedLabsThirdDescription")]
-		public virtual string SpecializedLabsThirdDescription => global::Umbraco.Cms.Web.Common.PublishedModels.OurLabsProperties.GetSpecializedLabsThirdDescription(this, _publishedValueFallback);
-
-		///<summary>
-		/// SpecializedLabsThirdImage
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("specializedLabsThirdImage")]
-		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops SpecializedLabsThirdImage => global::Umbraco.Cms.Web.Common.PublishedModels.OurLabsProperties.GetSpecializedLabsThirdImage(this, _publishedValueFallback);
-
-		///<summary>
-		/// SpecializedLabsThirdTitle
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("specializedLabsThirdTitle")]
-		public virtual string SpecializedLabsThirdTitle => global::Umbraco.Cms.Web.Common.PublishedModels.OurLabsProperties.GetSpecializedLabsThirdTitle(this, _publishedValueFallback);
 
 		///<summary>
 		/// Main Content Our Park

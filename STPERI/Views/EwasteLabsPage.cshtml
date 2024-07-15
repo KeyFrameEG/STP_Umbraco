@@ -1,0 +1,123 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.EwasteLabsPage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+ </header>
+
+    <div class="innerbanner fitlayout">
+
+        <h3 class="px-3 aos-item" data-aos="fade-up">@Model.Subtitle</h3>
+        <div class="clearfix"></div>
+        <span class="px-3 aos-item" data-aos="fade-up">
+         @Model.CentralLabsDetailsDescription
+        </span>
+        <div class="clearfix"></div>
+
+        <a href="#" class="linkbanner mx-3 aos-item" data-aos="fade-up">
+          <b>Apply Now</b>
+          <i class="feather icon-arrow-right"></i>
+      </a>
+       
+        <img alt="" src="@Model.BannerImage.Url()" />
+    </div>
+
+
+    <div class="w-bg fitlayout pt-4 mb-4">
+
+      <div class="container-fluid">
+           
+           <div class="row">
+
+            <div class="col-lg-12 my-4 aos-item" data-aos="fade-up">
+              <h2 class="migatitle">Description</h2>
+            </div>
+
+
+
+            <div class="col-md-6 mb-3 aos-item" data-aos="fade-right">
+              <div class="quoatline">
+				@Model.FirstDescriptionLabDetails
+              </div>
+            </div>
+
+
+            <div class="col-md-6 mb-3 aos-item" data-aos="fade-left">
+              <div class="quoatline">
+				@Model.SecondDescriptionLabDetails
+              </div>
+            </div>
+
+		@Html.GetBlockListHtml(Model,"MainContentCentralLabsDetails")
+
+
+             <div class="col-lg-10 my-5">
+              <h2 class="migatitle mb-4">@Model.LabContent</h2>
+            </div>
+
+            <div class="col-lg-6 mb-2 aos-item" data-aos="zoom-in">
+              <div class="galleryitem">
+                
+                
+                    <img alt="" class="w-100" src="@Model.LabContentFirstImage.Url()" />
+              
+            </div>
+             </div>
+
+             <div class="col-lg-6 mb-2 aos-item" data-aos="zoom-in">
+              <div class="galleryitem">
+               
+                
+                    <img alt="" class="w-100" src="@Model.LabContentSecondImage.Url()" />
+              
+            </div>
+             </div>
+
+             <div class="col-lg-6 mb-2 aos-item" data-aos="zoom-in">
+              <div class="galleryitem">
+               
+                
+                    <img alt="" class="w-100" src="@Model.LabContentThirdImage.Url()" />
+              
+            </div>
+             </div>
+
+             <div class="col-lg-6 mb-2 aos-item" data-aos="zoom-in">
+              <div class="galleryitem">
+               
+                
+                    <img alt="" class="w-100" src="@Model.LabContentForthImage.Url()" />
+              
+            </div>
+             </div>
+
+
+
+
+           
+           </div>
+      </div>
+
+    </div>
+
+@Html.GetBlockListHtml(Model,"MainContentOurTeam")
+
+ <div class="w-bg fitlayout pt-4 mb-4 paddingabove">
+
+  <div class="container-fluid">
+       
+       <div class="row">
+
+         <div class="col-lg-12 mb-4">
+             <div class="formholder applyform">
+                 <h3 class="px-3">Apply Now</h3>
+
+				@Model.Value("ApplyForm")
+             </div>
+         </div>
+
+       </div>
+  </div>
+
+</div>

@@ -166,21 +166,6 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		string SpecializedLabsSecondTitle { get; }
-
-		/// <summary>SpecializedLabsThirdDescription</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		string SpecializedLabsThirdDescription { get; }
-
-		/// <summary>SpecializedLabsThirdImage</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		global::Umbraco.Cms.Core.Models.MediaWithCrops SpecializedLabsThirdImage { get; }
-
-		/// <summary>SpecializedLabsThirdTitle</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		string SpecializedLabsThirdTitle { get; }
 	}
 
 	/// <summary>OurLabs Properties</summary>
@@ -590,44 +575,5 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		public static string GetSpecializedLabsSecondTitle(IOurLabsProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "specializedLabsSecondTitle");
-
-		///<summary>
-		/// SpecializedLabsThirdDescription
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("specializedLabsThirdDescription")]
-		public virtual string SpecializedLabsThirdDescription => GetSpecializedLabsThirdDescription(this, _publishedValueFallback);
-
-		/// <summary>Static getter for SpecializedLabsThirdDescription</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static string GetSpecializedLabsThirdDescription(IOurLabsProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "specializedLabsThirdDescription");
-
-		///<summary>
-		/// SpecializedLabsThirdImage
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("specializedLabsThirdImage")]
-		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops SpecializedLabsThirdImage => GetSpecializedLabsThirdImage(this, _publishedValueFallback);
-
-		/// <summary>Static getter for SpecializedLabsThirdImage</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static global::Umbraco.Cms.Core.Models.MediaWithCrops GetSpecializedLabsThirdImage(IOurLabsProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Models.MediaWithCrops>(publishedValueFallback, "specializedLabsThirdImage");
-
-		///<summary>
-		/// SpecializedLabsThirdTitle
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("specializedLabsThirdTitle")]
-		public virtual string SpecializedLabsThirdTitle => GetSpecializedLabsThirdTitle(this, _publishedValueFallback);
-
-		/// <summary>Static getter for SpecializedLabsThirdTitle</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static string GetSpecializedLabsThirdTitle(IOurLabsProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "specializedLabsThirdTitle");
 	}
 }
