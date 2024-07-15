@@ -20,7 +20,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 {
 	/// <summary>Home page</summary>
 	[PublishedModel("homePage")]
-	public partial class HomePage : PublishedContentModel, IBeUpdatedProperties, IFeaturedProperties, IFooterProperties, IHeaderProperties, ILatestActivitiesProperties, IModalContentProperties, INavigationProperties, INewspaperQuotesProperties, IOurFeaturedLocationProperties, IOurLabsProperties, IOurPark, IPartnersProperties, IServicesProperty, IStatisticsProperties, ISuccessStoriesProperty
+	public partial class HomePage : PublishedContentModel, IBeUpdatedProperties, IFeaturedProperties, IFooterProperties, IHeaderProperties, ILatestActivitiesProperties, IModalContentProperties, INavigationProperties, INewspaperQuotesProperties, IOurFeaturedLocationProperties, IOurLabsProperties, IOurPark, IPartnersProperties, IServicesProperty, IStartupshomeProperty, IStatisticsProperties, ISuccessStoriesProperty
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -776,6 +776,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("mainContentServices")]
 		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentServices => global::Umbraco.Cms.Web.Common.PublishedModels.ServicesProperty.GetMainContentServices(this, _publishedValueFallback);
+
+		///<summary>
+		/// Main Content Startupshome
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("mainContentStartupshome")]
+		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentStartupshome => global::Umbraco.Cms.Web.Common.PublishedModels.StartupshomeProperty.GetMainContentStartupshome(this, _publishedValueFallback);
 
 		///<summary>
 		/// EightTextValue

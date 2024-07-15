@@ -1,32 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "F:\\Work\\UmbracoGit\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\partials\\searchform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\partials\\searchform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\master.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\master.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\partials\\navigation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\partials\\navigation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\searchpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\searchpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\partials\\searchumbraco.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\partials\\searchumbraco.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\partials\\searchbox.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\partials\\searchbox.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -34,89 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SearchForm.cshtml",
-              "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Partials\\SearchForm.cshtml",
-              "RelativeDocumentMoniker": "STPERI\\Views\\Partials\\SearchForm.cshtml",
-              "ToolTip": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Partials\\SearchForm.cshtml",
-              "RelativeToolTip": "STPERI\\Views\\Partials\\SearchForm.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-14T11:47:56.395Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "navigation.cshtml",
-              "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Partials\\navigation.cshtml",
-              "RelativeDocumentMoniker": "STPERI\\Views\\Partials\\navigation.cshtml",
-              "ToolTip": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Partials\\navigation.cshtml",
-              "RelativeToolTip": "STPERI\\Views\\Partials\\navigation.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-14T11:45:59.454Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SearchBox.cshtml",
-              "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Partials\\SearchBox.cshtml",
-              "RelativeDocumentMoniker": "STPERI\\Views\\Partials\\SearchBox.cshtml",
-              "ToolTip": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Partials\\SearchBox.cshtml",
-              "RelativeToolTip": "STPERI\\Views\\Partials\\SearchBox.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-14T11:01:06.084Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SearchUmbraco.cshtml",
-              "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Partials\\SearchUmbraco.cshtml",
-              "RelativeDocumentMoniker": "STPERI\\Views\\Partials\\SearchUmbraco.cshtml",
-              "ToolTip": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Partials\\SearchUmbraco.cshtml",
-              "RelativeToolTip": "STPERI\\Views\\Partials\\SearchUmbraco.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-14T11:00:42.282Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SearchPage.cshtml",
-              "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\SearchPage.cshtml",
-              "RelativeDocumentMoniker": "STPERI\\Views\\SearchPage.cshtml",
-              "ToolTip": "F:\\Work\\UmbracoGit\\STPERI\\Views\\SearchPage.cshtml",
-              "RelativeToolTip": "STPERI\\Views\\SearchPage.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAC8AAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-14T11:00:07.03Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Master.cshtml",
-              "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Master.cshtml",
-              "RelativeDocumentMoniker": "STPERI\\Views\\Master.cshtml",
-              "ToolTip": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Master.cshtml",
-              "RelativeToolTip": "STPERI\\Views\\Master.cshtml",
-              "ViewState": "AQIAAFYAAAAAAAAAAAAAAGsAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-14T10:46:07.551Z",
-              "EditorCaption": ""
             }
           ]
         }
