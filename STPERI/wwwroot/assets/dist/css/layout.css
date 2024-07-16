@@ -999,6 +999,8 @@ header.sticky {
     margin: 0 0 10px;
     color: var(--colordarkblue);
     font-size: 22px;
+    overflow:hidden;
+    height:52px;
     font-family: "Poppins-bold", sans-serif;
 }
 .rtl .labsblock h5 {
@@ -1011,6 +1013,8 @@ header.sticky {
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
+    overflow:hidden;
+    height:88px;
 }
 
 .imglab {
@@ -3504,6 +3508,7 @@ a.LinkStartup {
     .labsblock h5 {
         margin: 0 0 15px;
         font-size: 28px;
+        height: 64px;
     }
 
     .labsblock span {

@@ -66,6 +66,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string CentralLabsDetailsDescription => global::Umbraco.Cms.Web.Common.PublishedModels.CentralLabsDetailsProperties.GetCentralLabsDetailsDescription(this, _publishedValueFallback);
 
 		///<summary>
+		/// Description
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("description")]
+		public virtual string Description => global::Umbraco.Cms.Web.Common.PublishedModels.CentralLabsDetailsProperties.GetDescription(this, _publishedValueFallback);
+
+		///<summary>
 		/// FirstDescriptionLabDetails
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
