@@ -538,6 +538,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string CentralLabsFirstTitle => global::Umbraco.Cms.Web.Common.PublishedModels.OurLabsProperties.GetCentralLabsFirstTitle(this, _publishedValueFallback);
 
 		///<summary>
+		/// CentralLabsFirstUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("centralLabsFirstUrl")]
+		public virtual string CentralLabsFirstUrl => global::Umbraco.Cms.Web.Common.PublishedModels.OurLabsProperties.GetCentralLabsFirstUrl(this, _publishedValueFallback);
+
+		///<summary>
 		/// CentralLabsSecondDescription
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
@@ -560,6 +568,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("centralLabsSecondTitle")]
 		public virtual string CentralLabsSecondTitle => global::Umbraco.Cms.Web.Common.PublishedModels.OurLabsProperties.GetCentralLabsSecondTitle(this, _publishedValueFallback);
+
+		///<summary>
+		/// CentralLabsSecondUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("centralLabsSecondUrl")]
+		public virtual string CentralLabsSecondUrl => global::Umbraco.Cms.Web.Common.PublishedModels.OurLabsProperties.GetCentralLabsSecondUrl(this, _publishedValueFallback);
 
 		///<summary>
 		/// CentralLabsThirdDescription
@@ -586,12 +602,36 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string CentralLabsThirdTitle => global::Umbraco.Cms.Web.Common.PublishedModels.OurLabsProperties.GetCentralLabsThirdTitle(this, _publishedValueFallback);
 
 		///<summary>
+		/// CentralLabsThirdUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("centralLabsThirdUrl")]
+		public virtual string CentralLabsThirdUrl => global::Umbraco.Cms.Web.Common.PublishedModels.OurLabsProperties.GetCentralLabsThirdUrl(this, _publishedValueFallback);
+
+		///<summary>
+		/// CentralReadAllUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("centralReadAllUrl")]
+		public virtual string CentralReadAllUrl => global::Umbraco.Cms.Web.Common.PublishedModels.OurLabsProperties.GetCentralReadAllUrl(this, _publishedValueFallback);
+
+		///<summary>
 		/// OurLabsTitle
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("ourLabsTitle")]
 		public virtual string OurLabsTitle => global::Umbraco.Cms.Web.Common.PublishedModels.OurLabsProperties.GetOurLabsTitle(this, _publishedValueFallback);
+
+		///<summary>
+		/// ReadAll
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("readAll")]
+		public virtual string ReadAll => global::Umbraco.Cms.Web.Common.PublishedModels.OurLabsProperties.GetReadAll(this, _publishedValueFallback);
 
 		///<summary>
 		/// ResearchDepartmentsButton
@@ -626,6 +666,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string ResearchDepartmentsFirstTitle => global::Umbraco.Cms.Web.Common.PublishedModels.OurLabsProperties.GetResearchDepartmentsFirstTitle(this, _publishedValueFallback);
 
 		///<summary>
+		/// ResearchDepartmentsFirstUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("researchDepartmentsFirstUrl")]
+		public virtual string ResearchDepartmentsFirstUrl => global::Umbraco.Cms.Web.Common.PublishedModels.OurLabsProperties.GetResearchDepartmentsFirstUrl(this, _publishedValueFallback);
+
+		///<summary>
 		/// ResearchDepartmentsSecondDescription
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
@@ -650,6 +698,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string ResearchDepartmentsSecondTitle => global::Umbraco.Cms.Web.Common.PublishedModels.OurLabsProperties.GetResearchDepartmentsSecondTitle(this, _publishedValueFallback);
 
 		///<summary>
+		/// ResearchDepartmentsSecondUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("researchDepartmentsSecondUrl")]
+		public virtual string ResearchDepartmentsSecondUrl => global::Umbraco.Cms.Web.Common.PublishedModels.OurLabsProperties.GetResearchDepartmentsSecondUrl(this, _publishedValueFallback);
+
+		///<summary>
 		/// ResearchDepartmentsThirdDescription
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
@@ -672,6 +728,22 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("researchDepartmentsThirdTitle")]
 		public virtual string ResearchDepartmentsThirdTitle => global::Umbraco.Cms.Web.Common.PublishedModels.OurLabsProperties.GetResearchDepartmentsThirdTitle(this, _publishedValueFallback);
+
+		///<summary>
+		/// ResearchDepartmentsThirdUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("researchDepartmentsThirdUrl")]
+		public virtual string ResearchDepartmentsThirdUrl => global::Umbraco.Cms.Web.Common.PublishedModels.OurLabsProperties.GetResearchDepartmentsThirdUrl(this, _publishedValueFallback);
+
+		///<summary>
+		/// ResearchReadAllUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("researchReadAllUrl")]
+		public virtual string ResearchReadAllUrl => global::Umbraco.Cms.Web.Common.PublishedModels.OurLabsProperties.GetResearchReadAllUrl(this, _publishedValueFallback);
 
 		///<summary>
 		/// SharedSuccessTitle
@@ -714,6 +786,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string SpecializedLabsFirstTitle => global::Umbraco.Cms.Web.Common.PublishedModels.OurLabsProperties.GetSpecializedLabsFirstTitle(this, _publishedValueFallback);
 
 		///<summary>
+		/// SpecializedLabsFirstUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("specializedLabsFirstUrl")]
+		public virtual string SpecializedLabsFirstUrl => global::Umbraco.Cms.Web.Common.PublishedModels.OurLabsProperties.GetSpecializedLabsFirstUrl(this, _publishedValueFallback);
+
+		///<summary>
 		/// SpecializedLabsSecondDescription
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
@@ -736,6 +816,22 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("specializedLabsSecondTitle")]
 		public virtual string SpecializedLabsSecondTitle => global::Umbraco.Cms.Web.Common.PublishedModels.OurLabsProperties.GetSpecializedLabsSecondTitle(this, _publishedValueFallback);
+
+		///<summary>
+		/// SpecializedLabsSecondUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("specializedLabsSecondUrl")]
+		public virtual string SpecializedLabsSecondUrl => global::Umbraco.Cms.Web.Common.PublishedModels.OurLabsProperties.GetSpecializedLabsSecondUrl(this, _publishedValueFallback);
+
+		///<summary>
+		/// SpecializedReadAllUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("specializedReadAllUrl")]
+		public virtual string SpecializedReadAllUrl => global::Umbraco.Cms.Web.Common.PublishedModels.OurLabsProperties.GetSpecializedReadAllUrl(this, _publishedValueFallback);
 
 		///<summary>
 		/// Main Content Our Park

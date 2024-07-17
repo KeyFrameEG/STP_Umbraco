@@ -18,10 +18,7 @@
               <h6 class="mb-5">@homePage.BeUpdatedDescription</h6>
 
               <div class="newsletter">
-               <form>
-                <input type="text" placeholder="@homePage.WriteEmail" />
-                <button><span>@homePage.BeUpdatedSubscribe</span><i class="feather icon-arrow-right"></i></button>
-               </form>
+                    @Model.Value("SubscribedForm")
               </div>
             </div>
 
