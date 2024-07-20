@@ -106,14 +106,6 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string CeoName => global::Umbraco.Cms.Web.Common.PublishedModels.StartupProperties.GetCeoName(this, _publishedValueFallback);
 
 		///<summary>
-		/// Ceo Role
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("ceoRole")]
-		public virtual string CeoRole => global::Umbraco.Cms.Web.Common.PublishedModels.StartupProperties.GetCeoRole(this, _publishedValueFallback);
-
-		///<summary>
 		/// CompanyDescription
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
@@ -216,6 +208,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("products")]
 		public virtual string Products => global::Umbraco.Cms.Web.Common.PublishedModels.StartupProperties.GetProducts(this, _publishedValueFallback);
+
+		///<summary>
+		/// RedirectUrlApp
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("redirectUrlApp")]
+		public virtual string RedirectUrlApp => global::Umbraco.Cms.Web.Common.PublishedModels.StartupProperties.GetRedirectUrlApp(this, _publishedValueFallback);
 
 		///<summary>
 		/// Rnkerapp

@@ -37,11 +37,6 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		string CeoName { get; }
 
-		/// <summary>Ceo Role</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		string CeoRole { get; }
-
 		/// <summary>CompanyDescription</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
@@ -106,6 +101,11 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		string Products { get; }
+
+		/// <summary>RedirectUrlApp</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		string RedirectUrlApp { get; }
 
 		/// <summary>Rnkerapp</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
@@ -222,19 +222,6 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		public static string GetCeoName(IStartupProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "ceoName");
-
-		///<summary>
-		/// Ceo Role
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("ceoRole")]
-		public virtual string CeoRole => GetCeoRole(this, _publishedValueFallback);
-
-		/// <summary>Static getter for Ceo Role</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static string GetCeoRole(IStartupProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "ceoRole");
 
 		///<summary>
 		/// CompanyDescription
@@ -404,6 +391,19 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		public static string GetProducts(IStartupProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "products");
+
+		///<summary>
+		/// RedirectUrlApp
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("redirectUrlApp")]
+		public virtual string RedirectUrlApp => GetRedirectUrlApp(this, _publishedValueFallback);
+
+		/// <summary>Static getter for RedirectUrlApp</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		public static string GetRedirectUrlApp(IStartupProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "redirectUrlApp");
 
 		///<summary>
 		/// Rnkerapp
