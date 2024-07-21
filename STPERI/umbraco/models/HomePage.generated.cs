@@ -426,6 +426,62 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string Training => global::Umbraco.Cms.Web.Common.PublishedModels.ModalContentProperties.GetTraining(this, _publishedValueFallback);
 
 		///<summary>
+		/// About
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("about")]
+		public virtual string About => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetAbout(this, _publishedValueFallback);
+
+		///<summary>
+		/// AboutNavbar
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("aboutNavbar")]
+		public virtual string AboutNavbar => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetAboutNavbar(this, _publishedValueFallback);
+
+		///<summary>
+		/// AboutUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("aboutUrl")]
+		public virtual string AboutUrl => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetAboutUrl(this, _publishedValueFallback);
+
+		///<summary>
+		/// BoardAbout
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("boardAbout")]
+		public virtual string BoardAbout => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetBoardAbout(this, _publishedValueFallback);
+
+		///<summary>
+		/// BoardAboutUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("boardAboutUrl")]
+		public virtual string BoardAboutUrl => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetBoardAboutUrl(this, _publishedValueFallback);
+
+		///<summary>
+		/// ChairmenAbout
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("chairmenAbout")]
+		public virtual string ChairmenAbout => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetChairmenAbout(this, _publishedValueFallback);
+
+		///<summary>
+		/// ChairmenAboutUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("chairmenAboutUrl")]
+		public virtual string ChairmenAboutUrl => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetChairmenAboutUrl(this, _publishedValueFallback);
+
+		///<summary>
 		/// Innovate
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]

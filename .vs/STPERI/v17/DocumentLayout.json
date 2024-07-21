@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "F:\\Work\\UmbracoGit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\partials\\blocklist\\components\\chairmenrow.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\partials\\blocklist\\components\\chairmenrow.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\chairmenpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\chairmenpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\partials\\navigation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\partials\\navigation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,40 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ChairmenRow.cshtml",
-              "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Partials\\blocklist\\Components\\ChairmenRow.cshtml",
-              "RelativeDocumentMoniker": "STPERI\\Views\\Partials\\blocklist\\Components\\ChairmenRow.cshtml",
-              "ToolTip": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Partials\\blocklist\\Components\\ChairmenRow.cshtml",
-              "RelativeToolTip": "STPERI\\Views\\Partials\\blocklist\\Components\\ChairmenRow.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACkAAAA1AAAA",
+              "Title": "navigation.cshtml",
+              "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Partials\\navigation.cshtml",
+              "RelativeDocumentMoniker": "STPERI\\Views\\Partials\\navigation.cshtml",
+              "ToolTip": "F:\\Work\\UmbracoGit\\STPERI\\Views\\Partials\\navigation.cshtml",
+              "RelativeToolTip": "STPERI\\Views\\Partials\\navigation.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-21T16:06:53.558Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HomePage.cshtml",
-              "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\HomePage.cshtml",
-              "RelativeDocumentMoniker": "STPERI\\Views\\HomePage.cshtml",
-              "ToolTip": "F:\\Work\\UmbracoGit\\STPERI\\Views\\HomePage.cshtml",
-              "RelativeToolTip": "STPERI\\Views\\HomePage.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-21T15:45:19.533Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ChairmenPage.cshtml",
-              "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\ChairmenPage.cshtml",
-              "RelativeDocumentMoniker": "STPERI\\Views\\ChairmenPage.cshtml",
-              "ToolTip": "F:\\Work\\UmbracoGit\\STPERI\\Views\\ChairmenPage.cshtml",
-              "RelativeToolTip": "STPERI\\Views\\ChairmenPage.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-21T15:37:37.62Z",
+              "WhenOpened": "2024-07-21T17:04:31.085Z",
               "EditorCaption": ""
             }
           ]
