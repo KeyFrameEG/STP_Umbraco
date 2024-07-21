@@ -7,6 +7,9 @@
       if(settings?.Hide ?? false){return;}
       if(row.FeaturedItems == null || !row.FeaturedItems.Any()) return;   
     }
+<div class="w-bg fitlayout py-4">
+
+    <div class="container-fluid">
           <div class="row">
 
                <div class="col-lg-12 my-4">
@@ -17,6 +20,7 @@
            var rowItem = (FeaturedItem)item.Content;
           <div class="col-lg-4 col-md-6">
                 <div class="cardfeather">
+                    <a href="@rowItem.RedirectUrl"></a>
                     <img alt="Incubators" src="@rowItem.Image.Url()" />
                     <h3>@rowItem.Title</h3>
 
@@ -27,3 +31,7 @@
           </div>
           }
 
+
+
+      </div>
+    </div>

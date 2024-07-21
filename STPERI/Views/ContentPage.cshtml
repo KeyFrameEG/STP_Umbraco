@@ -32,14 +32,11 @@
 @await Html.PartialAsync("~/Views/Partials/Statistics.cshtml")
 
 
-    <div class="w-bg fitlayout py-3">
 
-      <div class="container-fluid">
            
         @Html.GetBlockListHtml(Model,"MainContent")
 
-          </div>
-        </div>
+
     </div>
 
 @Html.GetBlockListHtml(Model,"MainContentOurTeam")

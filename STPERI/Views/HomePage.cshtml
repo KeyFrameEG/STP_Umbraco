@@ -7,7 +7,7 @@
   
 
 
-  </header>
+
 
     <div class="homebanner">
         <img alt="" src="@Model.BannerImage.Url()" />
@@ -16,9 +16,7 @@
 
 @await Html.PartialAsync("~/Views/Partials/Gateway.cshtml")
 
-    <div class="w-bg fitlayout py-4">
 
-      <div class="container-fluid">
        
 
 @Html.GetBlockListHtml(Model,"MainContent")
@@ -31,9 +29,10 @@
       <div class="container-fluid">
        @Html.GetBlockListHtml(Model,"MainContentLatestActivities")
        @Html.GetBlockListHtml(Model,"MainContentSuccessStories")
-       @await Html.PartialAsync("~/Views/Partials/LatestActivities.cshtml")
-        </div>
     </div>
+</div>
+       @await Html.PartialAsync("~/Views/Partials/LatestActivities.cshtml")
+
 @Html.GetBlockListHtml(Model,"MainContentPartners") 
 @await Html.PartialAsync("~/Views/Partials/BeUpdated.cshtml")
 

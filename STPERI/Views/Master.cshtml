@@ -110,15 +110,13 @@ var homePage = Umbraco.AssignedContentItem.AncestorOrSelf<HomePage>();
                 @await Html.PartialAsync("~/Views/Partials/SearchForm.cshtml")
 
 @await Html.PartialAsync("~/Views/Partials/navigation.cshtml")
-@RenderBody()
 
 
+</header>
+ @RenderBody()
 		</div>
-	</div>
-</div>
+	
 
-
-</div>
 @await Html.PartialAsync("~/Views/Partials/footer.cshtml")
 
 </div>

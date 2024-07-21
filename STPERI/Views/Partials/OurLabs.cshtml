@@ -28,141 +28,34 @@
             </ul>
             <div class="tab-content position-relative px-0 py-4 labtabs" id="myTabContent">
               <div class="tab-pane bg-white fade show active" id="Central-tab-pane" role="tabpanel" aria-labelledby="Central-tab" tabindex="0">
-                <div class="carsulholder">
-                  <div class="owl-carouselsteps">
-                      <div class="item">
-                        <div class="labsblock">
-                          <div class="imglab">
-                               <a href="@homePage.CentralLabsFirstUrl"></a>
-                               <i class="feather icon-arrow-right"></i>
-                              <img alt="Lab Name" src="@homePage.CentralLabsFirstImage.Url()" />
-                          </div>
-                          <h5>@homePage.CentralLabsFirstTitle </h5>
-                          <span>@homePage.CentralLabsFirstDescription
-                         </span>
-                     </div>
-                      </div>
+                        <div class="w-bg startfit py-4 aos-item" data-aos="fade-left">
 
-                      <div class="item">
-                        <div class="labsblock">
-                          <div class="imglab">
-                                <a href="@homePage.CentralLabsSecondUrl"></a>
-                               <i class="feather icon-arrow-right"></i>
-                              <img alt="Lab Name" src="@homePage.CentralLabsSecondImage.Url()" />
-                          </div>
-                          <h5>@homePage.CentralLabsSecondTitle</h5>
-                          <span>@homePage.CentralLabsSecondDescription
-                         </span>
-                     </div>
-                      </div>
+                            <div class="container-fluid">
 
-                      <div class="item">
-                        <div class="labsblock">
-                          <div class="imglab">
-                                            <a href="@homePage.CentralLabsThirdUrl"></a>
-                                            <i class="feather icon-arrow-right"></i>
-                              <img alt="Lab Name" src="@homePage.CentralLabsThirdImage.Url()" />
-                          </div>
-                          <h5>@homePage.CentralLabsThirdTitle</h5>
-                          <span>
-                            @homePage.CentralLabsThirdDescription
-                         </span>
+                                @Html.GetBlockListHtml(Model, "MainContentCentralLabs")
+                            </div>
                         </div>
-                      </div>
-                  </div>
 
-              </div>
-                        <div class="newsinfo">
-                            <a href="@homePage.CentralReadAllUrl">@homePage.ReadAll</a>
-                        </div>
               </div>
               <div class="tab-pane bg-white fade" id="Research-tab-pane" role="tabpanel" aria-labelledby="Research-tab" tabindex="0">
-                <div class="carsulholder">
-                  <div class="owl-carouselsteps">
-                      <div class="item">
-                        <div class="labsblock">
-                          <div class="imglab">
-                                            <a href="@homePage.ResearchDepartmentsFirstUrl"></a>
-                                            <i class="feather icon-arrow-right"></i>
-                              <img alt="Lab Name" src="@homePage.ResearchDepartmentsFirstImage.Url()" />
-                          </div>
-                          <h5>@homePage.ResearchDepartmentsFirstTitle </h5>
-                          <span>@homePage.ResearchDepartmentsFirstDescription
-                         </span>
-                     </div>
-                      </div>
+                        <div class="w-bg startfit py-4 aos-item" data-aos="fade-left">
 
-                      <div class="item">
-                        <div class="labsblock">
-                          <div class="imglab">
-                                            <a href="@homePage.ResearchDepartmentsSecondUrl"></a>
-                                            <i class="feather icon-arrow-right"></i>
-                              <img alt="Lab Name" src="@homePage.ResearchDepartmentsSecondImage.Url()" />
-                          </div>
-                          <h5>@homePage.ResearchDepartmentsSecondTitle</h5>
-                          <span>@homePage.ResearchDepartmentsSecondDescription
-                         </span>
-                     </div>
-                      </div>
+                            <div class="container-fluid">
 
-                      <div class="item">
-                        <div class="labsblock">
-                          <div class="imglab">
-                                            <a href="@homePage.ResearchDepartmentsThirdUrl"></a>
-                                            <i class="feather icon-arrow-right"></i>
-                              <img alt="Lab Name" src="@homePage.ResearchDepartmentsThirdImage.Url()" />
-                          </div>
-                          <h5>@homePage.ResearchDepartmentsThirdTitle</h5>
-                          <span>
-                              @homePage.ResearchDepartmentsThirdDescription 
-                          </span>
+                                @Html.GetBlockListHtml(Model, "MainContentResearch")
+                            </div>
                         </div>
-                      </div>
 
-                     
-                  </div>
-
-              </div>
-                        <div class="newsinfo">
-                            <a href="@homePage.ResearchReadAllUrl">@homePage.ReadAll</a>
-                        </div>
               </div>
               <div class="tab-pane bg-white fade" id="Specialized-tab-pane" role="tabpanel" aria-labelledby="Specialized-tab" tabindex="0">
-                <div class="carsulholder">
-                  <div class="owl-carouselsteps">
-                      <div class="item">
-                        <div class="labsblock">
-                          <div class="imglab">
-                                            <a href="@homePage.SpecializedLabsFirstUrl"></a>
-                                            <i class="feather icon-arrow-right"></i>
-                              <img alt="Lab Name" src="@homePage.SpecializedLabsFirstImage.Url()" />
-                          </div>
-                          <h5>@homePage.SpecializedLabsFirstTitle </h5>
-                          <span>@homePage.SpecializedLabsFirstDescription
-                         </span>
-                     </div>
-                      </div>
+                        <div class="w-bg startfit py-4 aos-item" data-aos="fade-left">
 
-                      <div class="item">
-                        <div class="labsblock">
-                          <div class="imglab">
-                                            <a href="@homePage.SpecializedLabsSecondUrl"></a>
-                                            <i class="feather icon-arrow-right"></i>
-                              <img alt="Lab Name" src="@homePage.SpecializedLabsSecondImage.Url()" />
-                          </div>
-                          <h5>@homePage.SpecializedLabsSecondTitle</h5>
-                          <span>@homePage.SpecializedLabsSecondDescription
-                         </span>
-                     </div>
-                      </div>
+                            <div class="container-fluid">
 
-                     
-                  </div>
-
-              </div>
-                        <div class="newsinfo mb-5">
-                            <a href="@homePage.SpecializedReadAllUrl">@homePage.ReadAll</a>
+                                @Html.GetBlockListHtml(Model, "MainContentSpecialized")
+                            </div>
                         </div>
+
               </div>            
             </div>
 

@@ -2,6 +2,9 @@
     @{
       var homePage = Model.AncestorOrSelf<HomePage>();
     }
+<div class="w-bg fitlayout py-4">
+
+    <div class="container-fluid">
    <div class="row">
       @Html.GetBlockListHtml(Model,"MainContentNewspaper")
 
@@ -20,7 +23,7 @@
            </div>
 
 
-           <div class="col-lg-7 align-self-center mt-5">
+           <div class="col-lg-7 align-self-center mt-5" id="mapLocation">
                 
                <div class="mapframe mt-5">
                   <span>@homePage.MapTitleOurFeaturedLocation</span>
@@ -32,3 +35,5 @@
         </div>
 
 
+    </div>
+ </div>

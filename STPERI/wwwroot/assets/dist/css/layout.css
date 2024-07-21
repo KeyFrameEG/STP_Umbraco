@@ -541,6 +541,15 @@ header.sticky {
     transition: all ease-in-out 0.2s;
 }
 
+.cardfeather a {
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
 .rtl .cardfeather img {
     right: 25px;
     left: auto
@@ -1496,34 +1505,60 @@ header.sticky {
     border: 1px solid rgba(124, 124, 148, 0.24);
 }
 
-    .newsletter input {
-        display: inline-block;
-        width: calc(100% - 140px);
-        padding: 0 15px;
-        height: 56px;
-        line-height: 56px;
-        border: none;
-        background: transparent;
+.newsletter p {
+    display: none !important;
+}
+
+.newsletter .umbraco-forms-fieldset {
+    width:calc(100% - 150px); display:inline-block; vertical-align:top; position:relative
+}
+
+    .newsletter .umbraco-forms-fieldset .field-validation-error {
+        color:red; bottom:-37px; left:14px; white-space:nowrap;
+        position: absolute
+    }
+    .rtl .newsletter .umbraco-forms-fieldset .field-validation-error {
+        
+        left: auto;
+        right:14px;
+    }
+    .newsletter .umbraco-forms-navigation {
+        display: inline-block
     }
 
-        .newsletter input:focus-visible {
-            outline: none !important;
-        }
+.newsletter input.text {
+    display: inline-block;
+    width: 100%;
+    padding: 0 15px;
+    height: 56px;
+    line-height: 56px;
+    border: none;
+    background: transparent;
+}
 
-    .newsletter button {
+    .newsletter input:focus-visible.text {
+        outline: none !important;
+    }
+
+    .newsletter input[type="submit"] {
         float: right;
         width: 136px;
         color: #fff;
         font-size: 16px;
         text-align: center;
         height: 56px;
-        line-height: 56px;
+        line-height: 46px;
         background: var(--colordarkblue);
         border: none;
+        position:relative;
+        left:20px;
+        top:3px;
     }
 
-.rtl .newsletter button {
+.rtl .newsletter input[type="submit"] {
     float: left;
+    right: 20px;
+    left:auto;
 }
 
 .newsletter button i {
@@ -1685,11 +1720,11 @@ ul.socialfooter {
         line-height: 24px;
     }
 
-.aboutrightOR .col-lg-4 {
+.aboutrightOR .col-lg-5 {
     position: relative;
 }
 
-    .aboutrightOR .col-lg-4::before {
+    .aboutrightOR .col-lg-5::before {
         position: absolute;
         right: 12px;
         top: 50%;
@@ -1703,12 +1738,12 @@ ul.socialfooter {
         -webkit-transform: translateY(-50%);
     }
 
-.rtl .aboutrightOR .col-lg-4::before {
+.rtl .aboutrightOR .col-lg-5::before {
     right: auto;
     left: 12px;
 }
 
-.aboutrightOR .col-lg-4 img {
+.aboutrightOR .col-lg-5 img {
     position: relative;
     z-index: 1;
     right: 0;
@@ -1719,16 +1754,16 @@ ul.socialfooter {
     transition: all ease-in-out 0.5s;
 }
 
-.rtl .aboutrightOR .col-lg-4 img {
+.rtl .aboutrightOR .col-lg-5 img {
     right: auto;
     left: 0
 }
 
-.aboutrightOR:hover .col-lg-4 img {
+.aboutrightOR:hover .col-lg-5 img {
     right: 20px
 }
 
-.rtl .aboutrightOR:hover .col-lg-4 img {
+.rtl .aboutrightOR:hover .col-lg-5 img {
     left: 20px;
     right: auto
 }
@@ -2462,7 +2497,7 @@ ul.socialfooter {
     left: 0;
     width: 100%;
     min-height: 450px;
-    height: 33vw;
+    height: 37vw;
 }
 
 .tab-content > .active {
@@ -3567,6 +3602,9 @@ a.LinkStartup {
 }
 
 @media (min-width: 1920px) {
+    .tab-content > .tab-pane {
+        height: 35vw;
+    }
 }
 
 @media (min-width: 2100px) {
