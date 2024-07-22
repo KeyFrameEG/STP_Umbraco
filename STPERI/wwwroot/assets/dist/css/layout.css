@@ -3114,7 +3114,7 @@ ul.listbenner {
     width: 100%;
     color: #fff;
     font-family: "Poppins-bold", sans-serif;
-    margin-top: 200px;
+    margin-top: 140px;
     padding-left: 4vw;
     margin-bottom: 15px;
     position: relative;
@@ -3378,6 +3378,7 @@ a.LinkStartup {
     display: inline-block;
     margin-bottom: 30px;
     position: relative;
+    width: 100%;
 }
 
     .boardcard img {
@@ -3411,6 +3412,41 @@ a.LinkStartup {
         height: 100%;
         z-index: 2;
     }
+
+.boardDetails {
+    display: inline-block;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+    .boardDetails h3 {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 5px;
+        color: #000;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .boardDetails h5 {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 20px;
+        color: #999;
+        font-size: 20px;
+    }
+
+    .boardDetails span {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 20px;
+        color: #666;
+        font-size: 16px;
+        line-height: 22px;
+    }
+.tab-content .col-lg-12.mt-4 {
+    display:none;
+}
 @media (min-width: 1440px) {
 }
 
@@ -3650,6 +3686,9 @@ a.LinkStartup {
     .tab-content > .tab-pane {
         height: 35vw;
     }
+    .testmonialblock strong {
+        margin-top: 200px;
+    }
 }
 
 @media (min-width: 2100px) {
@@ -3806,6 +3845,27 @@ a.LinkStartup {
 
 
 @media (max-width: 767px) {
+    .testmonialblock::before {
+        height: calc(100% - 40px);
+    }
+    .owl-carouselstories {
+        height: 340px;
+    }
+    .mapframe span {
+        right: 0px;
+    }
+    .rtl .mapframe span {
+        left: 0px;
+        right:auto;
+    }
+    .labtabs {
+        min-height: 360px;
+        height: unset;
+    }
+    .tab-content > .tab-pane {
+        min-height: 360px;
+        height: unset;
+    }
     .ImageStartUpHome {
         width: 120px;
         height: 120px;
@@ -3843,7 +3903,7 @@ a.LinkStartup {
     }
 
     .testmonialblock {
-        padding: 0 190px 0 0;
+        padding: 0 100px 0 0;
         height: 300px;
     }
 
@@ -3853,16 +3913,19 @@ a.LinkStartup {
     .owl-carousel.owl-carouselstories .owl-item:nth-child(8) .testmonialblock,
     .owl-carousel.owl-carouselstories .owl-item:nth-child(10) .testmonialblock,
     .owl-carousel.owl-carouselstories .owl-item:nth-child(12) .testmonialblock {
-        padding: 0 0 0 190px;
+        padding: 0 0 0 100px;
     }
 
     .testmonialblock img {
-        height: 220px;
+        height: 120px;
     }
 
     .testmonialblock strong {
-        margin-top: 150px;
-        font-size: 15px;
+        margin-top: 120px;
+        font-size: 14px;
+        line-height:22px;
+        height:110px;
+        overflow:hidden;
     }
 
     .header .modal-dialog {

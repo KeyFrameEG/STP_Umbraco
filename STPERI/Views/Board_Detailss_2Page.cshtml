@@ -1,0 +1,39 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Board_Detailss_2Page>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+<div class="innerbanner fitlayout">
+
+    <h3 class="px-3 aos-item" data-aos="fade-up">@Model.Subtitle</h3>
+    <div class="clearfix"></div>
+    <span class="px-3 aos-item" data-aos="fade-up">
+
+    </span>
+    <div class="clearfix"></div>
+
+
+    <img alt="" src="@Model.BannerImage.Url()" />
+</div>
+
+<div class="col-lg-3 mt-4">
+    <div class="boardcard">
+
+        <img alt="" src="@Model.BoardImage.Url()" />
+
+    </div>
+</div>
+
+
+
+<div class="col-lg-9 mt-md-4 mt-2">
+    <div class="boardDetails">
+        <h3>@Model.BoardName</h3>
+        <h5>@Model.BoardJob</h5>
+
+        <span>
+            @Model.BoardDescription
+        </span>
+    </div>
+</div>

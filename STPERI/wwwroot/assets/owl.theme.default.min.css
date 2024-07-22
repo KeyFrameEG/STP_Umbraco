@@ -874,4 +874,8 @@ display: inline-block;
   .owl-carouselstories {
     height: 320px;
   }
+    .owl-carouselsteps {
+        min-height: 340px;
+        height: unset;
+    }
 }

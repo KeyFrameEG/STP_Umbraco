@@ -16,7 +16,7 @@
           @foreach(var item in row.LatestActivitiesItems)
           {
             var rowItem = (LatestActivitiesItem)item.Content;
-            <div class="col-lg-6 px-0">
+            <div class="col-lg-6 px-md-0 px-3">
               <div class="activityblock">
                   <h3>@rowItem.Title</h3>
                 <img alt="activity name" src="@rowItem.Image.Url()">
