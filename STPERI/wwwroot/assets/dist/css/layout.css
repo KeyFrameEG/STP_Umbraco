@@ -3845,6 +3845,10 @@ a.LinkStartup {
 
 
 @media (max-width: 767px) {
+    .sticky .nav-essal .navbar-toggler {
+        right: -125px;
+        top: -1px;
+    }
     .testmonialblock::before {
         height: calc(100% - 40px);
     }

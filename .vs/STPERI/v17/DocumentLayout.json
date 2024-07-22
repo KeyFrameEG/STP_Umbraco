@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "F:\\Work\\UmbracoGit\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\rcyklpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\rcyklpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\startupsbatterycyclepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\startupsbatterycyclepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\startupspage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\startupspage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|f:\\work\\umbracogit\\stperi\\views\\startupssan3ty.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F47F2944-2821-4577-B9E0-B2F84153496B}|STPERI\\STPERI.csproj|solutionrelative:stperi\\views\\startupssan3ty.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +26,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StartupsSan3ty.cshtml",
+              "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\StartupsSan3ty.cshtml",
+              "RelativeDocumentMoniker": "STPERI\\Views\\StartupsSan3ty.cshtml",
+              "ToolTip": "F:\\Work\\UmbracoGit\\STPERI\\Views\\StartupsSan3ty.cshtml",
+              "RelativeToolTip": "STPERI\\Views\\StartupsSan3ty.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAgwC0AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-22T22:11:35.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StartupsPage.cshtml",
+              "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\StartupsPage.cshtml",
+              "RelativeDocumentMoniker": "STPERI\\Views\\StartupsPage.cshtml",
+              "ToolTip": "F:\\Work\\UmbracoGit\\STPERI\\Views\\StartupsPage.cshtml",
+              "RelativeToolTip": "STPERI\\Views\\StartupsPage.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAiwC0AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-22T22:11:32.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StartupsBatteryCyclePage.cshtml",
+              "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\StartupsBatteryCyclePage.cshtml",
+              "RelativeDocumentMoniker": "STPERI\\Views\\StartupsBatteryCyclePage.cshtml",
+              "ToolTip": "F:\\Work\\UmbracoGit\\STPERI\\Views\\StartupsBatteryCyclePage.cshtml",
+              "RelativeToolTip": "STPERI\\Views\\StartupsBatteryCyclePage.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAiwC0AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-22T22:11:28.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RCYKLPage.cshtml",
+              "DocumentMoniker": "F:\\Work\\UmbracoGit\\STPERI\\Views\\RCYKLPage.cshtml",
+              "RelativeDocumentMoniker": "STPERI\\Views\\RCYKLPage.cshtml",
+              "ToolTip": "F:\\Work\\UmbracoGit\\STPERI\\Views\\RCYKLPage.cshtml",
+              "RelativeToolTip": "STPERI\\Views\\RCYKLPage.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAiwC0AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-22T22:11:08.349Z",
+              "EditorCaption": ""
             }
           ]
         }
