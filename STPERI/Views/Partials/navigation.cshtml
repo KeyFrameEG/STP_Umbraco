@@ -11,15 +11,7 @@
       </button>
       <div class="collapse justify-content-end navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto flex-nowrap">
-
-          @if(children !=null && children.Any())
-          {
-              foreach(var item in children)
-              {
-              <li class="nav-item"><a class="nav-link" href="@item.Url">@item.Name</a></li>
-              }
-              
-          }
+                <li class="nav-item"><a class="nav-link" href="@homePage.HomeUrl">@homePage.Home</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         @homePage.AboutNavbar
@@ -32,6 +24,16 @@
                     </ul>
                 </li>
                 <li class="nav-item"><a class="nav-link" type="button" href="innovate/" data-bs-toggle="modal" data-bs-target="#exampleModal">@homePage.Innovate</a></li>
+          @if(children !=null && children.Any())
+          {
+              foreach(var item in children)
+              {
+              <li class="nav-item"><a class="nav-link" href="@item.Url">@item.Name</a></li>
+              }
+              
+          }
+
+             
 
        </ul>
       

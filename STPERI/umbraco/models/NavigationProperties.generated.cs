@@ -57,6 +57,16 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		string ChairmenAboutUrl { get; }
 
+		/// <summary>Home</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		string Home { get; }
+
+		/// <summary>HomeUrl</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		string HomeUrl { get; }
+
 		/// <summary>Innovate</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
@@ -209,6 +219,32 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		public static string GetChairmenAboutUrl(INavigationProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "chairmenAboutUrl");
+
+		///<summary>
+		/// Home
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("home")]
+		public virtual string Home => GetHome(this, _publishedValueFallback);
+
+		/// <summary>Static getter for Home</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		public static string GetHome(INavigationProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "home");
+
+		///<summary>
+		/// HomeUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("homeUrl")]
+		public virtual string HomeUrl => GetHomeUrl(this, _publishedValueFallback);
+
+		/// <summary>Static getter for HomeUrl</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		public static string GetHomeUrl(INavigationProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "homeUrl");
 
 		///<summary>
 		/// Innovate

@@ -8,9 +8,9 @@
       if(row.ServicesItems == null || !row.ServicesItems.Any()) return;   
     }
 
-    <div class="gray-bg fitlayout py-4">
+<div class="gray-bg fitlayout py-4" id="Services">
 
-      <div class="container-fluid">
+    <div class="container-fluid" >
            
            <div class="row">
 
@@ -22,7 +22,7 @@
           {
            var rowItem = (ServicesItem)item.Content;
                 <div class="col-lg-4 col-md-6 mt-4" >
-                    <div class="serviceblock" id="Services">
+                    <div class="serviceblock" >
                      <div class="imgsrvices">
                       <a href="@rowItem.RedirectUrl"></a>
                         <img alt="Service Name" class="custumimg" src="@rowItem.Image.Url()" />

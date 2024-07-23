@@ -602,6 +602,22 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string ChairmenAboutUrl => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetChairmenAboutUrl(this, _publishedValueFallback);
 
 		///<summary>
+		/// Home
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("home")]
+		public virtual string Home => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetHome(this, _publishedValueFallback);
+
+		///<summary>
+		/// HomeUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("homeUrl")]
+		public virtual string HomeUrl => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetHomeUrl(this, _publishedValueFallback);
+
+		///<summary>
 		/// Innovate
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]

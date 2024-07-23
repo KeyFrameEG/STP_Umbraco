@@ -290,10 +290,10 @@ header.sticky {
 }
 
 .navbar-light.nav-essal .navbar-nav .nav-link {
-    padding-right: 1.4rem;
-    font-size: 18px;
+    padding-right: 0.8rem;
+    font-size: 16px;
     font-weight: 500;
-    padding-left: 1.4rem;
+    padding-left: 0.8rem;
     color: var(--colordarkblue) !important;
 }
 
@@ -3478,7 +3478,7 @@ a.LinkStartup {
     }
 
     .navbar-light.nav-essal .navbar-nav .nav-link {
-        font-size: 22px;
+        font-size: 18px; padding-right: 1.1rem; padding-left: 1.1rem;
     }
 
     .fitlayout {
@@ -3695,19 +3695,51 @@ a.LinkStartup {
 }
 
 @media (max-width: 1335px) {
+
+    .navbar-light.nav-essal .navbar-nav .nav-link {
+        padding-right: 0.6rem;
+        font-size: 15px;
+        padding-left: 0.6rem;
+    }
 }
 
 @media (max-width: 1266px) {
 }
 
 @media (max-width: 1200px) {
+
+    .navbar-light.nav-essal .navbar-nav .nav-link {
+        padding-right: 0.5rem;
+        font-size: 14px;
+        padding-left: 0.5rem;
+    }
+
+    .logotext  {
+        width: 120px;
+    }
+    .sticky .logotext {
+        width: 120px;
+    }
     .ImageStartUpHome {
         width: 150px;
         height: 150px;
     }
 }
 
+@media (max-width: 1100px) {
+
+    .logotext {
+        display: none;
+    }
+}
+
 @media (max-width: 991px) {
+
+    .navbar-light.nav-essal .navbar-nav .nav-link {
+        padding-right: 1.4rem;
+        font-size: 18px;
+        padding-left: 1.4rem;
+    }
 
     .innerbanner img {
         max-width: unset;
@@ -3817,10 +3849,6 @@ a.LinkStartup {
 
     .homebanner img {
         max-width: unset;
-    }
-
-    .logotext {
-        display: none;
     }
 
     .searchbtn {
