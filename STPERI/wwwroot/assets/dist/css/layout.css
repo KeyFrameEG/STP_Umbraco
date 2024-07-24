@@ -394,6 +394,7 @@ header.sticky {
     font-size: 42px;
     font-family: "Poppins-bold", sans-serif;
     margin-bottom: 40px;
+    text-transform:capitalize;
 }
 
 .rtl .migatitle {
@@ -1004,7 +1005,14 @@ header.sticky {
     overflow: hidden;
     position: relative;
 }
-
+.labsblock a {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:2;
+}
 .rtl .labsblock {
     direction: rtl;
 }
@@ -3879,7 +3887,7 @@ a.LinkStartup {
         top: -1px;
     }
     .testmonialblock::before {
-        height: calc(100% - 40px);
+        height: calc(100% - 110px);
     }
     .owl-carouselstories {
         height: 340px;
@@ -3936,7 +3944,7 @@ a.LinkStartup {
     }
 
     .testmonialblock {
-        padding: 0 100px 0 0;
+        padding: 0 155px 0 0;
         height: 300px;
     }
 
@@ -3946,21 +3954,24 @@ a.LinkStartup {
     .owl-carousel.owl-carouselstories .owl-item:nth-child(8) .testmonialblock,
     .owl-carousel.owl-carouselstories .owl-item:nth-child(10) .testmonialblock,
     .owl-carousel.owl-carouselstories .owl-item:nth-child(12) .testmonialblock {
-        padding: 0 0 0 100px;
+        padding: 0 0 0 155px;
     }
 
     .testmonialblock img {
-        height: 120px;
+        height: 220px;
     }
 
     .testmonialblock strong {
-        margin-top: 120px;
+        margin-top: 140px;
         font-size: 14px;
-        line-height:22px;
-        height:110px;
-        overflow:hidden;
+        line-height: 22px;
+        height: 88px;
+        overflow: hidden;
+        margin-bottom: 8px;
     }
-
+    .testmonialblock small {
+        font-size:12px;
+    }
     .header .modal-dialog {
         margin: 0;
     }
