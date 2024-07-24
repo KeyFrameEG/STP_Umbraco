@@ -54,7 +54,31 @@
           });
       });
   </script>
+    <style>
+        .error-message {
+            color: red;
+            display: none;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            var isValid = true;
+            var searchInput = document.getElementById('q');
+            var arabicSearchInput = document.querySelector('.arside');
+            var errorMessage = document.getElementById('errorMessage');
+            var pattern = /^[A-Za-z\u0621-\u064A\s]+$/;
 
+            // Reset error messages
+            errorMessage.style.display = 'none';
+
+            if (!pattern.test(searchInput.value) || !pattern.test(arabicSearchInput.value)) {
+                errorMessage.style.display = 'block';
+                isValid = false;
+            }
+
+            return isValid;
+        }
+    </script>
 </head>
 
 
@@ -80,22 +104,9 @@
                     </select>
                 </div>
   
-  
-    <button onclick="newFunction()" class="searchbtn"><i class="feather icon-search"></i></button>
+                <button onclick="newFunction()" class="searchbtn"><i class="feather icon-search"></i></button>
 
-                <form class="form-inline my-2 my-lg-0" role="search" method="get" action="/search">
-                    <div class="overlay-search" id="myDIV">
-                        <div class="search-dialog">
-                            <button class="close-search" onclick="closesearch()"><i class="feather icon-x"></i></button>
-
-                            <input type="search" class="searchbox" id="q" name="q" placeholder="Search for..." />
-                            <input type="text" class="searchbox arside" placeholder="ابحث عن..." />
-                            <button class="findbtn"><span>Search</span><span class="arside">بحث</span></button>
-                        </div>
-
-                        <button class="outsidsearch" onclick="outsidesearch()"></button>
-                    </div>
-                </form>
+                @await Html.PartialAsync("~/Views/Partials/SearchForm.cshtml")
 @await Html.PartialAsync("~/Views/Partials/navigation.cshtml")
   
     </header>

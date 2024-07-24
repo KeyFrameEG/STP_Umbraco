@@ -2360,7 +2360,7 @@ ul.socialfooter {
         left: auto !important;
         top: auto !important;
         transform: unset !important;
-        max-width: 100%;
+        max-width: 100% !important;
         max-height: 100%;
         min-height: unset !important;
         min-width: unset !important;
@@ -2943,11 +2943,12 @@ ul.listbenner {
         position: absolute;
         top: 50%;
         left: 50%;
-        max-width: 80%;
-        max-height: 80px;
+        max-width: 100px;
+        max-height: 100px;
         z-index: 1;
         transform: translateX(-50%) translateY(-50%);
         -webkit-transform: translateX(-50%) translateY(-50%);
+        width:auto !important;
     }
 
     .imgpartner a {

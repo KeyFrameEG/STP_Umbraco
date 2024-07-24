@@ -642,6 +642,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops LogoText => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetLogoText(this, _publishedValueFallback);
 
 		///<summary>
+		/// LogoUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("logoUrl")]
+		public virtual string LogoUrl => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetLogoUrl(this, _publishedValueFallback);
+
+		///<summary>
 		/// Main Navigations
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
