@@ -63,7 +63,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("aboutSTPDescription")]
-		public virtual string AboutStpdescription => this.Value<string>(_publishedValueFallback, "aboutSTPDescription");
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString AboutStpdescription => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "aboutSTPDescription");
 
 		///<summary>
 		/// AboutSTPImage
@@ -79,7 +79,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("messageDescription")]
-		public virtual string MessageDescription => this.Value<string>(_publishedValueFallback, "messageDescription");
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString MessageDescription => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "messageDescription");
 
 		///<summary>
 		/// MessageText
@@ -111,7 +111,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("sTPVisionDescription")]
-		public virtual string STpvisionDescription => this.Value<string>(_publishedValueFallback, "sTPVisionDescription");
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString STpvisionDescription => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "sTPVisionDescription");
 
 		///<summary>
 		/// STPVisionImage
@@ -168,6 +168,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("mainContent")]
 		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContent => global::Umbraco.Cms.Web.Common.PublishedModels.FeaturedProperties.GetMainContent(this, _publishedValueFallback);
+
+		///<summary>
+		/// FooterLogo
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("footerLogo")]
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops FooterLogo => global::Umbraco.Cms.Web.Common.PublishedModels.FooterProperties.GetFooterLogo(this, _publishedValueFallback);
 
 		///<summary>
 		/// Footer Social Links: Enter the social links

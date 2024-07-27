@@ -209,7 +209,7 @@ header {
 }
 
 .rtl header {
-    padding-left: calc(1vw + 120px);
+    padding-left: calc(2vw + 120px);
     padding-right: 1vw;
     margin-left: unset;
     margin-right: 3vw;
@@ -220,7 +220,7 @@ header.sticky {
     top: 0;
     width: 100%;
     margin-left: 0;
-    padding-right: calc(4vw + 120px);
+    padding-right: calc(6vw + 120px);
     padding-left: 1vw;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -233,7 +233,7 @@ header.sticky {
 }
 
 .rtl header.sticky {
-    padding-left: calc(4vw + 120px);
+    padding-left: calc(6vw + 120px);
     padding-right: 1vw;
 }
 
@@ -439,7 +439,7 @@ header.sticky {
 
 .cardabout span {
     display: inline-block;
-    width: 100%;
+    width: 100%; text-align: justify;
     font-size: 16px;
     line-height: 22px;
     margin: 0 0 10px;
@@ -589,7 +589,7 @@ header.sticky {
 }
 
 .cardfeather span {
-    font-size: 16px;
+    font-size: 16px; text-align: justify;
     line-height: 24px;
     display: inline-block;
     width: 100%;
@@ -800,7 +800,7 @@ header.sticky {
     .statiscsbg span {
         display: inline-block;
         width: 100%;
-        color: #fff;
+        color: #fff; text-align: center;
         font-size: 25px;
         font-family: "Poppins-bold", sans-serif;
     }
@@ -828,7 +828,7 @@ header.sticky {
 }
 
     .rtl .statiscsbg button::before {
-        font-size: 18px;
+        font-size: 18px; display: inline-block; width: 100px;
         content: 'شاهد الكل';
         font-family: "Cairo-bold", sans-serif;
     }
@@ -932,9 +932,11 @@ header.sticky {
 
 .servicedata span {
     display: inline-block;
+    text-align: justify;
     width: 100%;
     font-size: 16px;
     line-height: 22px;
+    min-height: 66px;
 }
 
 .servicedata a {
@@ -1032,7 +1034,7 @@ header.sticky {
 }
 .labsblock span {
     display: inline-block;
-    width: 100%;
+    width: 100%; text-align: justify;
     margin: 0 0 10px;
     font-size: 16px;
     font-weight: 400;
@@ -1237,10 +1239,14 @@ header.sticky {
         line-height: 32px;
     }
 
+    .rtl .newsinfo h3  {
+        font-family: "Cairo-bold", sans-serif;
+    }
+
     .newsinfo span {
         display: inline-block;
         width: 100%;
-        font-weight: 400;
+        font-weight: 400; text-align: justify;
         font-size: 16px;
         line-height: 22px;
         margin-bottom: 10px;
@@ -1403,6 +1409,10 @@ header.sticky {
         margin-bottom: 40px;
     }
 
+    .rtl .locationdata h3  {
+        font-family: "Cairo-bold", sans-serif;
+    }
+
     .locationdata ul {
         display: inline-block;
         width: 100%;
@@ -1413,7 +1423,7 @@ header.sticky {
         .locationdata ul li {
             display: inline-block;
             width: 100%;
-            padding: 0 0 0 40px;
+            padding: 0 0 0 40px; text-align: justify;
             margin: 0 0 20px;
             position: relative;
             font-size: 16px;
@@ -1775,11 +1785,11 @@ ul.socialfooter {
 }
 
 .aboutrightOR:hover .col-lg-5 img {
-    right: 20px
+    right: 10px
 }
 
 .rtl .aboutrightOR:hover .col-lg-5 img {
-    left: 20px;
+    left: 10px;
     right: auto
 }
 
@@ -1823,11 +1833,11 @@ ul.socialfooter {
 }
 
 .aboutleftOR:hover .col-lg-4 img {
-    left: 20px
+    left: 10px
 }
 
 .rtl .aboutleftOR:hover .col-lg-4 img {
-    right: 20px;
+    right: 10px;
     left: auto
 }
 
@@ -1850,6 +1860,10 @@ ul.socialfooter {
         margin: 0 0 8px;
         font-family: "Poppins-bold", sans-serif;
         color: var(--colordarkblue);
+    }
+
+    .rtl .membertram h4 {
+        font-family: "Cairo-bold", sans-serif;
     }
 
     .membertram h6 {
@@ -1913,7 +1927,7 @@ ul.socialfooter {
     color: #fff;
     padding: 30px 30px 30px 50px;
     background: rgba(31, 30, 79, 0.8);
-    top: 135px;
+    top: 110px;
     -webkit-transition: all ease-in-out 0.5s;
     -moz-transition: all ease-in-out 0.5s;
     -o-transition: all ease-in-out 0.5s;
@@ -1957,7 +1971,7 @@ ul.socialfooter {
 
 .overlaynewslist span {
     display: inline-block;
-    width: 100%;
+    width: 100%; text-align: justify;
     margin: 0 0 10px;
     font-weight: 400;
     font-size: 16px;
@@ -1996,7 +2010,7 @@ ul.socialfooter {
 .quoatline {
     position: relative;
     display: inline-block;
-    line-height: 24px;
+    line-height: 24px; text-align: justify;
     font-size: 16px;
     padding: 0 20px;
 }
@@ -2511,7 +2525,7 @@ ul.socialfooter {
     top: 12px;
     left: 0;
     width: 100%;
-    min-height: 450px;
+    min-height: 500px;
     height: 37vw;
 }
 
@@ -3069,6 +3083,7 @@ ul.listbenner {
 
 .rtl .testmonialblock {
     text-align: right;
+    direction:rtl;
 }
 
 .owl-carousel.owl-carouselstories .owl-item:nth-child(2) .testmonialblock,
@@ -3127,7 +3142,11 @@ ul.listbenner {
     padding-left: 4vw;
     margin-bottom: 15px;
     position: relative;
-    z-index: 1;
+    z-index: 1; text-align: justify;
+}
+
+.rtl .testmonialblock strong {
+    font-family: "Cairo-bold", sans-serif;
 }
 
 .owl-carousel.owl-carouselstories .owl-item:nth-child(2) .testmonialblock strong,
@@ -3287,7 +3306,7 @@ ul.listbenner {
     font-size: 16px;
     line-height: 24px;
     display: inline-block;
-    width: 100%;
+    width: 100%; text-align: justify;
     height: 72px;
     overflow: hidden;
 }
@@ -3439,7 +3458,7 @@ a.LinkStartup {
 
     .boardDetails h5 {
         display: inline-block;
-        width: 100%;
+        width: 100%; text-align: justify;
         margin-bottom: 20px;
         color: #999;
         font-size: 20px;
@@ -3455,6 +3474,21 @@ a.LinkStartup {
     }
 .tab-content .col-lg-12.mt-4 {
     display:none;
+}
+
+span  {
+    text-align: justify;
+}
+.rtl .dropdown-menu[data-bs-popper] {
+    left: auto;
+    right:0;
+}
+.rtl .nav-essal.navbar-light.nav-essal .navbar-nav .nav-link {
+    font-family: "Cairo-bold", sans-serif;
+}
+
+.rtl .nav-essal .dropdown-item {
+    text-align: right
 }
 @media (min-width: 1440px) {
 }
@@ -3622,6 +3656,7 @@ a.LinkStartup {
     .servicedata span {
         font-size: 20px;
         line-height: 28px;
+        min-height: 56px;
     }
 
     .labseri.nav-tabs .nav-link {

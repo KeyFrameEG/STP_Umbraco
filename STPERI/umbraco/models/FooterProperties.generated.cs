@@ -22,6 +22,11 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 	/// <summary>Footer Properties</summary>
 	public partial interface IFooterProperties : IPublishedElement
 	{
+		/// <summary>FooterLogo</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		global::Umbraco.Cms.Core.Models.MediaWithCrops FooterLogo { get; }
+
 		/// <summary>Footer Social Links</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
@@ -63,6 +68,19 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		}
 
 		// properties
+
+		///<summary>
+		/// FooterLogo
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("footerLogo")]
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops FooterLogo => GetFooterLogo(this, _publishedValueFallback);
+
+		/// <summary>Static getter for FooterLogo</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		public static global::Umbraco.Cms.Core.Models.MediaWithCrops GetFooterLogo(IFooterProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Models.MediaWithCrops>(publishedValueFallback, "footerLogo");
 
 		///<summary>
 		/// Footer Social Links: Enter the social links
