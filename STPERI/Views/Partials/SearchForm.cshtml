@@ -3,12 +3,12 @@
     var homePage = Umbraco.AssignedContentItem.AncestorOrSelf<HomePage>();
     var children = homePage.MainNavigations;
 }
-<form class="form-inline my-2 my-lg-0" role="search" method="get" action="/search" onsubmit="return validateForm()">
+<form class="form-inline my-2 my-lg-0" role="search" method="get" action="@GetSearchUrl()" onsubmit="return validateForm()">
     <div class="overlay-search" id="myDIV">
         <div class="search-dialog">
             <button class="close-search" type="button" onclick="closesearch()"><i class="feather icon-x"></i></button>
 
-            <input type="search" class="searchbox" id="q" name="q" placeholder="Search for..." />
+            <input type="search" class="searchbox" id="q" name="q" placeholder="@homePage.SearchFor" />
 
             <span id="errorMessage" class="error-message">@homePage.SearchErrorMessage</span>
 
@@ -18,3 +18,15 @@
         <button class="outsidsearch" type="button" onclick="outsidesearch()"></button>
     </div>
 </form>
+
+@functions {
+    public string GetSearchUrl()
+    {
+        var currentCulture = System.Threading.Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName;
+        return currentCulture switch
+        {
+            "ar" => "/ar/search",
+            _ => "/search",
+        };
+    }
+}

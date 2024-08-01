@@ -7,19 +7,24 @@
 
 @if (ExamineManager.TryGetIndex("ExternalIndex" , out var index))
 {
-    var results = index.Searcher.Search(Model.SearchTerm);
+    var searchQuery = $"{Model.SearchTerm}*";
+    var results = index.Searcher.CreateQuery().NativeQuery(searchQuery).Execute();
 
     if (results?.Any()?? false)
     {
-        <p>We found @results?.Count() results</p>
+        @* <p>We found @results?.Count() results</p> *@
         <div class="row">
             <ul>
                 @foreach (var result in results)
                 {
                     var content = Model.Umbraco.Content(result.Id);
-                    <li>
-                        <a href="@content?.Url()">@content.Name</a>
-                    </li>
+                    var contentName = content?.Name ?? "No Title";
+                    if (contentName != "No Title")
+                    {
+                        <li>
+                            <a href="@content?.Url()">@contentName</a>
+                        </li>
+                    }
                 }
             </ul>
         </div>

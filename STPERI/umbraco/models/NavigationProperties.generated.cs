@@ -101,6 +101,11 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		string SearchErrorMessage { get; }
+
+		/// <summary>SearchFor</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		string SearchFor { get; }
 	}
 
 	/// <summary>Navigation Properties</summary>
@@ -341,5 +346,18 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		public static string GetSearchErrorMessage(INavigationProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "searchErrorMessage");
+
+		///<summary>
+		/// SearchFor
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("searchFor")]
+		public virtual string SearchFor => GetSearchFor(this, _publishedValueFallback);
+
+		/// <summary>Static getter for SearchFor</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		public static string GetSearchFor(INavigationProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "searchFor");
 	}
 }

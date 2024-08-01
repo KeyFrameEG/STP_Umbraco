@@ -682,6 +682,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string SearchErrorMessage => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetSearchErrorMessage(this, _publishedValueFallback);
 
 		///<summary>
+		/// SearchFor
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("searchFor")]
+		public virtual string SearchFor => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetSearchFor(this, _publishedValueFallback);
+
+		///<summary>
 		/// Main Content Newspaper
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]

@@ -40,3 +40,35 @@
 
 
 
+<script>
+    // Function to save the active tab to localStorage
+    function setActiveTab(tabId) {
+        localStorage.setItem('activeTab', tabId);
+    }
+
+    // Function to set the active tab from localStorage
+    function setTabFromLocalStorage() {
+        var activeTab = localStorage.getItem('activeTab');
+        if (activeTab) {
+            var tab = document.getElementById(activeTab);
+            var tabPane = document.querySelector(tab.getAttribute('data-bs-target'));
+
+            // Remove 'active' class from all tabs and tab panes
+            document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+            document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active', 'show'));
+
+            // Add 'active' class to the saved tab and its corresponding tab pane
+            tab.classList.add('active');
+            tabPane.classList.add('active', 'show');
+        } else {
+            // Set the default tab if no tab is saved in localStorage
+            var defaultTab = document.getElementById('Central-tab');
+            var defaultPane = document.querySelector(defaultTab.getAttribute('data-bs-target'));
+            defaultTab.classList.add('active');
+            defaultPane.classList.add('active', 'show');
+        }
+    }
+
+    // Call the function to set the active tab on page load
+    document.addEventListener('DOMContentLoaded', setTabFromLocalStorage);
+</script>

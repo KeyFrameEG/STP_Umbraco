@@ -14,18 +14,17 @@
 
             <div class="col-lg-12">
 
-            <ul class="nav nav-tabs labseri" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="Central-tab" data-bs-toggle="tab" data-bs-target="#Central-tab-pane" type="button" role="tab" aria-controls="Central-tab-pane" aria-selected="true">@homePage.CentrallabsButton</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="Research-tab" data-bs-toggle="tab" data-bs-target="#Research-tab-pane" type="button" role="tab" aria-controls="Research-tab-pane" aria-selected="false">@homePage.ResearchDepartmentsButton</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="Specialized-tab" data-bs-toggle="tab" data-bs-target="#Specialized-tab-pane" type="button" role="tab" aria-controls="Specialized-tab-pane" aria-selected="false">@homePage.SpecializedLabsButton</button>
-              </li>
-             
-            </ul>
+                <ul class="nav nav-tabs labseri" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="Central-tab" data-bs-toggle="tab" data-bs-target="#Central-tab-pane" type="button" role="tab" aria-controls="Central-tab-pane" aria-selected="true" onclick="setActiveTab('Central-tab')">@homePage.CentrallabsButton</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="Research-tab" data-bs-toggle="tab" data-bs-target="#Research-tab-pane" type="button" role="tab" aria-controls="Research-tab-pane" aria-selected="false" onclick="setActiveTab('Research-tab')">@homePage.ResearchDepartmentsButton</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="Specialized-tab" data-bs-toggle="tab" data-bs-target="#Specialized-tab-pane" type="button" role="tab" aria-controls="Specialized-tab-pane" aria-selected="false" onclick="setActiveTab('Specialized-tab')">@homePage.SpecializedLabsButton</button>
+                    </li>
+                </ul>
             <div class="tab-content position-relative px-0 py-4 labtabs" id="myTabContent">
               <div class="tab-pane bg-white fade show active" id="Central-tab-pane" role="tabpanel" aria-labelledby="Central-tab" tabindex="0">
                         <div class="w-bg aos-item" data-aos="fade-left">
