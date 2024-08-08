@@ -1,3 +1,6 @@
+
+using Umbraco.Cms.Core.Scoping;
+
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 builder.CreateUmbracoBuilder()
@@ -6,6 +9,8 @@ builder.CreateUmbracoBuilder()
     .AddDeliveryApi()
     .AddComposers()
     .Build();
+
+//builder.Services.AddScoped<IScopeProvider, IScopeProvider>();
 
 WebApplication app = builder.Build();
 

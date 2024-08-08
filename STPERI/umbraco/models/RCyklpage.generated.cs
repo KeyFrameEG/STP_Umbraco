@@ -138,6 +138,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops FirstImageProduct => global::Umbraco.Cms.Web.Common.PublishedModels.StartupProperties.GetFirstImageProduct(this, _publishedValueFallback);
 
 		///<summary>
+		/// FirstProduct
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("firstProduct")]
+		public virtual string FirstProduct => global::Umbraco.Cms.Web.Common.PublishedModels.StartupProperties.GetFirstProduct(this, _publishedValueFallback);
+
+		///<summary>
 		/// FirstService
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
@@ -250,6 +258,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops SecondImageProduct => global::Umbraco.Cms.Web.Common.PublishedModels.StartupProperties.GetSecondImageProduct(this, _publishedValueFallback);
 
 		///<summary>
+		/// SecondProduct
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("secondProduct")]
+		public virtual string SecondProduct => global::Umbraco.Cms.Web.Common.PublishedModels.StartupProperties.GetSecondProduct(this, _publishedValueFallback);
+
+		///<summary>
 		/// SecondService
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
@@ -272,6 +288,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("servicesProvided")]
 		public virtual string ServicesProvided => global::Umbraco.Cms.Web.Common.PublishedModels.StartupProperties.GetServicesProvided(this, _publishedValueFallback);
+
+		///<summary>
+		/// ThirdProduct
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("thirdProduct")]
+		public virtual string ThirdProduct => global::Umbraco.Cms.Web.Common.PublishedModels.StartupProperties.GetThirdProduct(this, _publishedValueFallback);
 
 		///<summary>
 		/// ThirdService

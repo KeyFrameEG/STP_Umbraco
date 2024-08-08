@@ -98,6 +98,22 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops ElyoumElsabeaImage => global::Umbraco.Cms.Web.Common.PublishedModels.NewspaperdetailsProperties.GetElyoumElsabeaImage(this, _publishedValueFallback);
 
 		///<summary>
+		/// EventDate
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("eventDate")]
+		public virtual string EventDate => global::Umbraco.Cms.Web.Common.PublishedModels.NewspaperdetailsProperties.GetEventDate(this, _publishedValueFallback);
+
+		///<summary>
+		/// EventLocation
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("eventLocation")]
+		public virtual string EventLocation => global::Umbraco.Cms.Web.Common.PublishedModels.NewspaperdetailsProperties.GetEventLocation(this, _publishedValueFallback);
+
+		///<summary>
 		/// FirstSectionImage
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
@@ -119,7 +135,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("sectionDescription")]
-		public virtual string SectionDescription => global::Umbraco.Cms.Web.Common.PublishedModels.NewspaperdetailsProperties.GetSectionDescription(this, _publishedValueFallback);
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString SectionDescription => global::Umbraco.Cms.Web.Common.PublishedModels.NewspaperdetailsProperties.GetSectionDescription(this, _publishedValueFallback);
 
 		///<summary>
 		/// SectionTitle
@@ -143,7 +159,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("topicFirstDescription")]
-		public virtual string TopicFirstDescription => global::Umbraco.Cms.Web.Common.PublishedModels.NewspaperdetailsProperties.GetTopicFirstDescription(this, _publishedValueFallback);
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString TopicFirstDescription => global::Umbraco.Cms.Web.Common.PublishedModels.NewspaperdetailsProperties.GetTopicFirstDescription(this, _publishedValueFallback);
 
 		///<summary>
 		/// TopicSecondDescription
@@ -151,7 +167,15 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("topicSecondDescription")]
-		public virtual string TopicSecondDescription => global::Umbraco.Cms.Web.Common.PublishedModels.NewspaperdetailsProperties.GetTopicSecondDescription(this, _publishedValueFallback);
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString TopicSecondDescription => global::Umbraco.Cms.Web.Common.PublishedModels.NewspaperdetailsProperties.GetTopicSecondDescription(this, _publishedValueFallback);
+
+		///<summary>
+		/// TopicSecondTitle
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("topicSecondTitle")]
+		public virtual string TopicSecondTitle => global::Umbraco.Cms.Web.Common.PublishedModels.NewspaperdetailsProperties.GetTopicSecondTitle(this, _publishedValueFallback);
 
 		///<summary>
 		/// TopicTitle

@@ -118,12 +118,23 @@
 
             </div>
 
-            <div class="col-md-6 mb-3 aos-item" data-aos="fade-right">
-                <img alt="" src="@Model.FirstImageProduct.Url()" class="w-100" />
-            </div>
+            <div class="locationdata">
+                <ul>
+                    @if (!string.IsNullOrEmpty(Model.FirstProduct))
+                    {
+                        <li>@Model.FirstProduct</li>
+                    }
 
-            <div class="col-md-6 mb-3 aos-item" data-aos="fade-left">
-                <img alt="" src="@Model.SecondImageProduct.Url()" class="w-100" />
+                    @if (!string.IsNullOrEmpty(Model.SecondProduct))
+                    {
+                        <li>@Model.SecondProduct</li>
+                    }
+
+                    @if (!string.IsNullOrEmpty(Model.ThirdProduct))
+                    {
+                        <li>@Model.ThirdProduct</li>
+                    }
+                </ul>
             </div>
 
             <div class="col-lg-10 mb-3 mt-4 aos-item" data-aos="fade-up">

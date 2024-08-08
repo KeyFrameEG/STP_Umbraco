@@ -32,6 +32,16 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		global::Umbraco.Cms.Core.Models.MediaWithCrops ElyoumElsabeaImage { get; }
 
+		/// <summary>EventDate</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		string EventDate { get; }
+
+		/// <summary>EventLocation</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		string EventLocation { get; }
+
 		/// <summary>FirstSectionImage</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
@@ -45,7 +55,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		/// <summary>SectionDescription</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		string SectionDescription { get; }
+		global::Umbraco.Cms.Core.Strings.IHtmlEncodedString SectionDescription { get; }
 
 		/// <summary>SectionTitle</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
@@ -60,12 +70,17 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		/// <summary>TopicFirstDescription</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		string TopicFirstDescription { get; }
+		global::Umbraco.Cms.Core.Strings.IHtmlEncodedString TopicFirstDescription { get; }
 
 		/// <summary>TopicSecondDescription</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		string TopicSecondDescription { get; }
+		global::Umbraco.Cms.Core.Strings.IHtmlEncodedString TopicSecondDescription { get; }
+
+		/// <summary>TopicSecondTitle</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		string TopicSecondTitle { get; }
 
 		/// <summary>TopicTitle</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
@@ -131,6 +146,32 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public static global::Umbraco.Cms.Core.Models.MediaWithCrops GetElyoumElsabeaImage(INewspaperdetailsProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Models.MediaWithCrops>(publishedValueFallback, "elyoumElsabeaImage");
 
 		///<summary>
+		/// EventDate
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("eventDate")]
+		public virtual string EventDate => GetEventDate(this, _publishedValueFallback);
+
+		/// <summary>Static getter for EventDate</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		public static string GetEventDate(INewspaperdetailsProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "eventDate");
+
+		///<summary>
+		/// EventLocation
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("eventLocation")]
+		public virtual string EventLocation => GetEventLocation(this, _publishedValueFallback);
+
+		/// <summary>Static getter for EventLocation</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		public static string GetEventLocation(INewspaperdetailsProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "eventLocation");
+
+		///<summary>
 		/// FirstSectionImage
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
@@ -162,12 +203,12 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("sectionDescription")]
-		public virtual string SectionDescription => GetSectionDescription(this, _publishedValueFallback);
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString SectionDescription => GetSectionDescription(this, _publishedValueFallback);
 
 		/// <summary>Static getter for SectionDescription</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static string GetSectionDescription(INewspaperdetailsProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "sectionDescription");
+		public static global::Umbraco.Cms.Core.Strings.IHtmlEncodedString GetSectionDescription(INewspaperdetailsProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(publishedValueFallback, "sectionDescription");
 
 		///<summary>
 		/// SectionTitle
@@ -201,12 +242,12 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("topicFirstDescription")]
-		public virtual string TopicFirstDescription => GetTopicFirstDescription(this, _publishedValueFallback);
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString TopicFirstDescription => GetTopicFirstDescription(this, _publishedValueFallback);
 
 		/// <summary>Static getter for TopicFirstDescription</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static string GetTopicFirstDescription(INewspaperdetailsProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "topicFirstDescription");
+		public static global::Umbraco.Cms.Core.Strings.IHtmlEncodedString GetTopicFirstDescription(INewspaperdetailsProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(publishedValueFallback, "topicFirstDescription");
 
 		///<summary>
 		/// TopicSecondDescription
@@ -214,12 +255,25 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("topicSecondDescription")]
-		public virtual string TopicSecondDescription => GetTopicSecondDescription(this, _publishedValueFallback);
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString TopicSecondDescription => GetTopicSecondDescription(this, _publishedValueFallback);
 
 		/// <summary>Static getter for TopicSecondDescription</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static string GetTopicSecondDescription(INewspaperdetailsProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "topicSecondDescription");
+		public static global::Umbraco.Cms.Core.Strings.IHtmlEncodedString GetTopicSecondDescription(INewspaperdetailsProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(publishedValueFallback, "topicSecondDescription");
+
+		///<summary>
+		/// TopicSecondTitle
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("topicSecondTitle")]
+		public virtual string TopicSecondTitle => GetTopicSecondTitle(this, _publishedValueFallback);
+
+		/// <summary>Static getter for TopicSecondTitle</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		public static string GetTopicSecondTitle(INewspaperdetailsProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "topicSecondTitle");
 
 		///<summary>
 		/// TopicTitle

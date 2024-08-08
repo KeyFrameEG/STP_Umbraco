@@ -19,7 +19,8 @@
                var rowItem = (OurParkItem)item.Content;
                <div class="col-lg-4 px-0">
                
-               <div class="tourpart darkbluetrans">                  
+               <div class="tourpart darkbluetrans">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#TourModal"></a>
                     <h3>@rowItem.Description</h3>
                     <img alt="tour" src="@rowItem.Image.Url()" />
                </div>

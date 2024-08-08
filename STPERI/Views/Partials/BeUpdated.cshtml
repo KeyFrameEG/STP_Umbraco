@@ -26,3 +26,32 @@
       </div>
     </div>
 
+<div class="modal fade transbg" id="TourModal" tabindex="-1" aria-labelledby="TourModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="TourModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <iframe class="videoTour" id="tourIframe" src="https://a4-design.com/vr-directory/ERI0/index.htm"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var tourModal = document.getElementById('TourModal');
+        var tourIframe = document.getElementById('tourIframe');
+
+        tourModal.addEventListener('hidden.bs.modal', function () {
+            // Save the iframe src
+            var src = tourIframe.src;
+            // Set the iframe src to empty string to stop the video
+            tourIframe.src = '';
+            // Restore the iframe src to the original value
+            tourIframe.src = src;
+        });
+    });
+</script>

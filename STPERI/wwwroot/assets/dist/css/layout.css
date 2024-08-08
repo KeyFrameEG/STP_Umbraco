@@ -3145,6 +3145,9 @@ ul.listbenner {
     margin-bottom: 15px;
     position: relative;
     z-index: 1; text-align: justify;
+    line-height:24px;
+    height:120px;
+    overflow:hidden;
 }
 
 .rtl .testmonialblock strong {
@@ -3492,6 +3495,36 @@ span  {
 .rtl .nav-essal .dropdown-item {
     text-align: right
 }
+.locationStyle {
+    font-weight:600px;
+    font-size:20px;
+    color:#fff !important;
+}
+.rtl .locationStyle {
+    font-family: "Cairo-bold", sans-serif;
+}
+.locationStyle i {
+    font-size: 30px;
+    position:relative;
+    top:3px;
+    margin-right:8px;
+}
+    .locationStyle i.icon-map-pin {
+        top: 7px;
+    }
+.rtl .locationStyle i {
+    margin-right: unset;
+    margin-left: 8px;
+    display:inline-block;
+}
+.transbg {
+    background:rgba(0,0,0,0.5) !important;
+}
+.videoTour {
+    width:100%;
+    height: 364px;
+    border:none;
+}
 @media (min-width: 1440px) {
 }
 
@@ -3735,6 +3768,9 @@ span  {
     .testmonialblock strong {
         margin-top: 200px;
     }
+    .innerbanner h3 {
+        width: 1100px;
+    }
 }
 
 @media (min-width: 2100px) {
@@ -3780,6 +3816,10 @@ span  {
 }
 
 @media (max-width: 991px) {
+
+    .videoTour {
+        height:320px;
+    }
 
     .navbar-light.nav-essal .navbar-nav .nav-link {
         padding-right: 1.4rem;
@@ -3919,6 +3959,9 @@ span  {
 
 
 @media (max-width: 767px) {
+    .videoTour {
+        height: 150px;
+    }
     .sticky .nav-essal .navbar-toggler {
         right: -125px;
         top: -1px;

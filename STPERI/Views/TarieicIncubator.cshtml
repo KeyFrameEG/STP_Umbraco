@@ -1,6 +1,7 @@
 ﻿@using Umbraco.Cms.Web.Common.PublishedModels;
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.TarieicIncubator>
 @using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@using Newtonsoft.Json.Linq;
 @{
 	Layout = "Master.cshtml";
 }
@@ -31,7 +32,8 @@
               <h2 class="migatitle mb-4">@Model.SectionTitle</h2>
 
               <span>
-            @Model.SectionDescription
+           
+                    @Html.Raw(RenderRichTextContent(Model.SectionDescription.ToString()))
               </span>
             </div>
 
@@ -51,14 +53,13 @@
 
         <div class="col-md-6 mb-3 aos-item" data-aos="fade-right">
           <div class="quoatline">
-			@Model.TopicFirstDescription
- 
+                    @Html.Raw(RenderRichTextContent(@Model.TopicFirstDescription.ToString()))
          </div>
         </div>
 
         <div class="col-md-6 mb-3 aos-item" data-aos="fade-left">
           <div class="quoatline">
-			@Model.TopicSecondDescription
+                    @Html.Raw(RenderRichTextContent(@Model.TopicSecondDescription.ToString()))
           </div>
         </div>
           
@@ -66,3 +67,30 @@
       </div>
 
     </div>
+@functions {
+    public HtmlString RenderRichTextContent(string jsonContent)
+    {
+        if (string.IsNullOrEmpty(jsonContent))
+        {
+            return new HtmlString("");
+        }
+
+        try
+        {
+            // Parse the JSON content
+            var jsonObject = JObject.Parse(jsonContent);
+
+            // Extract the markup value
+            var markup = jsonObject["markup"]?.ToString() ?? "";
+
+            // Return the HTML content
+            return new HtmlString(markup);
+        }
+        catch (Exception ex)
+        {
+            // Handle parsing errors if necessary
+            return new HtmlString($"<!-- Error parsing content: {ex.Message} -->");
+        }
+    }
+}
+}
