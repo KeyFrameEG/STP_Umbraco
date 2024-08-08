@@ -2844,6 +2844,20 @@ ul.listbenner {
     content: "\e85f";
     color: rgb(0 0 0 / 50%);
 }
+.applyform .form-group:nth-child(7) .col-sm-10:before {
+    position: absolute;
+    font-family: feather;
+    left: 10px;
+    top: 0px;
+    font-size: 22px;
+    content: "";
+    background: url("../../images/mailbox-flag.svg") center no-repeat;
+    width:22px;
+    height:22px;
+    background-size:100%;
+    opacity:0.5;
+    color: rgb(0 0 0 / 50%);
+}
 
 .applyform .form-group:nth-child(8) .col-sm-10:before {
     position: absolute;
