@@ -70,7 +70,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		/// <summary>FirstVision</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		string FirstVision { get; }
+		global::Umbraco.Cms.Core.Strings.IHtmlEncodedString FirstVision { get; }
 
 		/// <summary>Goals</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
@@ -145,7 +145,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		/// <summary>SecondVision</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		string SecondVision { get; }
+		global::Umbraco.Cms.Core.Strings.IHtmlEncodedString SecondVision { get; }
 
 		/// <summary>ServicesProvided</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
@@ -322,12 +322,12 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("firstVision")]
-		public virtual string FirstVision => GetFirstVision(this, _publishedValueFallback);
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString FirstVision => GetFirstVision(this, _publishedValueFallback);
 
 		/// <summary>Static getter for FirstVision</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static string GetFirstVision(IStartupProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "firstVision");
+		public static global::Umbraco.Cms.Core.Strings.IHtmlEncodedString GetFirstVision(IStartupProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(publishedValueFallback, "firstVision");
 
 		///<summary>
 		/// Goals
@@ -517,12 +517,12 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("secondVision")]
-		public virtual string SecondVision => GetSecondVision(this, _publishedValueFallback);
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString SecondVision => GetSecondVision(this, _publishedValueFallback);
 
 		/// <summary>Static getter for SecondVision</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static string GetSecondVision(IStartupProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "secondVision");
+		public static global::Umbraco.Cms.Core.Strings.IHtmlEncodedString GetSecondVision(IStartupProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(publishedValueFallback, "secondVision");
 
 		///<summary>
 		/// ServicesProvided

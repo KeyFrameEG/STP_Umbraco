@@ -1,18 +1,21 @@
 @using Examine
+@using System.Web
+@using System.Text.RegularExpressions
+@using Umbraco.Cms.Core.Models.PublishedContent
 @using Umbraco.Cms.Web.Common
 @inject IExamineManager ExamineManager;
 @model (string SearchTerm , UmbracoHelper Umbraco)
 
 <partial name="SearchBox" model="Model.SearchTerm" />
 
-@if (ExamineManager.TryGetIndex("ExternalIndex" , out var index))
+@if (ExamineManager.TryGetIndex("ExternalIndex", out var index))
 {
     var searchQuery = $"{Model.SearchTerm}*";
     var results = index.Searcher.CreateQuery().NativeQuery(searchQuery).Execute();
 
-    if (results?.Any()?? false)
+    if (results?.Any() ?? false)
     {
-        @* <p>We found @results?.Count() results</p> *@
+        <p>We found @results?.Count() results</p>
         <div class="row">
             <ul>
                 @foreach (var result in results)
@@ -22,7 +25,24 @@
                     if (contentName != "No Title")
                     {
                         <li>
-                            <a href="@content?.Url()">@contentName</a>
+                            <h4><a href="@content?.Url()">@contentName</a></h4>
+                            @* Retrieve the paragraphs where the search term is found *@
+                            @{
+                                var paragraphs = GetParagraphsWithSearchTerm(content, Model.SearchTerm);
+                                if (paragraphs.Any())
+                                {
+                                    <div>
+                                        @foreach (var paragraph in paragraphs)
+                                        {
+                                            <p>@Html.Raw(paragraph)</p>
+                                        }
+                                    </div>
+                                }
+                                else
+                                {
+                                    <p></p>
+                                }
+                            }
                         </li>
                     }
                 }
@@ -40,5 +60,62 @@
                 </div>
             </div>
         </div>
+    }
+}
+
+@functions {
+    private static IEnumerable<string> GetParagraphsWithSearchTerm(IPublishedContent content, string searchTerm)
+    {
+        var paragraphs = new List<string>();
+
+        // Iterate through all properties in the content node
+        foreach (var property in content.Properties)
+        {
+            if (property.HasValue())
+            {
+                var propertyValue = property.GetValue();
+
+                // Check if it's a string (like a rich text or text field)
+                if (propertyValue is string text)
+                {
+                    // Strip out HTML tags if it's a rich text field
+                    var plainText = StripHtml(text);
+
+                    // Split the text into paragraphs based on new lines, periods, or closing paragraph tags
+                    var paragraphArray = plainText.Split(new[] { "\r\n", "\n", ".", "</p>" }, StringSplitOptions.None);
+
+                    // Check each paragraph for the search term
+                    foreach (var paragraph in paragraphArray)
+                    {
+                        if (paragraph.Contains(searchTerm, StringComparison.OrdinalIgnoreCase))
+                        {
+                            // Highlight the search term
+                            var highlightedParagraph = HighlightSearchTerm(paragraph, searchTerm);
+                            paragraphs.Add(highlightedParagraph.Trim()); // Trim whitespace
+                        }
+                    }
+                }
+            }
+        }
+
+        return paragraphs;
+    }
+
+    // Function to strip HTML tags from the content
+    private static string StripHtml(string input)
+    {
+        return Regex.Replace(input, "<.*?>", string.Empty); // Strips HTML tags
+    }
+
+    // Function to highlight the search term in the text
+    private static string HighlightSearchTerm(string text, string searchTerm)
+    {
+        // Escape special characters in the search term for regex
+        var escapedTerm = Regex.Escape(searchTerm);
+
+        // Replace the search term with highlighted version
+        var highlightedText = Regex.Replace(text, escapedTerm, match => $"<span style='background-color: yellow;'>{match.Value}</span>", RegexOptions.IgnoreCase);
+
+        return highlightedText;
     }
 }

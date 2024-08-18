@@ -159,7 +159,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("firstVision")]
-		public virtual string FirstVision => global::Umbraco.Cms.Web.Common.PublishedModels.StartupProperties.GetFirstVision(this, _publishedValueFallback);
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString FirstVision => global::Umbraco.Cms.Web.Common.PublishedModels.StartupProperties.GetFirstVision(this, _publishedValueFallback);
 
 		///<summary>
 		/// Goals
@@ -279,7 +279,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("secondVision")]
-		public virtual string SecondVision => global::Umbraco.Cms.Web.Common.PublishedModels.StartupProperties.GetSecondVision(this, _publishedValueFallback);
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString SecondVision => global::Umbraco.Cms.Web.Common.PublishedModels.StartupProperties.GetSecondVision(this, _publishedValueFallback);
 
 		///<summary>
 		/// ServicesProvided
