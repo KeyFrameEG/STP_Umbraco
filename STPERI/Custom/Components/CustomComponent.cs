@@ -26,11 +26,14 @@ namespace STPERI.Custom.Handlers
                 if (content.ContentType.Alias.Equals("newsPage") ||
                     content.ContentType.Alias.Equals("eventPage"))
                 {
-                    SendEmail(content.Name);
+                    if (content.WasPropertyDirty("mainContentLatestNews"))
+                    {
+                        SendEmail(content.Name);
 
-                    var subscribers = GetSubscribers();
-                    // Send the email to all subscribers
-                    SendEmailsToSubscribers(subscribers, content.Name);
+                        var subscribers = GetSubscribers();
+                        // Send the email to all subscribers
+                        SendEmailsToSubscribers(subscribers, content.Name);
+                    }
                 }
             }
         }
