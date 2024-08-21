@@ -1,0 +1,60 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.MCitpartner>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+</header>
+
+<div class="innerbanner fitlayout">
+
+    <div class="clearfix"></div>
+    <h3 class="px-3 aos-item" data-aos="fade-up">@Model.TitleHeaderNewsPaper</h3>
+    <div class="clearfix"></div>
+    <div class="clearfix"></div>
+    <img alt="" src="@Model.BannerImage.Url()" />
+</div>
+
+
+<div class="w-bg fitlayout paddingabove pt-4 mb-4">
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-lg-10 mb-4 aos-item" data-aos="fade-down">
+                <h2 class="migatitle mb-4">@Model.SectionTitle</h2>
+
+                <span>
+                    @Model.SectionDescription
+                </span>
+            </div>
+
+
+            <div class="col-md-6 mb-3 aos-item" data-aos="fade-right">
+                <img alt="" src="@Model.FirstSectionImage.Url()" class="w-100" />
+            </div>
+
+            <div class="col-md-6 mb-3 aos-item" data-aos="fade-left">
+                <img alt="" src="@Model.SecondSectionImage.Url()" class="w-100" />
+            </div>
+
+            <div class="col-md-6 mb-3 aos-item" data-aos="fade-right">
+                <h2 class="migatitle mb-4">@Model.TopicTitle</h2>
+                <div class="quoatline">
+                    @Model.TopicFirstDescription
+
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-3 aos-item" data-aos="fade-left">
+                <h2 class="migatitle mb-4">@Model.TopicSecondTitle</h2>
+                <div class="quoatline">
+                    @Model.TopicSecondDescription
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

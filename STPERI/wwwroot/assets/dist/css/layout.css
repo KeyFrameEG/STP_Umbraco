@@ -2519,7 +2519,7 @@ ul.socialfooter {
     padding-left: 0px !important;
 }
 
-.tab-content > .tab-pane {
+.labtabs.tab-content > .tab-pane {
     display: block !important;
     position: absolute;
     z-index: 2;
@@ -2531,7 +2531,7 @@ ul.socialfooter {
     height: 37vw;
 }
 
-.tab-content > .active {
+.labtabs.tab-content > .active {
     display: block;
     z-index: 3;
 }
@@ -3491,8 +3491,8 @@ a.LinkStartup {
         font-size: 16px;
         line-height: 22px;
     }
-.tab-content .col-lg-12.mt-4 {
-    display:none;
+.labtabs.tab-content .col-lg-12.mt-4 {
+    display: none;
 }
 
 span  {
@@ -3536,7 +3536,7 @@ span  {
 }
 .videoTour {
     width:100%;
-    height: 364px;
+    height: 600px;
     border:none;
 }
 @media (min-width: 1440px) {
@@ -3776,7 +3776,10 @@ span  {
 }
 
 @media (min-width: 1920px) {
-    .tab-content > .tab-pane {
+    .videoTour {
+        height:900px;
+    }
+    .labtabs.tab-content > .tab-pane {
         height: 35vw;
     }
     .testmonialblock strong {
@@ -3997,10 +4000,10 @@ span  {
         min-height: 360px;
         height: unset;
     }
-    .tab-content > .tab-pane {
-        min-height: 360px;
-        height: unset;
-    }
+        .labtabs.tab-content > .tab-pane {
+            min-height: 360px;
+            height: unset;
+        }
     .ImageStartUpHome {
         width: 120px;
         height: 120px;

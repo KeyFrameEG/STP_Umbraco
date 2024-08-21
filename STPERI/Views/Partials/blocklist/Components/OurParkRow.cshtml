@@ -13,19 +13,44 @@
 <div class="col-lg-12 my-4">
   <h2 class="migatitle">@row.Title</h2>
 </div>
+            <div class="col-lg-12">
+                <ul class="nav nav-tabs labseri" id="myTab2" role="tablist2">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true" onclick="setActiveTab('home-tab', 'myTabGroup2')">Tour1</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false" onclick="setActiveTab('profile-tab', 'myTabGroup2')">Tour2</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false" onclick="setActiveTab('contact-tab', 'myTabGroup2')">Tour3</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent2">
+                    <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <iframe class="videoTour" id="tourIframe" src="https://a4-design.com/vr-directory/ERI0/index.htm"></iframe>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <iframe class="videoTour" id="tourIframe" src="https://a4-design.com/vr-directory/ERI0/index.htm"></iframe>
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <iframe class="videoTour" id="tourIframe" src="https://a4-design.com/vr-directory/ERI0/index.htm"></iframe>
+                    </div>
+                </div>
+            </div>
+
 
           @foreach(var item in row.OurParkItems)
           {
-               var rowItem = (OurParkItem)item.Content;
-               <div class="col-lg-4 px-0">
+               // var rowItem = (OurParkItem)item.Content;
+               // <div class="col-lg-4 px-0">
                
-               <div class="tourpart darkbluetrans">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#TourModal"></a>
-                    <h3>@rowItem.Description</h3>
-                    <img alt="tour" src="@rowItem.Image.Url()" />
-               </div>
+               // <div class="tourpart darkbluetrans">
+               //      <a href="#" data-bs-toggle="modal" data-bs-target="#TourModal"></a>
+               //      <h3>@rowItem.Description</h3>
+               //      <img alt="tour" src="@rowItem.Image.Url()" />
+               // </div>
 
-               </div>
+               // </div>
           }    
            </div>
 

@@ -41,34 +41,39 @@
 
 
 <script>
-    // Function to save the active tab to localStorage
-    function setActiveTab(tabId) {
-        localStorage.setItem('activeTab', tabId);
+    // Function to save the active tab to localStorage for a specific tab group
+    function setActiveTab(tabId, groupId) {
+        localStorage.setItem(groupId, tabId);
     }
 
-    // Function to set the active tab from localStorage
-    function setTabFromLocalStorage() {
-        var activeTab = localStorage.getItem('activeTab');
+    // Function to set the active tab from localStorage for a specific tab group
+    function setTabFromLocalStorage(groupId, defaultTabId) {
+        var activeTab = localStorage.getItem(groupId);
         if (activeTab) {
             var tab = document.getElementById(activeTab);
             var tabPane = document.querySelector(tab.getAttribute('data-bs-target'));
 
-            // Remove 'active' class from all tabs and tab panes
-            document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
-            document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active', 'show'));
+            // Remove 'active' class from all tabs and tab panes within the group
+            document.querySelectorAll(`#${groupId} .nav-link`).forEach(link => link.classList.remove('active'));
+            document.querySelectorAll(`#${groupId} .tab-pane`).forEach(pane => pane.classList.remove('active', 'show'));
 
             // Add 'active' class to the saved tab and its corresponding tab pane
             tab.classList.add('active');
             tabPane.classList.add('active', 'show');
         } else {
             // Set the default tab if no tab is saved in localStorage
-            var defaultTab = document.getElementById('Central-tab');
+            var defaultTab = document.getElementById(defaultTabId);
             var defaultPane = document.querySelector(defaultTab.getAttribute('data-bs-target'));
             defaultTab.classList.add('active');
             defaultPane.classList.add('active', 'show');
         }
     }
 
-    // Call the function to set the active tab on page load
-    document.addEventListener('DOMContentLoaded', setTabFromLocalStorage);
+    // Call the function to set the active tab on page load for each tab group
+    document.addEventListener('DOMContentLoaded', function () {
+        // First tab group
+        setTabFromLocalStorage('myTabGroup', 'Central-tab'); // Ensure 'Central-tab' is default
+        // Second tab group
+        setTabFromLocalStorage('myTabGroup2', 'home-tab'); // Ensure 'home-tab' is default
+    });
 </script>
