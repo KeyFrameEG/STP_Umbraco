@@ -74,6 +74,22 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops AboutStpimage => this.Value<global::Umbraco.Cms.Core.Models.MediaWithCrops>(_publishedValueFallback, "aboutSTPImage");
 
 		///<summary>
+		/// HostingImage
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("hostingImage")]
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops HostingImage => this.Value<global::Umbraco.Cms.Core.Models.MediaWithCrops>(_publishedValueFallback, "hostingImage");
+
+		///<summary>
+		/// HostingUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("hostingUrl")]
+		public virtual string HostingUrl => this.Value<string>(_publishedValueFallback, "hostingUrl");
+
+		///<summary>
 		/// MessageDescription
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
@@ -122,14 +138,6 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops STpvisionImage => this.Value<global::Umbraco.Cms.Core.Models.MediaWithCrops>(_publishedValueFallback, "sTPVisionImage");
 
 		///<summary>
-		/// SubscribedForm
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("subscribedForm")]
-		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString SubscribedForm => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "subscribedForm");
-
-		///<summary>
 		/// BeUpdatedDescription
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
@@ -170,6 +178,22 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContent => global::Umbraco.Cms.Web.Common.PublishedModels.FeaturedProperties.GetMainContent(this, _publishedValueFallback);
 
 		///<summary>
+		/// FAQ
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("fAQ")]
+		public virtual string FAQ => global::Umbraco.Cms.Web.Common.PublishedModels.FooterProperties.GetFAQ(this, _publishedValueFallback);
+
+		///<summary>
+		/// FAQUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("fAQUrl")]
+		public virtual string FAqurl => global::Umbraco.Cms.Web.Common.PublishedModels.FooterProperties.GetFAqurl(this, _publishedValueFallback);
+
+		///<summary>
 		/// FooterLogo
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
@@ -186,12 +210,52 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual global::System.Collections.Generic.IEnumerable<global::Umbraco.Cms.Core.Models.PublishedContent.SocialLink> FooterSocialLinks => global::Umbraco.Cms.Web.Common.PublishedModels.FooterProperties.GetFooterSocialLinks(this, _publishedValueFallback);
 
 		///<summary>
+		/// PolicyPrivacy
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("policyPrivacy")]
+		public virtual string PolicyPrivacy => global::Umbraco.Cms.Web.Common.PublishedModels.FooterProperties.GetPolicyPrivacy(this, _publishedValueFallback);
+
+		///<summary>
+		/// PolicyPrivacyUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("policyPrivacyUrl")]
+		public virtual string PolicyPrivacyUrl => global::Umbraco.Cms.Web.Common.PublishedModels.FooterProperties.GetPolicyPrivacyUrl(this, _publishedValueFallback);
+
+		///<summary>
 		/// RightsReserved
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("rightsReserved")]
 		public virtual string RightsReserved => global::Umbraco.Cms.Web.Common.PublishedModels.FooterProperties.GetRightsReserved(this, _publishedValueFallback);
+
+		///<summary>
+		/// TermsofUse
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("termsofUse")]
+		public virtual string TermsofUse => global::Umbraco.Cms.Web.Common.PublishedModels.FooterProperties.GetTermsofUse(this, _publishedValueFallback);
+
+		///<summary>
+		/// TermsofUseUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("termsofUseUrl")]
+		public virtual string TermsofUseUrl => global::Umbraco.Cms.Web.Common.PublishedModels.FooterProperties.GetTermsofUseUrl(this, _publishedValueFallback);
+
+		///<summary>
+		/// UsefulLinks
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("usefulLinks")]
+		public virtual string UsefulLinks => global::Umbraco.Cms.Web.Common.PublishedModels.FooterProperties.GetUsefulLinks(this, _publishedValueFallback);
 
 		///<summary>
 		/// BannerImage: Enter the banner image
@@ -208,6 +272,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("gateway")]
 		public virtual string Gateway => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetGateway(this, _publishedValueFallback);
+
+		///<summary>
+		/// SubscribedFormm
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("subscribedFormm")]
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString SubscribedFormm => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetSubscribedFormm(this, _publishedValueFallback);
 
 		///<summary>
 		/// Subtitle: Enter you sup title
@@ -802,12 +874,52 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string SpecializedLabsButton => global::Umbraco.Cms.Web.Common.PublishedModels.OurLabsProperties.GetSpecializedLabsButton(this, _publishedValueFallback);
 
 		///<summary>
+		/// FirstVideo
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("firstVideo")]
+		public virtual string FirstVideo => global::Umbraco.Cms.Web.Common.PublishedModels.OurPark.GetFirstVideo(this, _publishedValueFallback);
+
+		///<summary>
+		/// LabsTour
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("labsTour")]
+		public virtual string LabsTour => global::Umbraco.Cms.Web.Common.PublishedModels.OurPark.GetLabsTour(this, _publishedValueFallback);
+
+		///<summary>
 		/// Main Content Our Park
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("mainContentOurPark")]
 		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentOurPark => global::Umbraco.Cms.Web.Common.PublishedModels.OurPark.GetMainContentOurPark(this, _publishedValueFallback);
+
+		///<summary>
+		/// ParkTitle
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("parkTitle")]
+		public virtual string ParkTitle => global::Umbraco.Cms.Web.Common.PublishedModels.OurPark.GetParkTitle(this, _publishedValueFallback);
+
+		///<summary>
+		/// SecondVideo
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("secondVideo")]
+		public virtual string SecondVideo => global::Umbraco.Cms.Web.Common.PublishedModels.OurPark.GetSecondVideo(this, _publishedValueFallback);
+
+		///<summary>
+		/// ServicesTour
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("servicesTour")]
+		public virtual string ServicesTour => global::Umbraco.Cms.Web.Common.PublishedModels.OurPark.GetServicesTour(this, _publishedValueFallback);
 
 		///<summary>
 		/// Main Content Partners
@@ -832,6 +944,22 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("mainContentStartupshome")]
 		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentStartupshome => global::Umbraco.Cms.Web.Common.PublishedModels.StartupshomeProperty.GetMainContentStartupshome(this, _publishedValueFallback);
+
+		///<summary>
+		/// EightTextValue
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("eightTextValue")]
+		public virtual string EightTextValue => global::Umbraco.Cms.Web.Common.PublishedModels.StatisticsProperties.GetEightTextValue(this, _publishedValueFallback);
+
+		///<summary>
+		/// EightValue
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("eightValue")]
+		public virtual string EightValue => global::Umbraco.Cms.Web.Common.PublishedModels.StatisticsProperties.GetEightValue(this, _publishedValueFallback);
 
 		///<summary>
 		/// FifthTextValue
@@ -904,6 +1032,22 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("secondValue")]
 		public virtual string SecondValue => global::Umbraco.Cms.Web.Common.PublishedModels.StatisticsProperties.GetSecondValue(this, _publishedValueFallback);
+
+		///<summary>
+		/// SevenTextValue
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("sevenTextValue")]
+		public virtual string SevenTextValue => global::Umbraco.Cms.Web.Common.PublishedModels.StatisticsProperties.GetSevenTextValue(this, _publishedValueFallback);
+
+		///<summary>
+		/// SevenValue
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("sevenValue")]
+		public virtual string SevenValue => global::Umbraco.Cms.Web.Common.PublishedModels.StatisticsProperties.GetSevenValue(this, _publishedValueFallback);
 
 		///<summary>
 		/// SexTextValue

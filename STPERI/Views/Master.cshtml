@@ -113,14 +113,12 @@ var homePage = Umbraco.AssignedContentItem.AncestorOrSelf<HomePage>();
 
 
 </header>
+
  @RenderBody()
 		</div>
-	
-
-@await Html.PartialAsync("~/Views/Partials/footer.cshtml")
 
 </div>
-
+    @await Html.PartialAsync("~/Views/Partials/footer.cshtml")
 
     <script src="/assets/dist/js/bootstrap.bundle.min.js"></script>
 

@@ -9,7 +9,7 @@
 
 
     // Pagination settings
-    var pageSize = 4; // Number of items to display per page
+    var pageSize = 12; // Number of items to display per page
     var currentPage = 1;
     var queryStringPage = HttpContextAccessor.HttpContext.Request.Query["page"];
     if (!string.IsNullOrEmpty(queryStringPage) && int.TryParse(queryStringPage, out currentPage))
@@ -39,7 +39,7 @@
             @foreach (var item in itemsForPage)
           {
              var rowItem = (MeasurementsDetailsItem)item.Content;
-            <div class="col-lg-6 mb-4 aos-item" data-aos="fade-right">
+            <div class="col-lg-3 mb-4 aos-item" data-aos="fade-right">
               <div class="training">
                         <a href="@rowItem.RedirectUrl"></a>
               

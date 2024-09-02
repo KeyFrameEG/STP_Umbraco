@@ -1,0 +1,27 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.FAQ>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+</header>
+<div class="innerbanner fitlayout">
+
+    <div class="clearfix"></div>
+    <h3 class="px-3 aos-item" data-aos="fade-up">FAQ</h3>
+    <div class="clearfix"></div>
+    <div class="clearfix"></div>
+    <img alt="" src="@Model.BannerImage.Url()" />
+</div>
+<div class="w-bg fitlayout paddingabove pt-4 mb-4">
+
+    <div class="container-fluid">
+
+        <div class="row">
+<div class="accordion faqasa" id="accordionExample">
+                @Html.GetBlockListHtml(Model, "MainContentFaqprivacyterm")
+</div>
+        </div>
+    </div>
+
+</div>

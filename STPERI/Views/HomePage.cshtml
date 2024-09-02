@@ -20,10 +20,14 @@
        
 
 @Html.GetBlockListHtml(Model,"MainContent")
-@* @Html.GetBlockListHtml(Model, "MainContentStartupshome") *@
-@Html.GetBlockListHtml(Model,"MainContentOurPark")
+@await Html.PartialAsync("~/Views/Partials/Park.cshtml")
 @await Html.PartialAsync("~/Views/Partials/Statistics.cshtml")
 @Html.GetBlockListHtml(Model,"MainContentServices")
+
+
+@await Html.PartialAsync("~/Views/Partials/NewService.cshtml")
+
+
 @await Html.PartialAsync("~/Views/Partials/OurLabs.cshtml")
     <div class="w-bg fitlayout py-4">
       <div class="container-fluid">
@@ -77,3 +81,5 @@
         setTabFromLocalStorage('myTabGroup2', 'home-tab'); // Ensure 'home-tab' is default
     });
 </script>
+
+

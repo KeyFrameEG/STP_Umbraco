@@ -162,6 +162,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string Gateway => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetGateway(this, _publishedValueFallback);
 
 		///<summary>
+		/// SubscribedFormm
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("subscribedFormm")]
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString SubscribedFormm => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetSubscribedFormm(this, _publishedValueFallback);
+
+		///<summary>
 		/// Subtitle: Enter you sup title
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]

@@ -2413,7 +2413,14 @@ ul.socialfooter {
         width: 100%;
         z-index: 1;
     }
-
+a.BookingLink {
+    display:inline-block;
+    width:100%;
+    margin:0 0 30px;
+}
+a.BookingLink img {
+    width: 100%;
+}
 .carsulholder {
     display: inline-block;
     width: 100%;
@@ -3539,6 +3546,177 @@ span  {
     height: 600px;
     border:none;
 }
+.faqasa .accordion-button.collapsed {
+    background: #f6f8fd;
+    border-radius: 15px;
+    border: 1px #f6f8fd solid;
+    font-weight: 700;
+    color: #000;
+}
+
+.faqasa .accordion-button {
+    background: #fff;
+    margin-bottom: 0;
+    border: 1px #ebebeb solid;
+    border-radius: 15px 15px 0 0;
+    border-bottom: none;
+    text-align: left;
+}
+
+.rtl .faqasa .accordion-button {
+    text-align: right;
+}
+
+.faqasa .accordion-item {
+    border: none;
+    margin-bottom: 15px;
+}
+
+
+
+    .faqasa .accordion-item:first-of-type .accordion-button {
+        border-radius: 15px 15px 0 0;
+    }
+
+        .faqasa .accordion-item:first-of-type .accordion-button.collapsed {
+            border-radius: 15px;
+        }
+
+.faqasa .accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+    outline: none;
+    font-weight: 700;
+    color: #4c79cf;
+}
+
+.faqasa .accordion-collapse {
+    border: 1px #ebebeb solid;
+    border-top: none;
+    border-radius: 0 0 15px 15px;
+}
+
+.faqasa .accordion-item:last-of-type .accordion-collapse {
+    border-radius: 0 0 15px 15px !important;
+}
+
+.faqasa .accordion-item:last-of-type .accordion-button.collapsed {
+    border-radius: 15px !important;
+}
+
+.faqasa .accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.faqasa .accordion-button::after {
+    background-size: 0.8rem;
+}
+
+.rtl .faqasa .accordion-button::after {
+    margin-right: auto;
+    margin-left: unset;
+    background-position: 0px 50%;
+}
+
+.faqasa .accordion-body {
+    padding: 0 1.25rem 1rem;
+}
+
+.fb-page {
+    width: 100%;
+}
+
+.fb_iframe_widget span, .fb_iframe_widget iframe {
+    width: 100% !important;
+}
+
+.alighedPosistion {
+    text-align: left;
+}
+
+.rtl .alighedPosistion {
+    text-align: right;
+}
+
+.usefulLinks h4 {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 20px;
+    color: #000;
+    font-weight: 700;
+}
+
+.usefulLinks ul {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+    .usefulLinks ul li {
+        display: inline-block;
+        width: 100%;
+        margin: 0 0 10px;
+        list-style: none;
+    }
+
+        .usefulLinks ul li a {
+            display: inline-block;
+            color: var(--colordarkblue) !important;
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration: none !important;
+        }
+
+            .usefulLinks ul li a:hover {
+                color: var(--colororange) !important;
+            }
+.fixedMediaa {
+    position: fixed;
+    top: 300px;
+    right: 0;
+    z-index: 10;
+    width: 50px;
+}
+
+.rtl .fixedMediaa {
+    right: auto;
+    left: 0;
+}
+
+.fixedMediaa ul {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+    .fixedMediaa ul li {
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+        margin: 0 0 1px;
+        list-style: none;
+    }
+
+        .fixedMediaa ul li a {
+            display: inline-block;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 25px;
+            color: #fff !important;
+            text-decoration: none !important;
+            background: #0d6efd
+        }
+
+            .fixedMediaa ul li a i {
+                display: inline-block;
+                line-height: 50px;
+            }
 @media (min-width: 1440px) {
 }
 
@@ -3833,9 +4011,14 @@ span  {
 }
 
 @media (max-width: 991px) {
+    .fixedMediaa {
+display:none;
+    }
 
     .videoTour {
-        height:320px;
+        width:calc(100% + 50px);
+        left:-25px;
+        position:relative;
     }
 
     .navbar-light.nav-essal .navbar-nav .nav-link {
@@ -3976,9 +4159,6 @@ span  {
 
 
 @media (max-width: 767px) {
-    .videoTour {
-        height: 150px;
-    }
     .sticky .nav-essal .navbar-toggler {
         right: -125px;
         top: -1px;

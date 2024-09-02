@@ -9,7 +9,7 @@
 
 
     // Pagination settings
-    var pageSize = 4; // Number of items to display per page
+    var pageSize = 12; // Number of items to display per page
     var currentPage = 1;
     var queryStringPage = HttpContextAccessor.HttpContext.Request.Query["page"];
     if (!string.IsNullOrEmpty(queryStringPage) && int.TryParse(queryStringPage, out currentPage))
@@ -39,17 +39,16 @@
             @foreach (var item in itemsForPage)
           {
            var rowItem = (TrainingItem)item.Content;
-            <div class="col-lg-6 mb-4 aos-item" data-aos="fade-right">
+            <div class="col-lg-3 mb-4 aos-item" data-aos="fade-right">
               <div class="training">
-                <a href="@rowItem.RedirectUrl"></a>
-              
-                
-                  <img alt="News title" class="mewsimg" src="@rowItem.Image.Url()" />
+                <a href="@rowItem.RedirectUrl"></a>                            
+               @*    <img alt="News title" class="mewsimg" src="@rowItem.Image.Url()" /> *@
+                  <img alt="News title" class="mewsimg" src="~/assets/images/22.jpg" />
               </div>
               <div class="newsinfo">
                <h3>@rowItem.Title</h3>
                <span>@rowItem.Description</span>
-                        <a href="@rowItem.RedirectUrl">read more</a>
+                      @*   <a href="@rowItem.RedirectUrl">read more</a> *@
             
               </div>
              </div>

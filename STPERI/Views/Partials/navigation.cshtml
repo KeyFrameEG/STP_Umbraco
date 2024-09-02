@@ -41,4 +41,22 @@
   </div>
 </nav>
 
+<div class="fixedMediaa">
+    @if (homePage.FooterSocialLinks != null)
+    {
+        <ul>
+            @foreach (var social in homePage.FooterSocialLinks)
+            {
+                <li>
+                    <a href="@social.Url" target="_blank">
+                        <i class="fa fa-@social.Network"></i>
+                    </a>
+                </li>
+            }
+            <li><a href="https://www.instagram.com/electronics_research_institute/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+
+
+        </ul>
+    }
+</div>
 @await Html.PartialAsync("~/Views/Partials/ModalContent.cshtml")

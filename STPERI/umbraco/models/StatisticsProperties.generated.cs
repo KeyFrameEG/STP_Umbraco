@@ -22,6 +22,16 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 	/// <summary>Statistics Properties</summary>
 	public partial interface IStatisticsProperties : IPublishedElement
 	{
+		/// <summary>EightTextValue</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		string EightTextValue { get; }
+
+		/// <summary>EightValue</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		string EightValue { get; }
+
 		/// <summary>FifthTextValue</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
@@ -66,6 +76,16 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		string SecondValue { get; }
+
+		/// <summary>SevenTextValue</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		string SevenTextValue { get; }
+
+		/// <summary>SevenValue</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		string SevenValue { get; }
 
 		/// <summary>SexTextValue</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
@@ -118,6 +138,32 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		}
 
 		// properties
+
+		///<summary>
+		/// EightTextValue
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("eightTextValue")]
+		public virtual string EightTextValue => GetEightTextValue(this, _publishedValueFallback);
+
+		/// <summary>Static getter for EightTextValue</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		public static string GetEightTextValue(IStatisticsProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "eightTextValue");
+
+		///<summary>
+		/// EightValue
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("eightValue")]
+		public virtual string EightValue => GetEightValue(this, _publishedValueFallback);
+
+		/// <summary>Static getter for EightValue</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		public static string GetEightValue(IStatisticsProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "eightValue");
 
 		///<summary>
 		/// FifthTextValue
@@ -235,6 +281,32 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		public static string GetSecondValue(IStatisticsProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "secondValue");
+
+		///<summary>
+		/// SevenTextValue
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("sevenTextValue")]
+		public virtual string SevenTextValue => GetSevenTextValue(this, _publishedValueFallback);
+
+		/// <summary>Static getter for SevenTextValue</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		public static string GetSevenTextValue(IStatisticsProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "sevenTextValue");
+
+		///<summary>
+		/// SevenValue
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("sevenValue")]
+		public virtual string SevenValue => GetSevenValue(this, _publishedValueFallback);
+
+		/// <summary>Static getter for SevenValue</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		public static string GetSevenValue(IStatisticsProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "sevenValue");
 
 		///<summary>
 		/// SexTextValue
