@@ -20,7 +20,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 {
 	/// <summary>MeasurementsDetails Item</summary>
 	[PublishedModel("measurementsDetailsItem")]
-	public partial class MeasurementsDetailsItem : PublishedElementModel, IDescriptionProperty, IImageProperty, IRedirectUrlProperty, ITitleProperty
+	public partial class MeasurementsDetailsItem : PublishedElementModel, IDescriptionProperty, IImageProperty, IPriceProperty, IRedirectUrlProperty, IText2Property, ITitleProperty
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -66,12 +66,28 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops Image => global::Umbraco.Cms.Web.Common.PublishedModels.ImageProperty.GetImage(this, _publishedValueFallback);
 
 		///<summary>
+		/// Price
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("price")]
+		public virtual string Price => global::Umbraco.Cms.Web.Common.PublishedModels.PriceProperty.GetPrice(this, _publishedValueFallback);
+
+		///<summary>
 		/// RedirectUrl
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("redirectUrl")]
 		public virtual string RedirectUrl => global::Umbraco.Cms.Web.Common.PublishedModels.RedirectUrlProperty.GetRedirectUrl(this, _publishedValueFallback);
+
+		///<summary>
+		/// Text2
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("text2")]
+		public virtual string Text2 => global::Umbraco.Cms.Web.Common.PublishedModels.Text2Property.GetText2(this, _publishedValueFallback);
 
 		///<summary>
 		/// Title

@@ -1,24 +1,64 @@
-@model Umbraco.Forms.Web.Models.FieldViewModel
+﻿@model Umbraco.Forms.Web.Models.FieldViewModel
 @using Umbraco.Forms.Web
 @{
     var settings = Model.AdditionalSettings;
     var autocompleteAttribute = Model.GetSettingValue<string>("AutocompleteAttribute", string.Empty);
     var allowMultiple = settings.ContainsKey("AllowMultipleSelections") && settings["AllowMultipleSelections"].ToLower() == "true";
+
+    var currentCulture = System.Threading.Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName;
+    var placeholderText = currentCulture == "ar" ? "اختر.." : "choose..";
 }
 
-<select class="@Html.GetFormFieldClass(Model.FieldTypeName)"
+<!-- Include Select2 CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+
+<select class="@Html.GetFormFieldClass(Model.FieldTypeName) select2"
         name="@Model.Name"
         id="@Model.Id"
         data-umb="@Model.Id"
-        @if (string.IsNullOrEmpty(autocompleteAttribute) == false) { <text>autocomplete="@autocompleteAttribute"</text> }
-        @if (allowMultiple) { <text> multiple </text> }
-        @if (Model.Mandatory) { <text> data-val="true" data-val-required="@Model.RequiredErrorMessage" </text> }>
+@if (string.IsNullOrEmpty(autocompleteAttribute) == false)
+{
+    <text>autocomplete="@autocompleteAttribute"</text>
+}
+@if (allowMultiple)
+{
+    <text> multiple </text>
+}
+@if (Model.Mandatory)
+{
+    <text> data-val="true" data-val-required="@Model.RequiredErrorMessage" </text>
+}>
     @if (!allowMultiple)
     {
-        <option value=""></option>
+            <option value="" disabled selected>@placeholderText</option>
     }
+
     @foreach (var pv in Model.PreValues)
     {
         @: <option value="@pv.Value" @(Model.ContainsValue(pv.Value) ? "selected" : string.Empty)>@pv.Value</option>
     }
 </select>
+
+<!-- Include jQuery and Select2 JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('.select2').select2({
+            placeholder: "@placeholderText",
+            allowClear: true
+        });
+    });
+</script>
+
+<style>
+    /* Optional: Customize the Select2 styles */
+    .select2-container--default .select2-selection--single {
+        height: 38px; /* Adjust height */
+    }
+
+    .select2-selection__rendered {
+        line-height: 36px; /* Center text vertically */
+    }
+</style>

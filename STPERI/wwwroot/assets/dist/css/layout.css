@@ -1240,10 +1240,39 @@ header.sticky {
         font-size: 22px;
         line-height: 32px;
     }
-
-    .rtl .newsinfo h3  {
-        font-family: "Cairo-bold", sans-serif;
+.PriceCourse {
+    display: inline-block;
+    font-size: 28px;
+    color: var(--colororange);
+    vertical-align: top;
+    text-align: right;
+    line-height: 36px;
+    font-weight: normal;
+}
+.HoursCourse {
+    display: inline-block;
+    font-size: 28px;
+    color: var(--colororange);
+    vertical-align: top;
+    text-align: right;
+    line-height: 36px;
+    position: relative;
+    padding-right: 20px;
+    margin-right: 20px;
+    font-weight: normal;
+}
+    .HoursCourse:before {
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: 40px;
+        background: #ddd;
+        right: 0;
+        top: 20px;
     }
+.rtl .newsinfo h3 {
+    font-family: "Cairo-bold", sans-serif;
+}
 
     .newsinfo span {
         display: inline-block;
@@ -2405,14 +2434,23 @@ ul.socialfooter {
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: 2;
+        z-index: 3;
     }
+.CourseOption {
+    position: absolute;
+    z-index: 2;
+    bottom: 15px;
+    right: 15px;
+    background: #fff;
+    padding:10px 20px;
 
-    .training img {
-        position: relative;
-        width: 100%;
-        z-index: 1;
-    }
+}
+
+.training img {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
 a.BookingLink {
     display:inline-block;
     width:100%;

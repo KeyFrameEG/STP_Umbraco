@@ -9,7 +9,7 @@
 
 
     // Pagination settings
-    var pageSize = 12; // Number of items to display per page
+    var pageSize = 8; // Number of items to display per page
     var currentPage = 1;
     var queryStringPage = HttpContextAccessor.HttpContext.Request.Query["page"];
     if (!string.IsNullOrEmpty(queryStringPage) && int.TryParse(queryStringPage, out currentPage))
@@ -43,6 +43,14 @@
               <div class="training">
                 <a href="@rowItem.RedirectUrl"></a>                            
                @*    <img alt="News title" class="mewsimg" src="@rowItem.Image.Url()" /> *@
+                    <div class="CourseOption">
+                            <b class="HoursCourse">@rowItem.HoursCourse <br /> @rowItem.Text</b>
+                            <strong class="PriceCourse">
+                                @rowItem.Price
+                                <br />@rowItem.Text2
+                            </strong>
+                           
+                    </div>
                   <img alt="News title" class="mewsimg" src="~/assets/images/22.jpg" />
               </div>
               <div class="newsinfo">

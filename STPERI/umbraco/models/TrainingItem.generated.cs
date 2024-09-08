@@ -20,7 +20,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 {
 	/// <summary>Training Item</summary>
 	[PublishedModel("trainingItem")]
-	public partial class TrainingItem : PublishedElementModel, IDescriptionProperty, IImageProperty, IRedirectUrlProperty, ITitleProperty
+	public partial class TrainingItem : PublishedElementModel, IDescriptionProperty, IHours, IImageProperty, IPriceProperty, IRedirectUrlProperty, IText2Property, ITextProperty, ITitleProperty
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -58,6 +58,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString Description => global::Umbraco.Cms.Web.Common.PublishedModels.DescriptionProperty.GetDescription(this, _publishedValueFallback);
 
 		///<summary>
+		/// Hours
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("hoursCourse")]
+		public virtual string HoursCourse => global::Umbraco.Cms.Web.Common.PublishedModels.Hours.GetHoursCourse(this, _publishedValueFallback);
+
+		///<summary>
 		/// Image
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
@@ -66,12 +74,36 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops Image => global::Umbraco.Cms.Web.Common.PublishedModels.ImageProperty.GetImage(this, _publishedValueFallback);
 
 		///<summary>
+		/// Price
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("price")]
+		public virtual string Price => global::Umbraco.Cms.Web.Common.PublishedModels.PriceProperty.GetPrice(this, _publishedValueFallback);
+
+		///<summary>
 		/// RedirectUrl
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("redirectUrl")]
 		public virtual string RedirectUrl => global::Umbraco.Cms.Web.Common.PublishedModels.RedirectUrlProperty.GetRedirectUrl(this, _publishedValueFallback);
+
+		///<summary>
+		/// Text2
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("text2")]
+		public virtual string Text2 => global::Umbraco.Cms.Web.Common.PublishedModels.Text2Property.GetText2(this, _publishedValueFallback);
+
+		///<summary>
+		/// Text
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("text")]
+		public virtual string Text => global::Umbraco.Cms.Web.Common.PublishedModels.TextProperty.GetText(this, _publishedValueFallback);
 
 		///<summary>
 		/// Title

@@ -42,14 +42,21 @@
             <div class="col-lg-3 mb-4 aos-item" data-aos="fade-right">
               <div class="training">
                         <a href="@rowItem.RedirectUrl"></a>
-              
-                
+
+                        <div class="CourseOption">
+                           @*  <b class="HoursCourse">@rowItem.HoursCourse <br /> @rowItem.Text</b> *@
+                            <strong class="PriceCourse">
+                                @rowItem.Price
+                                <br />@rowItem.Text2
+                            </strong>
+
+                        </div>
                   <img alt="News title" class="mewsimg" src="@rowItem.Image.Url()" />
               </div>
               <div class="newsinfo">
                <h3>@rowItem.Title</h3>
                <span>@rowItem.Description</span>
-                        <a href="@rowItem.RedirectUrl">read more</a>
+                        @* <a href="@rowItem.RedirectUrl">read more</a> *@
             
               </div>
              </div>
