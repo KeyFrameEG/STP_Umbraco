@@ -88,6 +88,9 @@ var homePage = Umbraco.AssignedContentItem.AncestorOrSelf<HomePage>();
 
 <div class="flexheight d-flex align-items-start flex-column">
 <div class="mb-auto w-100">
+            <div class="test_Version animate-flicker">
+                <span class="arabic_style">تحت الانشاء </span><span class="english_style">Under Construction </span>
+            </div>
 <header class="header shadow-sm">
     <div class="logo">
           <a href="@homePage.LogoUrl">
@@ -95,6 +98,7 @@ var homePage = Umbraco.AssignedContentItem.AncestorOrSelf<HomePage>();
           <img alt="SCIENCE & TECHNOLOGY PARK FOR ELECTRONICS RESEARCH & INDUSTRY" class="logotext" src="@homePage.LogoText.Url()" />
       </a>
   </div>
+
 
 <div class="form-group lang">
     <select class="form-select" id="languageSelector" onchange="changeLanguage()">

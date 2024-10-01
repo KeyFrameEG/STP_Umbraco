@@ -40,14 +40,14 @@
                 var rowItem = (ManufacturingDetailsItem)item.Content;
             <div class="col-lg-6 mb-4 aos-item" data-aos="fade-right">
               <div class="training">
-                        <a href="@rowItem.RedirectUrl"></a>
+                        <a href="@rowItem?.RedirectUrl"></a>
               
                 
-                  <img alt="News title" class="mewsimg" src="@rowItem.Image.Url()" />
+                  <img alt="News title" class="mewsimg" src="@rowItem?.Image.Url()" />
               </div>
               <div class="newsinfo">
-               <h3>@rowItem.Title</h3>
-               <span>@rowItem.Description</span>
+               <h3>@rowItem?.Title</h3>
+               <span>@rowItem?.Description</span>
                        @*  <a href="@rowItem.RedirectUrl">read more</a> *@
             
               </div>

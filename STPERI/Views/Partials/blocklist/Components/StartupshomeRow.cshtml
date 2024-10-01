@@ -17,14 +17,14 @@
         var rowItem = (StartupshomeItem)item.Content;
           <div class="col-lg-3 col-6 mb-4">
                 <div class="StartupHome">
-                <a href="@rowItem.RedirectUrl" class="LinkStartup"></a>
+                <a href="@rowItem?.RedirectUrl" class="LinkStartup"></a>
                 <div class="ImageStartUpHome">
-                    <img alt="Incubators" src="@rowItem.Image.Url()" />
+                    <img alt="Incubators" src="@rowItem?.Image.Url()" />
                 </div>
-                    <h3>@rowItem.Title</h3>
+                    <h3>@rowItem?.Title</h3>
                </div>
           </div>
           }
     <div class="newsinfo mt-4">
-        <a href="/allstartups">@row.Subtitle</a>
+        <a href="/allstartups">@row?.Subtitle</a>
     </div>

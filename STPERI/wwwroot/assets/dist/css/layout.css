@@ -3755,6 +3755,95 @@ span  {
                 display: inline-block;
                 line-height: 50px;
             }
+
+.test_Version {
+    position:fixed;
+    right:0;
+    top:120px;
+    padding:0 20px;
+    border:2px red solid;
+    height:36px;
+    line-height:30px;
+    font-size:18px;
+    color:red;
+    z-index:100;
+    background:#fff;
+}
+.rtl .test_Version {
+    left: 0;
+    right:auto;
+}
+.arabic_style {
+    display:none;
+}
+.rtl .arabic_style {
+    display: block;
+}
+.rtl .english_style {
+    display: none;
+}
+@keyframes flickerAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes flickerAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes flickerAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes flickerAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.animate-flicker {
+    -webkit-animation: flickerAnimation 2s infinite;
+    -moz-animation: flickerAnimation 2s infinite;
+    -o-animation: flickerAnimation 2s infinite;
+    animation: flickerAnimation 2s infinite;
+}
 @media (min-width: 1440px) {
 }
 
