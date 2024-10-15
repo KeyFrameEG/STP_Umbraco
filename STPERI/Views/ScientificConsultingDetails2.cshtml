@@ -30,33 +30,37 @@
            <div class="row">
 
             <div class="col-lg-10 my-4 aos-item" data-aos="fade-dowb">
-              <h2 class="migatitle mb-4">@Model.OfferTitle</h2>
+                <h2 class="migatitle mb-4">@Html.Raw(Html.Encode(Model.OfferTitle)?.Replace("&#xA0;", "&nbsp;"))</h2>
             </div>
 
 
             <div class="col-lg-6 mb-4 aos-item" data-aos="fade-right">
               <div class="quoatline">
-                 @Model.OfferFirstDescription          </div>
+                    @Html.Raw(Html.Encode(Model.OfferFirstDescription)?.Replace("&#xA0;", "&nbsp;"))
+                </div>
              </div>
 
 
              <div class="col-lg-6 mb-4 aos-item" data-aos="fade-left">
               <div class="quoatline">
-              @Model.OfferSecondDescription      </div>
+                    @Html.Raw(Html.Encode(Model.OfferSecondDescription)?.Replace("&#xA0;", "&nbsp;"))
+                </div>
              </div>
 
              <div class="col-lg-6 mb-4 aos-item" data-aos="fade-right">
               <div class="quoatline">
-               @Model.OfferThirdDescription            </div>
+                    @Html.Raw(Html.Encode(Model.OfferThirdDescription)?.Replace("&#xA0;", "&nbsp;"))
+                </div>
              </div>
 
              <div class="col-lg-6 mb-4 aos-item" data-aos="fade-left">
               <div class="quoatline">
-              @Model.OfferForthDescription             </div>
+                     @Html.Raw(Html.Encode(Model.OfferForthDescription)?.Replace("&#xA0;", "&nbsp;"))
+                </div>
              </div>
 
              <div class="col-lg-10 my-5 aos-item" data-aos="fade-up">
-              <h2 class="migatitle mb-4">@Model.GalleryTitle</h2>
+                <h2 class="migatitle mb-4">@Html.Raw(Html.Encode(Model.GalleryTitle)?.Replace("&#xA0;", "&nbsp;"))</h2>
             </div>
 
              

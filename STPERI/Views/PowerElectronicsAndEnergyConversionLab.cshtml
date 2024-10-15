@@ -8,15 +8,15 @@
 
     <div class="innerbanner fitlayout">
 
-        <h3 class="px-3 aos-item" data-aos="fade-up">@Model.Subtitle</h3>
+    <h3 class="px-3 aos-item" data-aos="fade-up">@Html.Raw(Html.Encode(Model.Subtitle)?.Replace("&#xA0;", "&nbsp;"))</h3>
         <div class="clearfix"></div>
         <span class="px-3 aos-item" data-aos="fade-up">
-         @Model.CentralLabsDetailsDescription
+        @Html.Raw(Html.Encode(Model.CentralLabsDetailsDescription)?.Replace("&#xA0;", "&nbsp;"))
         </span>
         <div class="clearfix"></div>
 
-       
-        <img alt="" src="@Model.BannerImage.Url()" />
+
+    <img alt="" src="@Html.Raw(Html.Encode(Model.BannerImage.Url())?.Replace("&#xA0;", "&nbsp;"))" />
     </div>
 
 
@@ -27,21 +27,21 @@
            <div class="row">
 
             <div class="col-lg-12 my-4 aos-item" data-aos="fade-up">
-                <h2 class="migatitle">@Model.Description</h2>
+                <h2 class="migatitle">@Html.Raw(Html.Encode(Model.Description)?.Replace("&#xA0;", "&nbsp;"))</h2>
             </div>
 
 
 
             <div class="col-md-6 mb-3 aos-item" data-aos="fade-right">
               <div class="quoatline">
-				@Model.FirstDescriptionLabDetails
+                   @Html.Raw(Html.Encode(Model.FirstDescriptionLabDetails)?.Replace("&#xA0;", "&nbsp;"))
               </div>
             </div>
 
 
             <div class="col-md-6 mb-3 aos-item" data-aos="fade-left">
               <div class="quoatline">
-				@Model.SecondDescriptionLabDetails
+                    @Html.Raw(Html.Encode(Model.SecondDescriptionLabDetails)?.Replace("&#xA0;", "&nbsp;"))
               </div>
             </div>
 
