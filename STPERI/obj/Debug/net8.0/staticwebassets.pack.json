@@ -1,0 +1,549 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\css\\animations.min.css",
+      "PackagePath": "staticwebassets\\assets\\dist\\css\\animations.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\css\\aos.css",
+      "PackagePath": "staticwebassets\\assets\\dist\\css\\aos.css"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\assets\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\css\\feather.css",
+      "PackagePath": "staticwebassets\\assets\\dist\\css\\feather.css"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\css\\film_roll.css",
+      "PackagePath": "staticwebassets\\assets\\dist\\css\\film_roll.css"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\assets\\dist\\css\\font-awesome.css"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\css\\graphikarabic.css",
+      "PackagePath": "staticwebassets\\assets\\dist\\css\\graphikarabic.css"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\css\\layout.css",
+      "PackagePath": "staticwebassets\\assets\\dist\\css\\layout.css"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\fonts\\Cairo-Bold.ttf",
+      "PackagePath": "staticwebassets\\assets\\dist\\fonts\\Cairo-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\fonts\\Cairo-Regular.ttf",
+      "PackagePath": "staticwebassets\\assets\\dist\\fonts\\Cairo-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\assets\\dist\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\fonts\\Poppins-Bold.ttf",
+      "PackagePath": "staticwebassets\\assets\\dist\\fonts\\Poppins-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\fonts\\Poppins-Regular.ttf",
+      "PackagePath": "staticwebassets\\assets\\dist\\fonts\\Poppins-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\fonts\\feather.eot",
+      "PackagePath": "staticwebassets\\assets\\dist\\fonts\\feather.eot"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\fonts\\feather.svg",
+      "PackagePath": "staticwebassets\\assets\\dist\\fonts\\feather.svg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\fonts\\feather.ttf",
+      "PackagePath": "staticwebassets\\assets\\dist\\fonts\\feather.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\fonts\\feather.woff",
+      "PackagePath": "staticwebassets\\assets\\dist\\fonts\\feather.woff"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\assets\\dist\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\assets\\dist\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\assets\\dist\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\assets\\dist\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\assets\\dist\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\js\\aos.js",
+      "PackagePath": "staticwebassets\\assets\\dist\\js\\aos.js"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\assets\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\assets\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\assets\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\assets\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\assets\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\assets\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\assets\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\assets\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\js\\jquery-1.12.4.min.js",
+      "PackagePath": "staticwebassets\\assets\\dist\\js\\jquery-1.12.4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\js\\jquery-3.7.1.min.js",
+      "PackagePath": "staticwebassets\\assets\\dist\\js\\jquery-3.7.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\js\\jquery-migrate-3.3.2.min.js",
+      "PackagePath": "staticwebassets\\assets\\dist\\js\\jquery-migrate-3.3.2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\js\\jquery.film_roll.js",
+      "PackagePath": "staticwebassets\\assets\\dist\\js\\jquery.film_roll.js"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\js\\jquery.film_roll.min.js",
+      "PackagePath": "staticwebassets\\assets\\dist\\js\\jquery.film_roll.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\dist\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\assets\\dist\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\js\\scroll-smooth.js",
+      "PackagePath": "staticwebassets\\assets\\dist\\js\\scroll-smooth.js"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\js\\touchSwipe.min.js",
+      "PackagePath": "staticwebassets\\assets\\dist\\js\\touchSwipe.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\22.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\22.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\Ar.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Ar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\CEO.png",
+      "PackagePath": "staticwebassets\\assets\\images\\CEO.png"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\En.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\En.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\Incubators.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\Incubators.svg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\Rnker.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Rnker.png"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\about1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\about1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\about2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\about2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\achievements.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\achievements.svg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\activity1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\activity1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\activity2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\activity2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\activity3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\activity3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\activity4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\activity4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\banner-home.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner-home.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\bannerabout.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bannerabout.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\brand_1_1.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\brand_1_1.svg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\brand_1_3.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\brand_1_3.svg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\brand_1_4.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\brand_1_4.svg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\brand_1_5.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\brand_1_5.svg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\brand_1_6.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\brand_1_6.svg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\brand_1_7.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\brand_1_7.svg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\brand_1_8.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\brand_1_8.svg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\contactbanner.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\contactbanner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\cropped-favicon-180x180.png",
+      "PackagePath": "staticwebassets\\assets\\images\\cropped-favicon-180x180.png"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\cropped-favicon-192x192.png",
+      "PackagePath": "staticwebassets\\assets\\images\\cropped-favicon-192x192.png"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\cropped-favicon-270x270.png",
+      "PackagePath": "staticwebassets\\assets\\images\\cropped-favicon-270x270.png"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\cropped-favicon-32x32.png",
+      "PackagePath": "staticwebassets\\assets\\images\\cropped-favicon-32x32.png"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\development.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\development.svg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\emp1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\emp1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\emp2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\emp2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\emp3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\emp3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\emp4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\emp4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\lab1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\lab1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\lab2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\lab2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\lab3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\lab3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\labbanner.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\labbanner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\location.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\location.svg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\logo-footer.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\logo-footer.svg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\logo-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\logo-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\logo-text.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\logo-text.svg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\logoyoum7 1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logoyoum7 1.png"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\mailbox-flag.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\mailbox-flag.svg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\news.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\news.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\newsbanner.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\newsbanner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\newspaper.png",
+      "PackagePath": "staticwebassets\\assets\\images\\newspaper.png"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\potential.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\potential.svg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\robbot.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\robbot.svg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\service1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\service1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\service2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\service2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\service3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\service3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\sevvice_second.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\sevvice_second.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\startups.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\startups.svg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\testmonial1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\testmonial1.png"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\testmonial2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\testmonial2.png"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\tour1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\tour1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\tour2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\tour2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\tour3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\tour3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\train-details.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\train-details.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\train1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\train1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\train2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\train2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\train3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\train3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\train4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\train4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\assets\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\assets\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\owlcarousel\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\assets\\owlcarousel\\owl.carousel.js"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\vendors\\jquery.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendors\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\yout\\lib\\jquery-1.10.1.min.js",
+      "PackagePath": "staticwebassets\\assets\\yout\\lib\\jquery-1.10.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\yout\\lib\\jquery-1.9.0.min.js",
+      "PackagePath": "staticwebassets\\assets\\yout\\lib\\jquery-1.9.0.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\yout\\lib\\jquery.mousewheel-3.0.6.pack.js",
+      "PackagePath": "staticwebassets\\assets\\yout\\lib\\jquery.mousewheel-3.0.6.pack.js"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\yout\\lib\\video.js",
+      "PackagePath": "staticwebassets\\assets\\yout\\lib\\video.js"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\yout\\source\\blank.gif",
+      "PackagePath": "staticwebassets\\assets\\yout\\source\\blank.gif"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\yout\\source\\fancybox_loading.gif",
+      "PackagePath": "staticwebassets\\assets\\yout\\source\\fancybox_loading.gif"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\yout\\source\\fancybox_loading@2x.gif",
+      "PackagePath": "staticwebassets\\assets\\yout\\source\\fancybox_loading@2x.gif"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\yout\\source\\fancybox_overlay.png",
+      "PackagePath": "staticwebassets\\assets\\yout\\source\\fancybox_overlay.png"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\yout\\source\\fancybox_sprite.png",
+      "PackagePath": "staticwebassets\\assets\\yout\\source\\fancybox_sprite.png"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\yout\\source\\fancybox_sprite@2x.png",
+      "PackagePath": "staticwebassets\\assets\\yout\\source\\fancybox_sprite@2x.png"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\yout\\source\\helpers\\fancybox_buttons.png",
+      "PackagePath": "staticwebassets\\assets\\yout\\source\\helpers\\fancybox_buttons.png"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\yout\\source\\helpers\\jquery.fancybox-buttons.css",
+      "PackagePath": "staticwebassets\\assets\\yout\\source\\helpers\\jquery.fancybox-buttons.css"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\yout\\source\\helpers\\jquery.fancybox-buttons.js",
+      "PackagePath": "staticwebassets\\assets\\yout\\source\\helpers\\jquery.fancybox-buttons.js"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\yout\\source\\helpers\\jquery.fancybox-media.js",
+      "PackagePath": "staticwebassets\\assets\\yout\\source\\helpers\\jquery.fancybox-media.js"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\yout\\source\\helpers\\jquery.fancybox-thumbs.css",
+      "PackagePath": "staticwebassets\\assets\\yout\\source\\helpers\\jquery.fancybox-thumbs.css"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\yout\\source\\helpers\\jquery.fancybox-thumbs.js",
+      "PackagePath": "staticwebassets\\assets\\yout\\source\\helpers\\jquery.fancybox-thumbs.js"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\yout\\source\\jquery.fancybox.css",
+      "PackagePath": "staticwebassets\\assets\\yout\\source\\jquery.fancybox.css"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\yout\\source\\jquery.fancybox.js",
+      "PackagePath": "staticwebassets\\assets\\yout\\source\\jquery.fancybox.js"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\yout\\source\\jquery.fancybox.pack.js",
+      "PackagePath": "staticwebassets\\assets\\yout\\source\\jquery.fancybox.pack.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.STPERI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.STPERI.props",
+      "PackagePath": "build\\STPERI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.STPERI.props",
+      "PackagePath": "buildMultiTargeting\\STPERI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.STPERI.props",
+      "PackagePath": "buildTransitive\\STPERI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

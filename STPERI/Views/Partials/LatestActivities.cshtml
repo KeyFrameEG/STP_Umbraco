@@ -1,0 +1,39 @@
+   @inherits UmbracoViewPage
+    @{
+      var homePage = Model.AncestorOrSelf<HomePage>();
+    }
+<div class="w-bg fitlayout py-4">
+
+    <div class="container-fluid">
+   <div class="row">
+      @Html.GetBlockListHtml(Model,"MainContentNewspaper")
+
+            <div class="clearfix" id="mapLocation"></div>
+
+            <div class="col-lg-5 align-self-center mt-5 pt-5">
+            <div class="locationdata">
+                  <h3>@homePage.OurFeaturedLocationTitle</h3>
+
+                  <ul>
+                      <li>@homePage.FirstPointOurFeaturedLocation</li>
+                      <li>@homePage.SecondPointOurFeaturedLocation </li>
+                      <li>@homePage.ThirdPointOurFeaturedLocation</li>
+                  </ul>
+            </div>
+           </div>
+
+
+           <div class="col-lg-7 align-self-center mt-5">
+                
+               <div class="mapframe mt-5">
+                  <span>@homePage.MapTitleOurFeaturedLocation</span>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13802.91560920779!2d31.380945!3d30.13057!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145816e6032f2be9%3A0x324ae1eec9802809!2sElectronics%20Research%20Institute%20(ERI)!5e0!3m2!1sen!2seg!4v1722780810936!5m2!1sen!2seg" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               </div>
+               
+           </div>
+
+        </div>
+
+
+    </div>
+ </div>

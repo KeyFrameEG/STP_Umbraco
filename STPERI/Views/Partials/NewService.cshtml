@@ -1,0 +1,20 @@
+   @inherits UmbracoViewPage
+    @{
+      var homePage = Model.AncestorOrSelf<HomePage>();
+    }
+
+<div class="gray-bg fitlayout py-4" id="Services">
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-lg-12 text-center mt-4">
+                <a class="BookingLink" href="@homePage.HostingUrl">
+                    <img src="@homePage.HostingImage.Url()" />
+                </a>
+            </div>
+
+    </div>
+</div>
+</div>

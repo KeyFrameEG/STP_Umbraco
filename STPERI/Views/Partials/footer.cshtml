@@ -1,0 +1,153 @@
+    @inherits UmbracoViewPage
+    @{
+      var homePage = Model.AncestorOrSelf<HomePage>();
+    }
+<div class="w-bg fitlayout text-center pt-4 paddingabove">
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-lg-3 alighedPosistion">
+                <div class="fb-page"
+                     data-href="https://www.facebook.com/profile.php?id=100064893690092"
+                     data-tabs="timeline"
+                     data-width=""
+                     data-height="300"
+                     data-small-header="false"
+                     data-adapt-container-width="true"
+                     data-hide-cover="false"
+                     data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/profile.php?id=100064893690092" class="fb-xfbml-parse-ignore">
+                        <a href="https://www.facebook.com/profile.php?id=100064893690092">STP</a>
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="col-lg-6 alighedPosistion">
+
+                <h2 class="migatitle mb-3">@homePage.BeUpdatedTitle</h2>
+                <h6 class="mb-5">@homePage.BeUpdatedDescription</h6>
+                <div class="clearfix"></div>
+                <div class="newsletter">
+                    @Model.Value("SubscribedFormm")
+                </div>
+            </div>
+            <div class="col-lg-3 usefulLinks alighedPosistion">
+                <h4>@homePage.UsefulLinks</h4>
+                <ul>
+                    <li><a href="@homePage.FAqurl">@homePage.FAQ</a></li>
+                    <li><a href="@homePage.PolicyPrivacyUrl">@homePage.PolicyPrivacy</a></li>
+                    <li><a href="@homePage.TermsofUseUrl">@homePage.TermsofUse</a></li>
+                </ul>
+                <p>Visitor Count <span class="h4 fw-bold" id="visitorCount">0</span> </p>
+                <script async defer crossorigin="anonymous"
+                        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0"
+                        nonce="dXhsXlg5"></script>
+                <script>
+                    // Check if a visitor count exists in localStorage
+                    if (localStorage.getItem('visitCount')) {
+                        // Increment the count
+                        var visitCount = parseInt(localStorage.getItem('visitCount')) + 1;
+                    } else {
+                        // Set the count to 1 if this is the first visit
+                        var visitCount = 1;
+                    }
+
+                    // Save the updated count to localStorage
+                    localStorage.setItem('visitCount', visitCount);
+
+                    // Display the visitor count on the page
+                    document.getElementById('visitorCount').innerText = visitCount;
+                </script>
+
+            </div>
+        </div>
+    </div>
+</div>
+    <footer class="fitlayout">
+   
+        <div class="container-fluid position-relative">
+
+          <button class="chatbtn">
+        <img alt="Chat with Us" src="assets/images/robbot.svg" />
+        <span>Chat with Us</span>
+      </button>
+
+      <div class="chatbox">
+        <button class="closerobot"><i class="feather icon-x"></i></button>
+          <div class="chatheader">
+            <img alt="" src="assets//images/robbot.svg" />
+            Chat with Us 
+          </div>
+          <div class="chatrows">
+          <div class="datechat">
+            28 08 2024
+          </div>
+            <div class="robotside">
+                  <img alt="" src="assets/images/robbot.svg" />
+                  <div class="outputchat"><span>Hi, How Can I help you?</span></div>
+                  <small>11:00 AM</small>
+            </div>
+            <div class="clientside">
+                <span>AI Conferences</span>
+                <small>11:00 AM</small>
+            </div>
+
+            <div class="robotside">
+              <img alt="" src="assets/images/robbot.svg" />
+              <div class="outputchat">
+                <span>Here "AI conferences" results:</span>
+                <div class="clearfix"></div>
+                  <a href="#">Home</a>
+                  <div class="clearfix"></div>
+                  <a href="#">CentralLabsDetails</a>
+              </div>
+              <small>11:00 AM</small>
+          </div>
+          </div>
+          <div class="typeingchat">
+              <input type="text" placeholder="Message" />
+              <button><img alt="" src="assets/images/send-stp.svg" /></button>
+          </div>
+      </div>
+
+            <div class="row">
+
+              <div class="col-md-4  align-self-center mb-3">
+
+                <img alt="" src="@homePage.FooterLogo.Url()" />
+              </div>
+
+                <div class="col-md-4 align-self-center text-center">
+                   
+
+                 
+                  @if(homePage.FooterSocialLinks!=null)
+                  {
+                    <ul class="socialfooter">
+                      @foreach(var social in homePage.FooterSocialLinks)
+                      {
+                       <li>
+                          <a href="@social.Url" target="_blank">
+                            <i class="fa fa-@social.Network"></i>
+                          </a>
+                        </li>
+                      }
+                        <li><a href="https://www.instagram.com/electronics_research_institute/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+
+
+                    </ul>              
+                  }
+
+                </div>
+            
+                <div class="col-md-4 align-self-center endside">
+                @homePage.RightsReserved
+                </div>
+               
+
+
+            </div>
+        </div>
+    </footer>

@@ -1,0 +1,284 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.ContactPage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@using Umbraco.Forms.Web
+@{
+	Layout = null;
+    @Html.SetFormFieldClass("form-control")
+    // var currentCulture = System.Threading.Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName;
+}
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SCIENCE & TECHNOLOGY PARK FOR ELECTRONICS RESEARCH & INDUSTRY</title>
+    <link rel="icon" href="/assets/images/cropped-favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="/assets/images/cropped-favicon-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/cropped-favicon-180x180.png" />
+    <meta name="msapplication-TileImage" content="/assets/images/cropped-favicon-270x270.png" />
+    <!-- Bootstrap core CSS -->
+    <link href="/assets/dist/css/animations.min.css" rel="stylesheet">
+    <link href='/assets/owl.carousel.min.css' rel='stylesheet' type='text/css' />
+	<link href='/assets/owl.theme.default.min.css' rel='stylesheet' type='text/css' />
+    <link href="/assets/dist/css/layout.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/dist/css/aos.css" />
+    <script src="/assets/dist/js/jquery-1.12.4.min.js"></script>
+    <script src="/assets/dist/js/scroll-smooth.js"></script>
+    <script type="text/javascript" src="/assets/owlcarousel/owl.carousel.js"></script>
+     @Html.RenderUmbracoFormDependencies(Url)
+    <script type="text/javascript">
+      $(document).ready(function () {
+          // grab the initial top offset of the navigation
+          var stickyNavTop = $('.header').offset().top;
+  
+          // our function that decides weather the navigation bar should have "fixed" css position or not.
+          var stickyNav = function () {
+              var scrollTop = $(window).scrollTop(); // our current vertical position from the top
+  
+              // if we've scrolled more than the navigation, change its position to fixed to stick to top,
+              // otherwise change it back to relative
+              if (scrollTop > stickyNavTop) {
+                  $('.header').addClass('sticky');
+              } else {
+                  $('.header').removeClass('sticky');
+              }
+          };
+  
+          stickyNav();
+          // and run it again every time you scroll
+          $(window).scroll(function () {
+              stickyNav();
+          });
+      });
+  </script>
+    <style>
+        .error-message {
+            color: red;
+            display: none;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            var isValid = true;
+            var searchInput = document.getElementById('q');
+            var arabicSearchInput = document.querySelector('.arside');
+            var errorMessage = document.getElementById('errorMessage');
+            var pattern = /^[A-Za-z\u0621-\u064A\s]+$/;
+
+            // Reset error messages
+            errorMessage.style.display = 'none';
+
+            if (!pattern.test(searchInput.value) || !pattern.test(arabicSearchInput.value)) {
+                errorMessage.style.display = 'block';
+                isValid = false;
+            }
+
+            return isValid;
+        }
+    </script>
+</head>
+
+
+
+<body>
+
+ <div class="flexheight d-flex align-items-start flex-column">
+  <div class="mb-auto w-100">
+            <div class="test_Version animate-flicker">
+                <span class="arabic_style">تحت الانشاء </span><span class="english_style">Under Construction </span>
+            </div>
+    <header class="header shadow-sm">
+      <div class="logo">
+        <a href="@Model.LogoLink">
+            <img alt="SCIENCE & TECHNOLOGY PARK FOR ELECTRONICS RESEARCH & INDUSTRY" class="logoIcon" src="/assets/images/logo-icon.svg" />
+            <img alt="SCIENCE & TECHNOLOGY PARK FOR ELECTRONICS RESEARCH & INDUSTRY" class="logotext" src="/assets/images/logo-text.svg" />
+        </a>
+    </div>
+
+
+                <div class="form-group lang">
+                    <select class="form-select" id="languageSelector" onchange="changeLanguage()">
+                        <option value="en" selected>En</option>
+                        <option value="ar">Ar</option>
+                        <option value="fr">Fr</option>
+                    </select>
+                </div>
+  
+                <button onclick="newFunction()" class="searchbtn"><i class="feather icon-search"></i></button>
+
+                @await Html.PartialAsync("~/Views/Partials/SearchForm.cshtml")
+@await Html.PartialAsync("~/Views/Partials/navigation.cshtml")
+  
+    </header>
+
+    <div class="innerbanner fitlayout">
+
+        <h3 class="px-3 aos-item" data-aos="fade-up">Contact</h3>
+        <div class="clearfix"></div>
+@*         <span class="px-3 aos-item" data-aos="fade-up">
+          Lorem ipsum dolor sit amet consectetur. Enim enim nisl ac metus.Lorem ipsum dolor sit amet consectetur. Enim enim nisl .
+        </span> *@
+
+        <div class="row mapup">
+          <div class="col-lg-6 mt-4 px-0 aos-item" data-aos="fade-right">
+            
+              @Model.Value("contactForm")
+            
+        </div>
+
+
+        <div class="col-lg-6 align-self-center mt-4 px-4 aos-item" data-aos="fade-left">
+                
+          <div class="mapframecontact">
+             <span>Joseph Tito St, Huckstep, El Nozha, Cairo, Egypt. P.O.Box: 12622</span>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13802.91560920779!2d31.380945!3d30.13057!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145816e6032f2be9%3A0x324ae1eec9802809!2sElectronics%20Research%20Institute%20(ERI)!5e0!3m2!1sen!2seg!4v1722780810936!5m2!1sen!2seg" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           </div>
+          
+      </div>
+      
+        </div>
+        <img alt="" src="/assets/images/contactbanner.jpg" />
+    </div>
+</div>
+    <footer class="fitlayout">
+
+      <!--  <button class="chatbtn">
+        <img alt="Chat with Us" src="/assets/images/robbot.svg" />
+        <span>Chat with Us</span>
+      </button> -->
+        <div class="container-fluid">
+            <div class="row">
+
+              <div class="col-md-4  align-self-center mb-3">
+
+                <img alt="" src="/assets/images/logo-footer.svg" />
+              </div>
+
+                <div class="col-md-4 align-self-center text-center">
+                   
+
+                 
+
+                    <ul class="socialfooter">
+                            <li><a href="https://www.youtube.com/channel/UC3SX500jxi8wGMP4vbKCUMg"><i class="fa fa-youtube-play"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/electronics-research-institute-2b8352267/"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://www.instagram.com/electronics_research_institute/"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100064893690092"><i class="fa fa-facebook"></i></a></li>
+                    </ul>
+
+                   
+
+                    
+
+                </div>
+
+               
+
+               
+                <div class="col-md-4 align-self-center endside">
+                  @Model.FooterText
+                </div>
+               
+
+
+            </div>
+        </div>
+    </footer>
+
+</div>
+   
+
+    <script src="/assets/dist/js/bootstrap.bundle.min.js"></script>
+
+   
+
+	<script type="text/javascript" src="/assets/dist/js/main.js"></script>
+
+
+<script src="/assets/dist/js/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>  
+<script>
+  function newFunction() {
+     var element = document.getElementById("myDIV");
+     element.classList.add("mystyle");
+  }
+
+  function closesearch() {
+     var element = document.getElementById("myDIV");
+     element.classList.remove("mystyle");
+  }
+
+  function outsidesearch() {
+     var element = document.getElementById("myDIV");
+     element.classList.remove("mystyle");
+  }
+  </script>
+    <script>
+        function changeLanguage() {
+            var lang = document.getElementById("languageSelector").value;
+            var currentUrl = window.location.href;
+            var baseUrl = window.location.origin;
+
+            if (lang === "ar") {
+                if (!currentUrl.includes('/ar/')) {
+                    window.location.href = currentUrl.replace(baseUrl, baseUrl + '/ar');
+                } else {
+                    applyRtlStyles();
+                }
+            } else if (lang === "fr") {
+                if (!currentUrl.includes('/fr/')) {
+                    window.location.href = currentUrl.includes('/ar/') ?
+                        currentUrl.replace('/ar/', '/fr/') :
+                        currentUrl.replace(baseUrl, baseUrl + '/fr');
+                } else {
+                    applyLtrStyles();
+                }
+            } else {
+                if (currentUrl.includes('/ar/')) {
+                    window.location.href = currentUrl.replace('/ar/', '/');
+                } else if (currentUrl.includes('/fr/')) {
+                    window.location.href = currentUrl.replace('/fr/', '/');
+                } else {
+                    applyLtrStyles();
+                }
+            }
+        }
+
+        function applyRtlStyles() {
+            // Add logic to switch to RTL CSS
+            document.body.classList.add('rtl');
+            document.body.classList.remove('ltr');
+        }
+
+        function applyLtrStyles() {
+            // Add logic to switch to LTR CSS
+            document.body.classList.add('ltr');
+            document.body.classList.remove('rtl');
+        }
+
+        // Initial load to apply correct styles based on URL
+        document.addEventListener("DOMContentLoaded", function () {
+            var currentUrl = window.location.href;
+            if (currentUrl.includes('/ar/')) {
+                document.getElementById("languageSelector").value = "ar";
+                applyRtlStyles();
+            } else if (currentUrl.includes('/fr/')) {
+                document.getElementById("languageSelector").value = "fr";
+                applyLtrStyles();
+            } else {
+                document.getElementById("languageSelector").value = "en";
+                applyLtrStyles();
+            }
+        });
+    </script>
+</body>
+
+</html>

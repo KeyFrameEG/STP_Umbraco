@@ -1,0 +1,27 @@
+   @inherits UmbracoViewPage<BlockListItem>
+   @using Microsoft.AspNetCore.Http
+   @inject IHttpContextAccessor HttpContextAccessor
+    @{
+    var row = (FaqprivacytermRow)Model.Content;
+      var settings = (ServicesRowSettings)Model.Settings;
+      if(settings?.Hide ?? false){return;}
+    if (row.FaqprivacytermItems == null || !row.FaqprivacytermItems.Any()) return;
+    }
+
+            @foreach (var item in row.FaqprivacytermItems)
+          {
+                var rowItem = (Faqprivacytermitem)item.Content;
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          @rowItem.Title
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          @rowItem.Description
+                        </div>
+                    </div>
+                </div>
+          }
+

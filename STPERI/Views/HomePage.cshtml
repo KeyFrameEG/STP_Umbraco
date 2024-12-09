@@ -1,0 +1,84 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.HomePage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+  
+
+
+
+
+    <div class="homebanner">
+        <img alt="" src="@Model.BannerImage.Url()" />
+    </div>
+
+
+@await Html.PartialAsync("~/Views/Partials/Gateway.cshtml")
+
+@await Html.PartialAsync("~/Views/Partials/home_events.cshtml")
+       
+@Html.GetBlockListHtml(Model,"MainContent")
+@await Html.PartialAsync("~/Views/Partials/Park.cshtml")
+@await Html.PartialAsync("~/Views/Partials/Statistics.cshtml")
+@Html.GetBlockListHtml(Model,"MainContentServices")
+
+
+@await Html.PartialAsync("~/Views/Partials/NewService.cshtml")
+
+
+@await Html.PartialAsync("~/Views/Partials/OurLabs.cshtml")
+    <div class="w-bg fitlayout py-4">
+      <div class="container-fluid">
+       @Html.GetBlockListHtml(Model,"MainContentLatestActivities")
+       @Html.GetBlockListHtml(Model,"MainContentSuccessStories")
+    </div>
+</div>
+       @await Html.PartialAsync("~/Views/Partials/LatestActivities.cshtml")
+
+@Html.GetBlockListHtml(Model,"MainContentPartners") 
+@await Html.PartialAsync("~/Views/Partials/BeUpdated.cshtml")
+
+
+
+
+
+<script>
+    // Function to save the active tab to localStorage for a specific tab group
+    function setActiveTab(tabId, groupId) {
+        localStorage.setItem(groupId, tabId);
+    }
+
+    // Function to set the active tab from localStorage for a specific tab group
+    function setTabFromLocalStorage(groupId, defaultTabId) {
+        var activeTab = localStorage.getItem(groupId);
+        if (activeTab) {
+            var tab = document.getElementById(activeTab);
+            var tabPane = document.querySelector(tab.getAttribute('data-bs-target'));
+
+            // Remove 'active' class from all tabs and tab panes within the group
+            document.querySelectorAll(`#${groupId} .nav-link`).forEach(link => link.classList.remove('active'));
+            document.querySelectorAll(`#${groupId} .tab-pane`).forEach(pane => pane.classList.remove('active', 'show'));
+
+            // Add 'active' class to the saved tab and its corresponding tab pane
+            tab.classList.add('active');
+            tabPane.classList.add('active', 'show');
+        } else {
+            // Set the default tab if no tab is saved in localStorage
+            var defaultTab = document.getElementById(defaultTabId);
+            var defaultPane = document.querySelector(defaultTab.getAttribute('data-bs-target'));
+            defaultTab.classList.add('active');
+            defaultPane.classList.add('active', 'show');
+        }
+    }
+
+    // Call the function to set the active tab on page load for each tab group
+    document.addEventListener('DOMContentLoaded', function () {
+        // First tab group
+        setTabFromLocalStorage('myTabGroup', 'Central-tab'); // Ensure 'Central-tab' is default
+        // Second tab group
+        setTabFromLocalStorage('myTabGroup2', 'home-tab'); // Ensure 'home-tab' is default
+    });
+</script>
+
+

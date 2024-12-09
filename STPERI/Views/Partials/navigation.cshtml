@@ -1,0 +1,62 @@
+@inherits UmbracoViewPage
+@{
+    var homePage = Umbraco.AssignedContentItem.AncestorOrSelf<HomePage>();
+    var children = homePage.MainNavigations;
+}
+<nav class="navbar navbar-expand-lg navbar-light nav-essal">
+  <div class="container-fluid px-0">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse justify-content-end navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto flex-nowrap">
+                <li class="nav-item"><a class="nav-link" href="@homePage.HomeUrl">@homePage.Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        @homePage.AboutNavbar
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="@homePage.AboutUrl">@homePage.About</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="@homePage.ChairmenAboutUrl">@homePage.ChairmenAbout</a></li>
+                        <li><a class="dropdown-item" href="@homePage.BoardAboutUrl">@homePage.BoardAbout</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" type="button" href="innovate/" data-bs-toggle="modal" data-bs-target="#exampleModal">@homePage.Innovate</a></li>
+          @if(children !=null && children.Any())
+          {
+              foreach(var item in children)
+              {
+              <li class="nav-item"><a class="nav-link" href="@item.Url">@item.Name</a></li>
+              }
+              
+          }
+
+             
+
+       </ul>
+      
+      </div>
+  </div>
+</nav>
+
+<div class="fixedMediaa">
+    @if (homePage.FooterSocialLinks != null)
+    {
+        <ul>
+            @foreach (var social in homePage.FooterSocialLinks)
+            {
+                <li>
+                    <a href="@social.Url" target="_blank">
+                        <i class="fa fa-@social.Network"></i>
+                    </a>
+                </li>
+            }
+            <li><a href="https://www.instagram.com/electronics_research_institute/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+
+
+        </ul>
+    }
+</div>
+@await Html.PartialAsync("~/Views/Partials/ModalContent.cshtml")

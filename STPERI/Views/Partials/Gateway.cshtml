@@ -1,0 +1,65 @@
+   @inherits UmbracoViewPage
+    @{
+      var homePage = Model.AncestorOrSelf<HomePage>();
+    }
+
+
+    <div class="w-bg fitlayout aboutrightOR pt-4 mb-4">
+
+      <div class="container-fluid">
+           
+           <div class="row">
+
+            <div class="col-lg-12">
+              <h2 class="migatitle">@homePage.Gateway</h2>
+            </div>
+
+               <div class="col-lg-7 align-self-center mb-md-0 mb-4">
+                   <div class="cardabout">
+                      <h4>@homePage.AboutStp</h4>
+                      <span>
+                        @Html.Raw(homePage.AboutStpdescription)
+                      </span>
+                    <h4>@homePage.STpvision</h4>
+                    <span>
+                        @homePage.STpvisionDescription
+                    </span>
+                   </div>
+               </div>
+
+
+               <div class="col-lg-5 align-self-center mb-md-4">
+                   <img alt="about STPERI" class="w-100" src="@homePage.AboutStpimage.Url()" />
+               </div>
+           
+           </div>
+      </div>
+
+    </div>
+
+
+    <div class="w-bg aboutleftOR fitlayout py-4">
+
+      <div class="container-fluid">
+           
+           <div class="row">
+
+            <div class="col-lg-4 align-self-center mt-md-3 mt-2 mb-md-0 mb-4">
+              <img alt="about STPERI" class="w-100" src="@homePage.STpvisionImage.Url()" />
+             </div>
+
+             <div class="col-lg-1"></div>
+
+             <div class="col-lg-7 align-self-center mt-md-3 mt-2">
+              <div class="cardabout">
+                <h4>@homePage.MessageText</h4>
+                <span>
+                @homePage.MessageDescription
+                </span>
+
+             </div>
+             </div>
+          </div>
+
+        </div>
+    </div>

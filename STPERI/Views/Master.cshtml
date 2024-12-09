@@ -1,0 +1,288 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@using Umbraco.Forms.Web
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+Layout = null;
+var homePage = Umbraco.AssignedContentItem.AncestorOrSelf<HomePage>();
+}
+
+<!doctype html>
+<html>
+
+<head>
+	  @await Html.PartialAsync("~/Views/Partials/metaData.cshtml")
+    <link rel="icon" href="/assets/images/cropped-favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="/assets/images/cropped-favicon-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/cropped-favicon-180x180.png" />
+    <meta name="msapplication-TileImage" content="/assets/images/cropped-favicon-270x270.png" />
+    <!-- Bootstrap core CSS -->
+    <link href="/assets/dist/css/animations.min.css" rel="stylesheet">
+    <link href='/assets/owl.carousel.min.css' rel='stylesheet' type='text/css' />
+	<link href='/assets/owl.theme.default.min.css' rel='stylesheet' type='text/css' />
+    <link href="/assets/dist/css/layout.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/dist/css/aos.css" />
+    @* <script src="/assets/dist/js/jquery-3.7.1.min.js"></script> *@
+    <script src="/assets/dist/js/jquery-1.12.4.min.js"></script>
+   @*  <script src="/assets/dist/js/jquery-migrate-3.3.2.min.js"></script> *@
+    <script src="/assets/dist/js/scroll-smooth.js"></script>
+    <script type="text/javascript" src="/assets/owlcarousel/owl.carousel.js"></script>
+@Html.RenderUmbracoFormDependencies(Url)
+    <script type="text/javascript">
+      $(document).ready(function () {
+          // grab the initial top offset of the navigation
+          var stickyNavTop = $('.header').offset().top;
+  
+          // our function that decides weather the navigation bar should have "fixed" css position or not.
+          var stickyNav = function () {
+              var scrollTop = $(window).scrollTop(); // our current vertical position from the top
+  
+              // if we've scrolled more than the navigation, change its position to fixed to stick to top,
+              // otherwise change it back to relative
+              if (scrollTop > stickyNavTop) {
+                  $('.header').addClass('sticky');
+              } else {
+                  $('.header').removeClass('sticky');
+              }
+          };
+  
+          stickyNav();
+          // and run it again every time you scroll
+          $(window).scroll(function () {
+              stickyNav();
+          });
+      });
+  </script>
+
+    <style>
+        .error-message {
+            color: red;
+            display: none;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            var isValid = true;
+            var searchInput = document.getElementById('q');
+            var arabicSearchInput = document.querySelector('.arside');
+            var errorMessage = document.getElementById('errorMessage');
+            var pattern = /^[A-Za-z\u0621-\u064A\s]+$/;
+
+            // Reset error messages
+            errorMessage.style.display = 'none';
+
+            if (!pattern.test(searchInput.value) || !pattern.test(arabicSearchInput.value)) {
+                errorMessage.style.display = 'block';
+                isValid = false;
+            }
+
+            return isValid;
+        }
+    </script>
+
+
+
+
+</head>
+
+<body>
+
+<div class="flexheight d-flex align-items-start flex-column">
+<div class="mb-auto w-100">
+            <div class="test_Version animate-flicker">
+                <span class="arabic_style">تحت الانشاء </span><span class="english_style">Under Construction </span>
+            </div>
+<header class="header shadow-sm">
+    <div class="logo">
+          <a href="@homePage.LogoUrl">
+          <img alt="SCIENCE & TECHNOLOGY PARK FOR ELECTRONICS RESEARCH & INDUSTRY" class="logoIcon" src="@homePage.LogoIcon.Url()" />
+          <img alt="SCIENCE & TECHNOLOGY PARK FOR ELECTRONICS RESEARCH & INDUSTRY" class="logotext" src="@homePage.LogoText.Url()" />
+      </a>
+  </div>
+
+
+<div class="form-group lang">
+    <select class="form-select" id="languageSelector" onchange="changeLanguage()">
+        <option value="en" selected>En</option>
+        <option value="ar">Ar</option>
+        <option value="fr">Fr</option>
+    </select>
+</div>
+
+
+                <button onclick="newFunction()" class="searchbtn"><i class="feather icon-search"></i></button>
+
+                @await Html.PartialAsync("~/Views/Partials/SearchForm.cshtml")
+
+@await Html.PartialAsync("~/Views/Partials/navigation.cshtml")
+
+
+</header>
+
+ @RenderBody()
+		</div>
+
+</div>
+    @await Html.PartialAsync("~/Views/Partials/footer.cshtml")
+    
+
+    <script src="/assets/dist/js/bootstrap.bundle.min.js"></script>
+
+   
+
+	<script type="text/javascript" src="/assets/dist/js/main.js"></script>
+
+
+<script src="/assets/dist/js/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>  
+
+<script>
+      var a = 0;
+    $(window).scroll(function() {
+
+    var oTop = $('#counter').offset().top - window.innerHeight;
+    if (a == 0 && $(window).scrollTop() > oTop) {
+      $('.counter-value').each(function() {
+        var $this = $(this),
+          countTo = $this.attr('data-count');
+        $({
+          countNum: $this.text()
+        }).animate({
+            countNum: countTo
+          },
+
+          {
+
+            duration: 2000,
+            easing: 'swing',
+            step: function() {
+              $this.text(Math.floor(this.countNum));
+            },
+            complete: function() {
+              $this.text(this.countNum);
+              //alert('finished');
+            }
+
+          });
+      });
+      a = 1;
+    }
+
+    });
+</script> 
+
+   <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more"; 
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less"; 
+          moreText.style.display = "inline-flex";
+        }
+      }
+   </script>
+
+<script>
+      function newFunction() {
+        var element = document.getElementById("myDIV");
+        element.classList.add("mystyle");
+      }
+
+      function closesearch() {
+        var element = document.getElementById("myDIV");
+        element.classList.remove("mystyle");
+      }
+
+      function outsidesearch() {
+        var element = document.getElementById("myDIV");
+        element.classList.remove("mystyle");
+      }
+</script>
+    <script>
+        function changeLanguage() {
+            var lang = document.getElementById("languageSelector").value;
+            var currentUrl = window.location.href;
+            var baseUrl = window.location.origin;
+            var cleanedUrl = currentUrl.replace(/\/(ar|fr)\//, '/');
+            if (lang === "ar") {
+                window.location.href = baseUrl + '/ar' + cleanedUrl.replace(baseUrl, '');
+                applyRtlStyles();
+            } else if (lang === "fr") {
+                window.location.href = baseUrl + '/fr' + cleanedUrl.replace(baseUrl, '');
+                applyLtrStyles();
+            } else {
+                window.location.href = cleanedUrl;
+                applyLtrStyles();
+            }
+
+        }
+
+        function applyRtlStyles() {
+            // Add logic to switch to RTL CSS
+            document.body.classList.add('rtl');
+            document.body.classList.remove('ltr');
+        }
+
+        function applyLtrStyles() {
+            // Add logic to switch to LTR CSS
+            document.body.classList.add('ltr');
+            document.body.classList.remove('rtl');
+        }
+
+        // Initial load to apply correct styles based on URL
+        document.addEventListener("DOMContentLoaded", function () {
+            var currentUrl = window.location.href;
+            if (currentUrl.includes('/ar/')) {
+                document.getElementById("languageSelector").value = "ar";
+                applyRtlStyles();
+            } else if (currentUrl.includes('/fr/')) {
+                document.getElementById("languageSelector").value = "fr";
+                applyLtrStyles();
+            } else {
+                document.getElementById("languageSelector").value = "en";
+                applyLtrStyles();
+            }
+        });
+    </script>
+    <script>
+        function newFunction() {
+            var element = document.getElementById("myDIV");
+            element.classList.add("mystyle");
+        }
+
+        function closesearch() {
+            var element = document.getElementById("myDIV");
+            element.classList.remove("mystyle");
+        }
+
+        function outsidesearch() {
+            var element = document.getElementById("myDIV");
+            element.classList.remove("mystyle");
+        }
+    </script>
+
+    <script>
+        $(".chatbtn").on("click", function () {
+        $(".chatbox").addClass("active");
+        $(".chatbtn").addClass("closechat");
+        });
+        
+        $(".closerobot").on("click", function () {
+        $(".chatbox").removeClass("active");
+        });
+    </script>
+
+
+</body>
+
+</html>
