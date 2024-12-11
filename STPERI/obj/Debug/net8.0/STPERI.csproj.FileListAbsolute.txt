@@ -764,3 +764,7 @@ C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\obj\Debug\net8.0\ref\STPER
 C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\bin\Debug\net8.0\appsettings-schema.json
 C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\bin\Debug\net8.0\appsettings-schema.Umbraco.Cms.json
 C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\bin\Debug\net8.0\appsettings-schema.Umbraco.Forms.json
+C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\obj\Debug\net8.0\STPERI.sourcelink.json
+C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\bin\Debug\net8.0\STPERI.staticwebassets.endpoints.json
+C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\obj\Debug\net8.0\staticwebassets\msbuild.STPERI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props

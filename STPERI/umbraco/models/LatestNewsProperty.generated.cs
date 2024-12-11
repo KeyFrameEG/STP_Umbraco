@@ -22,10 +22,45 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 	/// <summary>LatestNews Property</summary>
 	public partial interface ILatestNewsProperty : IPublishedElement
 	{
+		/// <summary>MainContentAI</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentAI { get; }
+
+		/// <summary>MainContentCommunityEngagement</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentCommunityEngagement { get; }
+
+		/// <summary>MainContentCurriculumDevelopment</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentCurriculumDevelopment { get; }
+
+		/// <summary>MainContentDiversityAndInclusion</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentDiversityAndInclusion { get; }
+
 		/// <summary>Main Content LatestNews</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentLatestNews { get; }
+
+		/// <summary>MainContentMentalHealth</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentMentalHealth { get; }
+
+		/// <summary>MainContentResearchAndStudies</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentResearchAndStudies { get; }
+
+		/// <summary>Main Content Technology</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentTechnology { get; }
 	}
 
 	/// <summary>LatestNews Property</summary>
@@ -60,6 +95,58 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		// properties
 
 		///<summary>
+		/// MainContentAI
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("mainContentAI")]
+		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentAI => GetMainContentAI(this, _publishedValueFallback);
+
+		/// <summary>Static getter for MainContentAI</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		public static global::Umbraco.Cms.Core.Models.Blocks.BlockListModel GetMainContentAI(ILatestNewsProperty that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(publishedValueFallback, "mainContentAI");
+
+		///<summary>
+		/// MainContentCommunityEngagement
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("mainContentCommunityEngagement")]
+		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentCommunityEngagement => GetMainContentCommunityEngagement(this, _publishedValueFallback);
+
+		/// <summary>Static getter for MainContentCommunityEngagement</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		public static global::Umbraco.Cms.Core.Models.Blocks.BlockListModel GetMainContentCommunityEngagement(ILatestNewsProperty that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(publishedValueFallback, "mainContentCommunityEngagement");
+
+		///<summary>
+		/// MainContentCurriculumDevelopment
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("mainContentCurriculumDevelopment")]
+		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentCurriculumDevelopment => GetMainContentCurriculumDevelopment(this, _publishedValueFallback);
+
+		/// <summary>Static getter for MainContentCurriculumDevelopment</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		public static global::Umbraco.Cms.Core.Models.Blocks.BlockListModel GetMainContentCurriculumDevelopment(ILatestNewsProperty that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(publishedValueFallback, "mainContentCurriculumDevelopment");
+
+		///<summary>
+		/// MainContentDiversityAndInclusion
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("mainContentDiversityAndInclusion")]
+		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentDiversityAndInclusion => GetMainContentDiversityAndInclusion(this, _publishedValueFallback);
+
+		/// <summary>Static getter for MainContentDiversityAndInclusion</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		public static global::Umbraco.Cms.Core.Models.Blocks.BlockListModel GetMainContentDiversityAndInclusion(ILatestNewsProperty that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(publishedValueFallback, "mainContentDiversityAndInclusion");
+
+		///<summary>
 		/// Main Content LatestNews
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
@@ -71,5 +158,44 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		public static global::Umbraco.Cms.Core.Models.Blocks.BlockListModel GetMainContentLatestNews(ILatestNewsProperty that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(publishedValueFallback, "mainContentLatestNews");
+
+		///<summary>
+		/// MainContentMentalHealth
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("mainContentMentalHealth")]
+		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentMentalHealth => GetMainContentMentalHealth(this, _publishedValueFallback);
+
+		/// <summary>Static getter for MainContentMentalHealth</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		public static global::Umbraco.Cms.Core.Models.Blocks.BlockListModel GetMainContentMentalHealth(ILatestNewsProperty that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(publishedValueFallback, "mainContentMentalHealth");
+
+		///<summary>
+		/// MainContentResearchAndStudies
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("mainContentResearchAndStudies")]
+		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentResearchAndStudies => GetMainContentResearchAndStudies(this, _publishedValueFallback);
+
+		/// <summary>Static getter for MainContentResearchAndStudies</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		public static global::Umbraco.Cms.Core.Models.Blocks.BlockListModel GetMainContentResearchAndStudies(ILatestNewsProperty that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(publishedValueFallback, "mainContentResearchAndStudies");
+
+		///<summary>
+		/// Main Content Technology
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("mainContentTechnology")]
+		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentTechnology => GetMainContentTechnology(this, _publishedValueFallback);
+
+		/// <summary>Static getter for Main Content Technology</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		public static global::Umbraco.Cms.Core.Models.Blocks.BlockListModel GetMainContentTechnology(ILatestNewsProperty that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(publishedValueFallback, "mainContentTechnology");
 	}
 }
