@@ -434,6 +434,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string ForthTraningLink => global::Umbraco.Cms.Web.Common.PublishedModels.ModalContentProperties.GetForthTraningLink(this, _publishedValueFallback);
 
 		///<summary>
+		/// Hosting Conferences
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("hostingConferences")]
+		public virtual string HostingConferences => global::Umbraco.Cms.Web.Common.PublishedModels.ModalContentProperties.GetHostingConferences(this, _publishedValueFallback);
+
+		///<summary>
 		/// Lab
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
@@ -682,6 +690,38 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string ChairmenAboutUrl => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetChairmenAboutUrl(this, _publishedValueFallback);
 
 		///<summary>
+		/// Contact
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("contact")]
+		public virtual string Contact => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetContact(this, _publishedValueFallback);
+
+		///<summary>
+		/// ContactURL
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("contactURL")]
+		public virtual string ContactUrl => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetContactUrl(this, _publishedValueFallback);
+
+		///<summary>
+		/// Events and Seminars
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("eventsAndSeminars")]
+		public virtual string EventsAndSeminars => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetEventsAndSeminars(this, _publishedValueFallback);
+
+		///<summary>
+		/// Events and Seminars URL
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("eventsAndSeminarsURL")]
+		public virtual string EventsAndSeminarsUrl => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetEventsAndSeminarsUrl(this, _publishedValueFallback);
+
+		///<summary>
 		/// Home
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
@@ -704,6 +744,38 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("innovate")]
 		public virtual string Innovate => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetInnovate(this, _publishedValueFallback);
+
+		///<summary>
+		/// Internships
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("internships")]
+		public virtual string Internships => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetInternships(this, _publishedValueFallback);
+
+		///<summary>
+		/// InternshipsURL
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("internshipsURL")]
+		public virtual string InternshipsUrl => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetInternshipsUrl(this, _publishedValueFallback);
+
+		///<summary>
+		/// Jobs
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("jobs")]
+		public virtual string Jobs => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetJobs(this, _publishedValueFallback);
+
+		///<summary>
+		/// JobsURL
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("jobsUrl")]
+		public virtual string JobsUrl => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetJobsUrl(this, _publishedValueFallback);
 
 		///<summary>
 		/// LogoIcon: Enter the logo icon
@@ -738,6 +810,102 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual global::System.Collections.Generic.IEnumerable<global::Umbraco.Cms.Core.Models.Link> MainNavigations => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetMainNavigations(this, _publishedValueFallback);
 
 		///<summary>
+		/// Media
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("media")]
+		public virtual string Media => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetMedia(this, _publishedValueFallback);
+
+		///<summary>
+		/// Meetings Up
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("meetingsUp")]
+		public virtual string MeetingsUp => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetMeetingsUp(this, _publishedValueFallback);
+
+		///<summary>
+		/// Meetings Up URL
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("meetingsUpURL")]
+		public virtual string MeetingsUpUrl => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetMeetingsUpUrl(this, _publishedValueFallback);
+
+		///<summary>
+		/// News
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("news")]
+		public virtual string News => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetNews(this, _publishedValueFallback);
+
+		///<summary>
+		/// Newspaper
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("newspaper")]
+		public virtual string Newspaper => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetNewspaper(this, _publishedValueFallback);
+
+		///<summary>
+		/// NewspaperURL
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("newspaperURL")]
+		public virtual string NewspaperUrl => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetNewspaperUrl(this, _publishedValueFallback);
+
+		///<summary>
+		/// NewsURL
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("newsURL")]
+		public virtual string NewsUrl => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetNewsUrl(this, _publishedValueFallback);
+
+		///<summary>
+		/// Opportunities
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("opportunities")]
+		public virtual string Opportunities => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetOpportunities(this, _publishedValueFallback);
+
+		///<summary>
+		/// Publications and Research
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("publicationsAndResearch")]
+		public virtual string PublicationsAndResearch => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetPublicationsAndResearch(this, _publishedValueFallback);
+
+		///<summary>
+		/// Publications and Research URL
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("publicationsAndResearchURL")]
+		public virtual string PublicationsAndResearchUrl => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetPublicationsAndResearchUrl(this, _publishedValueFallback);
+
+		///<summary>
+		/// Running Calls
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("runningCalls")]
+		public virtual string RunningCalls => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetRunningCalls(this, _publishedValueFallback);
+
+		///<summary>
+		/// Running Calls URL
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("runningCallsURL")]
+		public virtual string RunningCallsUrl => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetRunningCallsUrl(this, _publishedValueFallback);
+
+		///<summary>
 		/// SearchButton
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
@@ -760,6 +928,38 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("searchFor")]
 		public virtual string SearchFor => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetSearchFor(this, _publishedValueFallback);
+
+		///<summary>
+		/// Upcoming Events
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("upcomingEvents")]
+		public virtual string UpcomingEvents => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetUpcomingEvents(this, _publishedValueFallback);
+
+		///<summary>
+		/// Upcoming Events URL
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("upcomingEventsURL")]
+		public virtual string UpcomingEventsUrl => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetUpcomingEventsUrl(this, _publishedValueFallback);
+
+		///<summary>
+		/// Visitor Map
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("visitorMap")]
+		public virtual string VisitorMap => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetVisitorMap(this, _publishedValueFallback);
+
+		///<summary>
+		/// Visitor Map URL
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("visitorMapURL")]
+		public virtual string VisitorMapUrl => global::Umbraco.Cms.Web.Common.PublishedModels.NavigationProperties.GetVisitorMapUrl(this, _publishedValueFallback);
 
 		///<summary>
 		/// Main Content Newspaper

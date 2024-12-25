@@ -1,6 +1,18 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\caleandar\\caleandar.js",
+      "PackagePath": "staticwebassets\\assets\\dist\\caleandar\\caleandar.js"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\caleandar\\caleandar.min.js",
+      "PackagePath": "staticwebassets\\assets\\dist\\caleandar\\caleandar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\caleandar\\demo.js",
+      "PackagePath": "staticwebassets\\assets\\dist\\caleandar\\demo.js"
+    },
+    {
       "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\css\\animations.min.css",
       "PackagePath": "staticwebassets\\assets\\dist\\css\\animations.min.css"
     },
@@ -373,6 +385,10 @@
       "PackagePath": "staticwebassets\\assets\\images\\potential.svg"
     },
     {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\publication-icon.png",
+      "PackagePath": "staticwebassets\\assets\\images\\publication-icon.png"
+    },
+    {
       "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\robbot.svg",
       "PackagePath": "staticwebassets\\assets\\images\\robbot.svg"
     },
@@ -435,6 +451,10 @@
     {
       "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\train4.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\train4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\visitor-map.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\visitor-map.jpg"
     },
     {
       "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\owl.carousel.min.css",

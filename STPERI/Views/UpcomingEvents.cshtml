@@ -1,0 +1,103 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.UpcomingEvents>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<div class="innerbanner fitlayout">
+    <h3 class="px-3 aos-item" data-aos="fade-up">@Model.Title</h3>
+    <div class="clearfix"></div>
+    <!-- span class="px-3 aos-item" data-aos="fade-up">@Model.Subtitle</span -->
+    <img alt="" src="@Model.BannerImage.Url()" />
+</div>
+
+
+<div class="w-bg fitlayout pt-4 mb-4 paddingabove">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 aos-item" data-aos="fade-down">
+                <h2 class="migatitle">@Model.Subtitle</h2>
+                <ul class="nav nav-tabs labseri mb-3" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="LatestNew" data-bs-toggle="tab" data-bs-target="#LatestNew-pane" type="button" role="tab" aria-controls="LatestNew-pane" aria-selected="true" onclick="setActiveTab('LatestNew', 'myTabGroup')">@Model.LatestNewsButton</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="Research-tab" data-bs-toggle="tab" data-bs-target="#Research-tab-pane" type="button" role="tab" aria-controls="Research-tab-pane" aria-selected="false" onclick="setActiveTab('Research-tab', 'myTabGroup')" tabindex="-1">@Model.ResearchAndStudieButton</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="Technology-tab" data-bs-toggle="tab" data-bs-target="#Technology-tab-pane" type="button" role="tab" aria-controls="Technology-tab-pane" aria-selected="false" onclick="setActiveTab('Technology-tab', 'myTabGroup')" tabindex="-1">@Model.TechnologyButton</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="CommunityEngagement-tab" data-bs-toggle="tab" data-bs-target="#CommunityEngagement-tab-pane" type="button" role="tab" aria-controls="CommunityEngagement-tab-pane" aria-selected="false" onclick="setActiveTab('CommunityEngagement-tab', 'myTabGroup')" tabindex="-1">@Model.CommunityEngagementButton</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="MentalHealth-tab" data-bs-toggle="tab" data-bs-target="#MentalHealth-tab-pane" type="button" role="tab" aria-controls="MentalHealth-tab-pane" aria-selected="false" onclick="setActiveTab('MentalHealth-tab', 'myTabGroup')" tabindex="-1">@Model.MentalHealthButton</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="CurriculumDevelopment-tab" data-bs-toggle="tab" data-bs-target="#CurriculumDevelopment-tab-pane" type="button" role="tab" aria-controls="CurriculumDevelopment-tab-pane" aria-selected="false" onclick="setActiveTab('CurriculumDevelopment-tab', 'myTabGroup')" tabindex="-1">@Model.CurriculumDevelopmentButton</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="DiversityAndInclusion-tab" data-bs-toggle="tab" data-bs-target="#DiversityAndInclusion-tab-pane" type="button" role="tab" aria-controls="DiversityAndInclusion-tab-pane" aria-selected="false" onclick="setActiveTab('DiversityAndInclusion-tab', 'myTabGroup')" tabindex="-1">@Model.DiversityAndInclusionButton</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="AI-tab" data-bs-toggle="tab" data-bs-target="#AI-tab-pane" type="button" role="tab" aria-controls="AI-tab-pane" aria-selected="false" onclick="setActiveTab('AI-tab', 'myTabGroup')" tabindex="-1">@Model.MentalHealthButton</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tab-content" id="myTabContent">
+                <!-- Latest News Tab Content -->
+                <div class="tab-pane fade show active" id="LatestNew-pane" role="tabpanel" aria-labelledby="LatestNew">
+                    @Html.GetBlockListHtml(Model, "MainContentLatestNews")
+                </div>
+
+                <!-- Research And Studies Tab Content -->
+                <div class="tab-pane fade" id="Research-tab-pane" role="tabpanel" aria-labelledby="Research-tab">
+                    @Html.GetBlockListHtml(Model, "mainContentResearchAndStudies")
+                </div>
+
+                <!-- Technology Tab Content -->
+                <div class="tab-pane fade" id="Technology-tab-pane" role="tabpanel" aria-labelledby="Technology-tab">
+                    @Html.GetBlockListHtml(Model, "MainContentTechnology")
+                </div>
+
+                <!-- Community Engagement Tab Content -->
+                <div class="tab-pane fade" id="CommunityEngagement-tab-pane" role="tabpanel" aria-labelledby="CommunityEngagement-tab">
+                    @Html.GetBlockListHtml(Model, "MainContentCommunityEngagement")
+                </div>
+
+                <!-- Mental Health Tab Content -->
+                <div class="tab-pane fade" id="MentalHealth-tab-pane" role="tabpanel" aria-labelledby="MentalHealth-tab">
+                    @Html.GetBlockListHtml(Model, "MainContentMentalHealth")
+                </div>
+
+                <!-- Curriculum Development Tab Content -->
+                <div class="tab-pane fade" id="CurriculumDevelopment-tab-pane" role="tabpanel" aria-labelledby="CurriculumDevelopment-tab">
+                    @Html.GetBlockListHtml(Model, "MainContentCurriculumDevelopment")
+                </div>
+
+                <!-- Diversity And Inclusion Tab Content -->
+                <div class="tab-pane fade" id="DiversityAndInclusion-tab-pane" role="tabpanel" aria-labelledby="DiversityAndInclusion-tab">
+                    @Html.GetBlockListHtml(Model, "MainContentDiversityAndInclusion")
+                </div>
+
+                <!-- AI Tab Content -->
+                <div class="tab-pane fade" id="AI-tab-pane" role="tabpanel" aria-labelledby="AI-tab">
+                    @Html.GetBlockListHtml(Model, "MainContentAI")
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    // This is to set the active tab based on the selected button (for handling active states)
+    function setActiveTab(tabId, groupId) {
+        var tabs = document.querySelectorAll(`#${groupId} .nav-link`);
+        tabs.forEach(tab => tab.classList.remove('active'));
+        document.getElementById(tabId).classList.add('active');
+    }
+</script>

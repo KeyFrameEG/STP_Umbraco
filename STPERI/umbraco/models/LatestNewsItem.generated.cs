@@ -20,7 +20,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 {
 	/// <summary>LatestNews Item</summary>
 	[PublishedModel("latestNewsItem")]
-	public partial class LatestNewsItem : PublishedElementModel, IDateProperty, IDescriptionProperty, IImageProperty, IRedirectUrlProperty, ITitleProperty
+	public partial class LatestNewsItem : PublishedElementModel, IDateProperty, IDescriptionProperty, IImageProperty, ILocationProperty, IRedirectUrlProperty, ITitleProperty
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -72,6 +72,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("image")]
 		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops Image => global::Umbraco.Cms.Web.Common.PublishedModels.ImageProperty.GetImage(this, _publishedValueFallback);
+
+		///<summary>
+		/// Location
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("location")]
+		public virtual string Location => global::Umbraco.Cms.Web.Common.PublishedModels.LocationProperty.GetLocation(this, _publishedValueFallback);
 
 		///<summary>
 		/// RedirectUrl

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qtNSQ61yBv/5mgmRkVdeOSK6JB9KLjvtzHL1NTwOoJg=",
+  "Hash": "oJvMiy9yYSUdhcfopOXFAZ3+nqr6fmW9d2MH+hTGzoQ=",
   "Source": "STPERI",
   "BasePath": "_content/STPERI",
   "Mode": "Default",
@@ -60329,6 +60329,69 @@
       "OriginalItemSpec": "C:\\Users\\LOQ\\.nuget\\packages\\umbraco.forms.staticassets\\13.0.0\\staticwebassets\\Xslt\\xml.xslt"
     },
     {
+      "Identity": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\caleandar\\caleandar.js",
+      "SourceId": "STPERI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\",
+      "BasePath": "_content/STPERI",
+      "RelativePath": "assets/dist/caleandar/caleandar#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "msrr1g8g9f",
+      "Integrity": "diZpIaqVTAghSmPmN7FJjYJzmR3p4iYrNlUPiZsD0wM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\dist\\caleandar\\caleandar.js"
+    },
+    {
+      "Identity": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\caleandar\\caleandar.min.js",
+      "SourceId": "STPERI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\",
+      "BasePath": "_content/STPERI",
+      "RelativePath": "assets/dist/caleandar/caleandar.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jn2obyv8am",
+      "Integrity": "b8breu1WsBlBFKqmoF6wJ02ZvQiGCG8sry85Jf3ES5c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\dist\\caleandar\\caleandar.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\caleandar\\demo.js",
+      "SourceId": "STPERI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\",
+      "BasePath": "_content/STPERI",
+      "RelativePath": "assets/dist/caleandar/demo#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ov60qhnymd",
+      "Integrity": "1FAYkMtGZyhs+F6EHfieiDMdKg2xnlgB/d1zeZuaR/M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\dist\\caleandar\\demo.js"
+    },
+    {
       "Identity": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\css\\animations.min.css",
       "SourceId": "STPERI",
       "SourceType": "Discovered",
@@ -60553,8 +60616,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "mce8sueae6",
-      "Integrity": "WtGV/8H7aJuUFAO96ZL5LO0xlnMYS9xhRQIUEZkp8DE=",
+      "Fingerprint": "nbi7dgm1uf",
+      "Integrity": "g2Ww7A8235QBES5SdDwZc8HJI5UktFdrwoQFiYXQ3Kc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\dist\\css\\layout.css"
@@ -62261,6 +62324,27 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\potential.svg"
     },
     {
+      "Identity": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\publication-icon.png",
+      "SourceId": "STPERI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\",
+      "BasePath": "_content/STPERI",
+      "RelativePath": "assets/images/publication-icon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ov30r9ctew",
+      "Integrity": "XC38x6wjY57OizcNJ92fT2BVyuW0gy+/0kYRR3vBEbA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\publication-icon.png"
+    },
+    {
       "Identity": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\Rnker.png",
       "SourceId": "STPERI",
       "SourceType": "Discovered",
@@ -62616,6 +62700,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\train4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\visitor-map.jpg",
+      "SourceId": "STPERI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\",
+      "BasePath": "_content/STPERI",
+      "RelativePath": "assets/images/visitor-map#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "d34fidurxf",
+      "Integrity": "h/drQfavlp313vVbO4QiCJXmhIkGa50FqdexoTrV1ak=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\visitor-map.jpg"
     },
     {
       "Identity": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\owl.carousel.min.css",
@@ -71983,6 +72088,252 @@
       ]
     },
     {
+      "Route": "assets/dist/caleandar/caleandar.js",
+      "AssetFile": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\caleandar\\caleandar.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12391"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"diZpIaqVTAghSmPmN7FJjYJzmR3p4iYrNlUPiZsD0wM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Jul 2016 13:44:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-diZpIaqVTAghSmPmN7FJjYJzmR3p4iYrNlUPiZsD0wM="
+        }
+      ]
+    },
+    {
+      "Route": "assets/dist/caleandar/caleandar.min.jn2obyv8am.js",
+      "AssetFile": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\caleandar\\caleandar.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7290"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"b8breu1WsBlBFKqmoF6wJ02ZvQiGCG8sry85Jf3ES5c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Jul 2016 13:44:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jn2obyv8am"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/dist/caleandar/caleandar.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-b8breu1WsBlBFKqmoF6wJ02ZvQiGCG8sry85Jf3ES5c="
+        }
+      ]
+    },
+    {
+      "Route": "assets/dist/caleandar/caleandar.min.js",
+      "AssetFile": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\caleandar\\caleandar.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7290"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"b8breu1WsBlBFKqmoF6wJ02ZvQiGCG8sry85Jf3ES5c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Jul 2016 13:44:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-b8breu1WsBlBFKqmoF6wJ02ZvQiGCG8sry85Jf3ES5c="
+        }
+      ]
+    },
+    {
+      "Route": "assets/dist/caleandar/caleandar.msrr1g8g9f.js",
+      "AssetFile": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\caleandar\\caleandar.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12391"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"diZpIaqVTAghSmPmN7FJjYJzmR3p4iYrNlUPiZsD0wM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Jul 2016 13:44:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "msrr1g8g9f"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/dist/caleandar/caleandar.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-diZpIaqVTAghSmPmN7FJjYJzmR3p4iYrNlUPiZsD0wM="
+        }
+      ]
+    },
+    {
+      "Route": "assets/dist/caleandar/demo.js",
+      "AssetFile": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\caleandar\\demo.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "470"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1FAYkMtGZyhs+F6EHfieiDMdKg2xnlgB/d1zeZuaR/M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Nov 2024 09:22:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1FAYkMtGZyhs+F6EHfieiDMdKg2xnlgB/d1zeZuaR/M="
+        }
+      ]
+    },
+    {
+      "Route": "assets/dist/caleandar/demo.ov60qhnymd.js",
+      "AssetFile": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\caleandar\\demo.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "470"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1FAYkMtGZyhs+F6EHfieiDMdKg2xnlgB/d1zeZuaR/M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Nov 2024 09:22:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ov60qhnymd"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/dist/caleandar/demo.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1FAYkMtGZyhs+F6EHfieiDMdKg2xnlgB/d1zeZuaR/M="
+        }
+      ]
+    },
+    {
       "Route": "assets/dist/css/animations.min.css",
       "AssetFile": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\css\\animations.min.css",
       "Selectors": [],
@@ -72813,7 +73164,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "109171"
+          "Value": "111539"
         },
         {
           "Name": "Content-Type",
@@ -72821,11 +73172,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"WtGV/8H7aJuUFAO96ZL5LO0xlnMYS9xhRQIUEZkp8DE=\""
+          "Value": "\"g2Ww7A8235QBES5SdDwZc8HJI5UktFdrwoQFiYXQ3Kc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Nov 2024 11:11:15 GMT"
+          "Value": "Sun, 22 Dec 2024 17:08:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -72835,12 +73186,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-WtGV/8H7aJuUFAO96ZL5LO0xlnMYS9xhRQIUEZkp8DE="
+          "Value": "sha256-g2Ww7A8235QBES5SdDwZc8HJI5UktFdrwoQFiYXQ3Kc="
         }
       ]
     },
     {
-      "Route": "assets/dist/css/layout.mce8sueae6.css",
+      "Route": "assets/dist/css/layout.nbi7dgm1uf.css",
       "AssetFile": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\css\\layout.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -72850,7 +73201,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "109171"
+          "Value": "111539"
         },
         {
           "Name": "Content-Type",
@@ -72858,11 +73209,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"WtGV/8H7aJuUFAO96ZL5LO0xlnMYS9xhRQIUEZkp8DE=\""
+          "Value": "\"g2Ww7A8235QBES5SdDwZc8HJI5UktFdrwoQFiYXQ3Kc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Nov 2024 11:11:15 GMT"
+          "Value": "Sun, 22 Dec 2024 17:08:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -72872,7 +73223,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "mce8sueae6"
+          "Value": "nbi7dgm1uf"
         },
         {
           "Name": "label",
@@ -72880,7 +73231,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-WtGV/8H7aJuUFAO96ZL5LO0xlnMYS9xhRQIUEZkp8DE="
+          "Value": "sha256-g2Ww7A8235QBES5SdDwZc8HJI5UktFdrwoQFiYXQ3Kc="
         }
       ]
     },
@@ -79527,6 +79878,88 @@
       ]
     },
     {
+      "Route": "assets/images/publication-icon.ov30r9ctew.png",
+      "AssetFile": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\publication-icon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3775"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XC38x6wjY57OizcNJ92fT2BVyuW0gy+/0kYRR3vBEbA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 22 Nov 2024 14:13:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ov30r9ctew"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/publication-icon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XC38x6wjY57OizcNJ92fT2BVyuW0gy+/0kYRR3vBEbA="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/publication-icon.png",
+      "AssetFile": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\publication-icon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3775"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XC38x6wjY57OizcNJ92fT2BVyuW0gy+/0kYRR3vBEbA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 22 Nov 2024 14:13:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XC38x6wjY57OizcNJ92fT2BVyuW0gy+/0kYRR3vBEbA="
+        }
+      ]
+    },
+    {
       "Route": "assets/images/Rnker.png",
       "AssetFile": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\Rnker.png",
       "Selectors": [],
@@ -80917,6 +81350,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Y28CwbRHv3oXPLQTX0VQdZAO7VbKnRTapOns4IyznNg="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/visitor-map.d34fidurxf.jpg",
+      "AssetFile": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\visitor-map.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1215924"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"h/drQfavlp313vVbO4QiCJXmhIkGa50FqdexoTrV1ak=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 22 Nov 2024 13:48:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d34fidurxf"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/visitor-map.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-h/drQfavlp313vVbO4QiCJXmhIkGa50FqdexoTrV1ak="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/visitor-map.jpg",
+      "AssetFile": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\visitor-map.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1215924"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"h/drQfavlp313vVbO4QiCJXmhIkGa50FqdexoTrV1ak=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 22 Nov 2024 13:48:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-h/drQfavlp313vVbO4QiCJXmhIkGa50FqdexoTrV1ak="
         }
       ]
     },

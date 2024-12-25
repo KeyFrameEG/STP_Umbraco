@@ -1,0 +1,24 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.VisitorMap>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<div class="innerbanner fitlayout">
+    <h3 class="px-3 aos-item" data-aos="fade-up">@Model.Title</h3>
+    <div class="clearfix"></div>
+    <!-- span class="px-3 aos-item" data-aos="fade-up">@Model.Subtitle</span -->
+    <img alt="" src="@Model.BannerImage.Url()" />
+</div>
+
+<div class="w-bg fitlayout pt-4 mb-4 paddingabove">
+	<div class="container-fluid">     
+		<div class="row">
+		<div class="col-md-12 mb-4 aos-item aos-init aos-animate" data-aos="zoom-in">
+			<img alt="" class="w-100 my-4" src="assets/images/visitor-map.jpg">
+			<a href="#" class="visitormap-link" target="_blank">View Map <i class="feather icon-arrow-right"></i></a>
+		</div>
+		</div>
+	</div>
+</div>

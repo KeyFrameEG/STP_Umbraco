@@ -1,0 +1,21 @@
+   @inherits UmbracoViewPage<BlockListItem>
+   @using Microsoft.AspNetCore.Http
+   @inject IHttpContextAccessor HttpContextAccessor
+    @{
+    var row = (PrivacyTermRow)Model.Content;
+      var settings = (ServicesRowSettings)Model.Settings;
+      if(settings?.Hide ?? false){return;}
+    if (row.PrivacyTermItems == null || !row.PrivacyTermItems.Any()) return;
+    }
+
+@foreach (var item in row.PrivacyTermItems)
+          {
+                var rowItem = (PrivacyTermItem)item.Content;
+                <div class="cardabout">
+                     <h4 class="mt-2">@rowItem.Title</h4>
+                    <span class="mb-4">
+                               @rowItem.Description
+                    </span>
+                </div>
+          }
+

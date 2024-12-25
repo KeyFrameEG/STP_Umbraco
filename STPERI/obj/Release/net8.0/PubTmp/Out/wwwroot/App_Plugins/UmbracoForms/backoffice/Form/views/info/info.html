@@ -1,0 +1,85 @@
+<div ng-controller="umbTrackedFormReferencesController as vm">
+  <umb-load-indicator ng-if="vm.loading === true"></umb-load-indicator>
+
+  <div class="umb-package-details">
+    <div class="umb-package-details__main-content">
+        <h5 class="mt0" style="margin-bottom: 20px;">
+            <span ng-if="!vm.hasReferences && (vm.loading === false) && (vm.hideNoResult === false)">
+                <localize key="formSettings_noReferencesTitle"></localize>
+            </span>
+            <span ng-if="vm.hasReferences && (vm.loading === false) && (vm.hideNoResult === false)">
+                <localize key="formSettings_referencesTitle"></localize>
+            </span>
+        </h5>
+    
+        <div class="umb-table" ng-if="vm.hasReferences && (vm.loading === false) && (vm.hideNoResult === false)">
+            <div class="umb-table-head">
+                <div class="umb-table-row">
+                    <div class="umb-table-cell"></div>
+                    <div class="umb-table-cell umb-table__name not-fixed"><localize key="general_nodeName"></localize></div>
+                    <div class="umb-table-cell"><localize key="general_status"></localize></div>
+                    <div class="umb-table-cell"><localize key="general_typeName"></localize></div>
+                    <div class="umb-table-cell"><localize key="general_type"></localize></div>
+                    <div class="umb-table-cell"><localize key="relationType_relation"></localize></div>
+                </div>
+            </div>
+            <div class="umb-table-body">
+                <div class="umb-table-row" ng-repeat="reference in vm.references.items" ng-class="{ '-light':!reference.published }">
+                    <div class="umb-table-cell">
+                        <umb-icon icon="{{reference.icon}}" class="umb-table-body__icon">
+                        </umb-icon>
+                    </div>
+                    <div class="umb-table-cell umb-table__name">
+                        <a ng-href="{{vm.getUrl(reference.udi, reference.id)}}">{{::reference.name}}</a>
+                    </div>
+                    <div class="umb-table-cell">
+                      <div ng-if="reference.published !== null">
+                        <span ng-if="reference.published" title="@content_published" localize="title"><localize key="content_published">Published</localize></span>
+                        <span ng-if="!reference.published" title="@content_unpublished" localize="title"><localize key="content_unpublished">Unpublished</localize></span>
+                      </div>
+                    </div>
+                    <div class="umb-table-cell">
+                        <span title="{{::reference.contentTypeName}}">{{::reference.contentTypeName}}</span>
+                    </div>
+                    <div class="umb-table-cell">
+                        <span title="{{::reference.type}}">{{::reference.type}}</span>
+                    </div>
+                    <div class="umb-table-cell">
+                        <span title="{{::reference.relationTypeName}}">{{::reference.relationTypeName}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Pagination -->
+        <div class="flex justify-center">
+            <umb-pagination ng-if="vm.hasReferences"
+                            page-number="vm.pageNumber"
+                            total-pages="vm.references.totalPages"
+                            on-change="vm.changePageNumber(pageNumber)">
+            </umb-pagination>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="umb-package-details__sidebar">
+        <umb-box data-element="node-info-general">
+            <umb-box-header title-key="general_general"></umb-box-header>
+            <umb-box-content class="block-form">
+                <umb-control-group data-element="node-info-create-date" label="@content_createDate">
+                    {{vm.form.createDateFormatted}}
+                </umb-control-group>
+
+                <umb-control-group data-element="node-info-update-date" label="@content_updateDate">
+                    {{vm.form.updateDateFormatted}}
+                </umb-control-group>
+
+                <umb-control-group data-element="node-info-id" label="Id">
+                    <div>{{ vm.form.nodeId }}</div>
+                    <small>{{ vm.form.id }}</small>
+                </umb-control-group>
+            </umb-box-content>
+        </umb-box>
+    </div>
+  </div>
+</div>

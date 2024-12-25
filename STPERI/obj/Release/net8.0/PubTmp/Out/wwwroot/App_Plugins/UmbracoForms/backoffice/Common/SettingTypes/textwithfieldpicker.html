@@ -1,0 +1,12 @@
+<div class="obviuse-forms__form-field-picker" ng-controller="UmbracoForms.SettingTypes.TextWithFieldPickerController as vm">
+  <uui-button-group>
+    <uui-button label="Free text" look="{{vm.inputMode === 'FREE_TEXT' ? 'secondary' : 'default'}}" color="primary" ng-click="vm.changeInputMode('FREE_TEXT')"></uui-button>
+    <uui-button label="Select field" look="{{vm.inputMode === 'FIELD_PICKER' ? 'secondary' : 'default'}}" color="primary" ng-click="vm.changeInputMode('FIELD_PICKER')"></uui-button>
+  </uui-button-group>
+  <div ng-if="vm.inputMode === 'FIELD_PICKER'" style="margin-top:10px;">
+    <select ng-model="vm.fieldDdlValue" ng-change="vm.onFieldDdlChange()" ng-options="value.alias as value.caption for value in vm.fieldDdlOptions"></select>
+  </div>
+  <div ng-if="vm.inputMode === 'FREE_TEXT'" style="margin-top:10px;">
+    <input type="text" ng-model="vm.textBoxValue" ng-change="vm.onTextBoxChange()" class="-full-width-input" />
+  </div>
+</div>

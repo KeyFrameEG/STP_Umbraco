@@ -1,0 +1,122 @@
+@inherits UmbracoViewPage
+@{
+    var homePage = Model.AncestorOrSelf<HomePage>();
+}
+
+   <div class="w-bg fitlayout py-4">
+
+      <div class="container-fluid">
+           
+           <div class="row">
+
+              <div class="col-lg-4 upcomingHome mb-md-0 mb-4">
+                <h2 class="eventsHometitle">Upcoming  Events</h2>
+                <div id="carouselUpcomintEvents" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselUpcomintEvents" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselUpcomintEvents" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                   
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <a class="linkupcominghome" href="#"></a>
+                      <div class="imgUpcoming">
+                        <small>Research and Studies</small>
+                        <img src="assets/images/about1.jpg" alt="...">
+                      </div>
+                      
+                      <div class="carousel-caption d-md-block">
+                        <h5>First slide label First slide label First slide label First slide label</h5>
+                        <span><i class="feather icon-calendar"></i> 22 . 10 .2024</span>
+                        <span class="w-100"><i class="feather icon-clock"></i> 10.00PM to 12.00PM</span>
+                        <span class="w-100"><i class="feather icon-map-pin"></i> place of meeting will add here later place of meeting will add here later place of meeting will add here laters</span>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <a class="linkupcominghome" href="#"></a>
+                      <div class="imgUpcoming">
+                        <small>Research and Studies</small>
+                      <img src="assets/images/about2.jpg" alt="...">
+                    </div>
+                      <div class="carousel-caption d-md-block">
+                        <h5>Second slide label</h5>
+                        <span><i class="feather icon-calendar"></i> 22 . 10 .2024</span>
+                            <span class="w-100"><i class="feather icon-clock"></i> 10.00PM to 12.00PM</span>
+                            <span class="w-100"><i class="feather icon-map-pin"></i> place of meeting will add here later</span>
+                      </div>
+                    </div>
+                 
+                  </div>
+                
+                </div>
+              </div>
+
+              <div class="col-lg-8 SeminarHome">
+                <h2 class="eventsHometitle">Recent Events</h2>
+
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                 
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row">
+                        <div class="col-lg-7">
+                          <div class="imgSeminar">
+                            <a href="#"></a>
+                            <img src="assets/images/about1.jpg" alt="...">
+                          </div>
+                        </div>
+
+                        <div class="col-lg-5 px-md-2 px-4">
+                          <div class="carousel-caption d-md-block">
+                            <small>Research and Studies</small>
+                            <h5>Second slide label</h5>
+                            <span><i class="feather icon-calendar"></i> 22 . 10 .2024</span>
+                            <span><i class="feather icon-clock"></i> 10.00PM to 12.00PM</span>
+                            <span class="w-100"><i class="feather icon-map-pin"></i> place of meeting will add here later</span>
+                            <p>Text details about this event will add here Text details about this event will add here Text details about this event will add here Text details about this event will add here</p>
+                            <a href="#" class="moreSeminar">Read more <i class="feather icon-arrow-right mx-2"></i></a>
+                          </div>
+                        </div>
+                    </div>
+                     
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row">
+                        <div class="col-lg-7">
+                          <div class="imgSeminar">
+                            <a href="#"></a>
+                            <img src="assets/images/about2.jpg" alt="...">
+                          </div>
+                        </div>
+
+                        <div class="col-lg-5 px-md-2 px-4">
+                          <div class="carousel-caption d-md-block">
+                            <small>Research and Studies</small>
+                            <h5>Second slide label</h5>
+                            <span><i class="feather icon-calendar"></i> 5 . 10 .2024</span>
+                            <span><i class="feather icon-clock"></i> 2.00PM to 5.00PM</span>
+                            <span class="w-100"><i class="feather icon-map-pin"></i> place of meeting will add here later</span>
+                            <p>Text details about this event will add here Text details about this event will add here Text details about this event will add here Text details about this event will add here</p>
+                            <a href="#" class="moreSeminar">Read more <i class="feather icon-arrow-right mx-2"></i></a>
+                          </div>
+                        </div>
+                    </div>
+                    
+                    </div>
+                 
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+
+
+          </div>
+        </div>
+    </div>

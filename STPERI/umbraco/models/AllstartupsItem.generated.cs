@@ -20,7 +20,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 {
 	/// <summary>Allstartups Item</summary>
 	[PublishedModel("allstartupsItem")]
-	public partial class AllstartupsItem : PublishedElementModel, IDescriptionProperty, IImageProperty, IRedirectUrlProperty, ISubtitleProperty, ITitleProperty
+	public partial class AllstartupsItem : PublishedElementModel, IDateProperty, IDescriptionProperty, IImageProperty, IRedirectUrlProperty, ISubtitleProperty, ITitleProperty
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -48,6 +48,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		}
 
 		// properties
+
+		///<summary>
+		/// Date
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("date")]
+		public virtual string Date => global::Umbraco.Cms.Web.Common.PublishedModels.DateProperty.GetDate(this, _publishedValueFallback);
 
 		///<summary>
 		/// Description

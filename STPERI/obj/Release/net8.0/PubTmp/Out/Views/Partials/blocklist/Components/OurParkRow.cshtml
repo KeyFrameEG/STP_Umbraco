@@ -1,0 +1,12 @@
+   @inherits UmbracoViewPage<BlockListItem>
+    @{
+      var row = (OurParkRow)Model.Content;
+      var settings = (OurParkRowSettings)Model.Settings;
+      if(settings?.Hide ?? false){return;}
+      if(row.OurParkItems == null || !row.OurParkItems.Any()) return;   
+    var labsTour = Model.Content.Value<string>("labsTour");
+    var ServicesTour = Model.Content.Value<string>("servicesTour");
+    var FirstVideo = Model.Content.Value<string>("firstVideo");
+    var SecondVideo = Model.Content.Value<string>("secondVideo");
+
+    }

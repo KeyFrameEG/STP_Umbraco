@@ -1,0 +1,20 @@
+{
+    "id": "Umbraco.Forms",
+    "name": "Umbraco Forms",
+    "allowPackageTelemetry": true,
+    "gridEditors": [
+        {
+            "alias": "umbraco_form_picker",
+            "name": "Form",
+            "view": "~/App_Plugins/UmbracoForms/backoffice/GridEditors/FormPicker.html",
+            "render": "macro",
+            "icon": "icon-umb-contour"
+        }
+    ],
+     "javascript": [
+        "~/App_Plugins/UmbracoForms/js/umbraco.forms.js"
+    ],
+    "css": [
+        "~/App_Plugins/UmbracoForms/css/umbraco.forms.css"
+    ]
+}
