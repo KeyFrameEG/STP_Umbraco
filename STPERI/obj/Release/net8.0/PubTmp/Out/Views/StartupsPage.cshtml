@@ -83,7 +83,7 @@
 
                 <h2 class="migatitle  mb-4">@Model.Goals</h2>
                 <div class="locationdata">
-
+                    
                     <ul>
                         <li class="">
                             @Model.FirstGoal
@@ -94,6 +94,7 @@
                         </li>
 
                     </ul>
+
                 </div>
             </div>
 
@@ -101,12 +102,12 @@
 
                 <h2 class="migatitle  mb-4">@Model.ServicesProvided</h2>
                 <div class="locationdata">
-
-                    <ul>
+                    @Model.ServicesProvidedList
+                    @*<ul>
                         <li class="">@Model.FirstService</li>
                         <li class="">@Model.SecondService</li>
                         <li class="">@Model.ThirdService</li>
-                    </ul>
+                    </ul>*@
                 </div>
             </div>
 

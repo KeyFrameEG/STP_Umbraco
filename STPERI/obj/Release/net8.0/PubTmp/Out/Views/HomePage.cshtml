@@ -17,8 +17,29 @@
 @await Html.PartialAsync("~/Views/Partials/Gateway.cshtml")
 
 @await Html.PartialAsync("~/Views/Partials/home_events.cshtml")
-       
+
+@*
+<div class="w-bg fitlayout py-4">
+      <div class="container-fluid">
+           <div class="row">            
+                @{
+                    // Set the design key for the first block
+                    ViewData["BlockListKey"] = "UpcomingEventsHome";
+                }
+                    @Html.GetBlockListHtml(Model, "UpcomingEventsHome")
+
+                @{
+                    // Set the design key for the first block
+                    ViewData["BlockListKey2"] = "EventsHome";
+                }
+                    @Html.GetBlockListHtml(Model, "EventsHome")
+           </div>
+      </div>
+</div>
+*@
+
 @Html.GetBlockListHtml(Model,"MainContent")
+
 @await Html.PartialAsync("~/Views/Partials/Park.cshtml")
 @await Html.PartialAsync("~/Views/Partials/Statistics.cshtml")
 @Html.GetBlockListHtml(Model,"MainContentServices")

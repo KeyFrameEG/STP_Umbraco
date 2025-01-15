@@ -12,6 +12,9 @@ builder.CreateUmbracoBuilder()
 
 //builder.Services.AddScoped<IScopeProvider, IScopeProvider>();
 
+    builder.Services.AddHostedService<ScheduledTaskService>();
+
+
 WebApplication app = builder.Build();
 
 await app.BootUmbracoAsync();

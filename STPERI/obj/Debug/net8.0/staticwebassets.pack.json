@@ -393,6 +393,10 @@
       "PackagePath": "staticwebassets\\assets\\images\\robbot.svg"
     },
     {
+      "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\send-stp.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\send-stp.svg"
+    },
+    {
       "Id": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\service1.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\service1.jpg"
     },

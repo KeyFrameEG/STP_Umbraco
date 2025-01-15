@@ -22,85 +22,20 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 	/// <summary>LatestNews Property</summary>
 	public partial interface ILatestNewsProperty : IPublishedElement
 	{
-		/// <summary>AI Button</summary>
+		/// <summary>AllButton</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		string AIbutton { get; }
+		string AllButton { get; }
 
-		/// <summary>Community Engagement Button</summary>
+		/// <summary>MainContentCategory</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		string CommunityEngagementButton { get; }
-
-		/// <summary>Curriculum Development Button</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		string CurriculumDevelopmentButton { get; }
-
-		/// <summary>Diversity and Inclusion Button</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		string DiversityAndInclusionButton { get; }
-
-		/// <summary>Latest News Button</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		string LatestNewsButton { get; }
-
-		/// <summary>MainContentAI</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentAI { get; }
-
-		/// <summary>MainContentCommunityEngagement</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentCommunityEngagement { get; }
-
-		/// <summary>MainContentCurriculumDevelopment</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentCurriculumDevelopment { get; }
-
-		/// <summary>MainContentDiversityAndInclusion</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentDiversityAndInclusion { get; }
+		global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentCategory { get; }
 
 		/// <summary>Main Content LatestNews</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentLatestNews { get; }
-
-		/// <summary>MainContentMentalHealth</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentMentalHealth { get; }
-
-		/// <summary>MainContentResearchAndStudies</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentResearchAndStudies { get; }
-
-		/// <summary>Main Content Technology</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentTechnology { get; }
-
-		/// <summary>Mental Health Button</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		string MentalHealthButton { get; }
-
-		/// <summary>ResearchAndStudieButton</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		string ResearchAndStudieButton { get; }
-
-		/// <summary>Technology Button</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		string TechnologyButton { get; }
 	}
 
 	/// <summary>LatestNews Property</summary>
@@ -135,121 +70,30 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		// properties
 
 		///<summary>
-		/// AI Button
+		/// AllButton
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("aIButton")]
-		public virtual string AIbutton => GetAIbutton(this, _publishedValueFallback);
+		[ImplementPropertyType("allButton")]
+		public virtual string AllButton => GetAllButton(this, _publishedValueFallback);
 
-		/// <summary>Static getter for AI Button</summary>
+		/// <summary>Static getter for AllButton</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static string GetAIbutton(ILatestNewsProperty that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "aIButton");
+		public static string GetAllButton(ILatestNewsProperty that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "allButton");
 
 		///<summary>
-		/// Community Engagement Button
+		/// MainContentCategory
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("communityEngagementButton")]
-		public virtual string CommunityEngagementButton => GetCommunityEngagementButton(this, _publishedValueFallback);
+		[ImplementPropertyType("mainContentCategory")]
+		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentCategory => GetMainContentCategory(this, _publishedValueFallback);
 
-		/// <summary>Static getter for Community Engagement Button</summary>
+		/// <summary>Static getter for MainContentCategory</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static string GetCommunityEngagementButton(ILatestNewsProperty that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "communityEngagementButton");
-
-		///<summary>
-		/// Curriculum Development Button
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("curriculumDevelopmentButton")]
-		public virtual string CurriculumDevelopmentButton => GetCurriculumDevelopmentButton(this, _publishedValueFallback);
-
-		/// <summary>Static getter for Curriculum Development Button</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static string GetCurriculumDevelopmentButton(ILatestNewsProperty that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "curriculumDevelopmentButton");
-
-		///<summary>
-		/// Diversity and Inclusion Button
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("diversityAndInclusionButton")]
-		public virtual string DiversityAndInclusionButton => GetDiversityAndInclusionButton(this, _publishedValueFallback);
-
-		/// <summary>Static getter for Diversity and Inclusion Button</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static string GetDiversityAndInclusionButton(ILatestNewsProperty that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "diversityAndInclusionButton");
-
-		///<summary>
-		/// Latest News Button
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("latestNewsButton")]
-		public virtual string LatestNewsButton => GetLatestNewsButton(this, _publishedValueFallback);
-
-		/// <summary>Static getter for Latest News Button</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static string GetLatestNewsButton(ILatestNewsProperty that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "latestNewsButton");
-
-		///<summary>
-		/// MainContentAI
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("mainContentAI")]
-		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentAI => GetMainContentAI(this, _publishedValueFallback);
-
-		/// <summary>Static getter for MainContentAI</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static global::Umbraco.Cms.Core.Models.Blocks.BlockListModel GetMainContentAI(ILatestNewsProperty that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(publishedValueFallback, "mainContentAI");
-
-		///<summary>
-		/// MainContentCommunityEngagement
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("mainContentCommunityEngagement")]
-		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentCommunityEngagement => GetMainContentCommunityEngagement(this, _publishedValueFallback);
-
-		/// <summary>Static getter for MainContentCommunityEngagement</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static global::Umbraco.Cms.Core.Models.Blocks.BlockListModel GetMainContentCommunityEngagement(ILatestNewsProperty that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(publishedValueFallback, "mainContentCommunityEngagement");
-
-		///<summary>
-		/// MainContentCurriculumDevelopment
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("mainContentCurriculumDevelopment")]
-		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentCurriculumDevelopment => GetMainContentCurriculumDevelopment(this, _publishedValueFallback);
-
-		/// <summary>Static getter for MainContentCurriculumDevelopment</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static global::Umbraco.Cms.Core.Models.Blocks.BlockListModel GetMainContentCurriculumDevelopment(ILatestNewsProperty that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(publishedValueFallback, "mainContentCurriculumDevelopment");
-
-		///<summary>
-		/// MainContentDiversityAndInclusion
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("mainContentDiversityAndInclusion")]
-		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentDiversityAndInclusion => GetMainContentDiversityAndInclusion(this, _publishedValueFallback);
-
-		/// <summary>Static getter for MainContentDiversityAndInclusion</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static global::Umbraco.Cms.Core.Models.Blocks.BlockListModel GetMainContentDiversityAndInclusion(ILatestNewsProperty that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(publishedValueFallback, "mainContentDiversityAndInclusion");
+		public static global::Umbraco.Cms.Core.Models.Blocks.BlockListModel GetMainContentCategory(ILatestNewsProperty that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(publishedValueFallback, "mainContentCategory");
 
 		///<summary>
 		/// Main Content LatestNews
@@ -263,83 +107,5 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		public static global::Umbraco.Cms.Core.Models.Blocks.BlockListModel GetMainContentLatestNews(ILatestNewsProperty that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(publishedValueFallback, "mainContentLatestNews");
-
-		///<summary>
-		/// MainContentMentalHealth
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("mainContentMentalHealth")]
-		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentMentalHealth => GetMainContentMentalHealth(this, _publishedValueFallback);
-
-		/// <summary>Static getter for MainContentMentalHealth</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static global::Umbraco.Cms.Core.Models.Blocks.BlockListModel GetMainContentMentalHealth(ILatestNewsProperty that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(publishedValueFallback, "mainContentMentalHealth");
-
-		///<summary>
-		/// MainContentResearchAndStudies
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("mainContentResearchAndStudies")]
-		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentResearchAndStudies => GetMainContentResearchAndStudies(this, _publishedValueFallback);
-
-		/// <summary>Static getter for MainContentResearchAndStudies</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static global::Umbraco.Cms.Core.Models.Blocks.BlockListModel GetMainContentResearchAndStudies(ILatestNewsProperty that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(publishedValueFallback, "mainContentResearchAndStudies");
-
-		///<summary>
-		/// Main Content Technology
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("mainContentTechnology")]
-		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentTechnology => GetMainContentTechnology(this, _publishedValueFallback);
-
-		/// <summary>Static getter for Main Content Technology</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static global::Umbraco.Cms.Core.Models.Blocks.BlockListModel GetMainContentTechnology(ILatestNewsProperty that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(publishedValueFallback, "mainContentTechnology");
-
-		///<summary>
-		/// Mental Health Button
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("mentalHealthButton")]
-		public virtual string MentalHealthButton => GetMentalHealthButton(this, _publishedValueFallback);
-
-		/// <summary>Static getter for Mental Health Button</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static string GetMentalHealthButton(ILatestNewsProperty that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "mentalHealthButton");
-
-		///<summary>
-		/// ResearchAndStudieButton
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("researchAndStudieButton")]
-		public virtual string ResearchAndStudieButton => GetResearchAndStudieButton(this, _publishedValueFallback);
-
-		/// <summary>Static getter for ResearchAndStudieButton</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static string GetResearchAndStudieButton(ILatestNewsProperty that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "researchAndStudieButton");
-
-		///<summary>
-		/// Technology Button
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("technologyButton")]
-		public virtual string TechnologyButton => GetTechnologyButton(this, _publishedValueFallback);
-
-		/// <summary>Static getter for Technology Button</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static string GetTechnologyButton(ILatestNewsProperty that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "technologyButton");
 	}
 }

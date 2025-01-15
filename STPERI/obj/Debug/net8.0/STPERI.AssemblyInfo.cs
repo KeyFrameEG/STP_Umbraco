@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("STPERI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5682b25f5d0e7a51acb4eea4ec07550a0c86e22")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2f524713cb2276bcd038990c4010cb5b0b6bcf0")]
 [assembly: System.Reflection.AssemblyProductAttribute("STPERI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("STPERI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

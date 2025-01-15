@@ -20,7 +20,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 {
 	/// <summary>LatestNews Item</summary>
 	[PublishedModel("latestNewsItem")]
-	public partial class LatestNewsItem : PublishedElementModel, IDateProperty, IDescriptionProperty, IImageProperty, ILocationProperty, IRedirectUrlProperty, ITitleProperty
+	public partial class LatestNewsItem : PublishedElementModel, ICategoryProperty, IDateFormatProperty, IDateProperty, IDescriptionProperty, IImageProperty, ILocationProperty, IRedirectUrlProperty, ITitleProperty
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -48,6 +48,21 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		}
 
 		// properties
+
+		///<summary>
+		/// Category
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("category")]
+		public virtual string Category => global::Umbraco.Cms.Web.Common.PublishedModels.CategoryProperty.GetCategory(this, _publishedValueFallback);
+
+		///<summary>
+		/// Date Format
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[ImplementPropertyType("dateFormat")]
+		public virtual global::System.DateTime DateFormat => global::Umbraco.Cms.Web.Common.PublishedModels.DateFormatProperty.GetDateFormat(this, _publishedValueFallback);
 
 		///<summary>
 		/// Date

@@ -90,76 +90,20 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string Title => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetTitle(this, _publishedValueFallback);
 
 		///<summary>
-		/// AI Button
+		/// AllButton
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("aIButton")]
-		public virtual string AIbutton => global::Umbraco.Cms.Web.Common.PublishedModels.LatestNewsProperty.GetAIbutton(this, _publishedValueFallback);
+		[ImplementPropertyType("allButton")]
+		public virtual string AllButton => global::Umbraco.Cms.Web.Common.PublishedModels.LatestNewsProperty.GetAllButton(this, _publishedValueFallback);
 
 		///<summary>
-		/// Community Engagement Button
+		/// MainContentCategory
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("communityEngagementButton")]
-		public virtual string CommunityEngagementButton => global::Umbraco.Cms.Web.Common.PublishedModels.LatestNewsProperty.GetCommunityEngagementButton(this, _publishedValueFallback);
-
-		///<summary>
-		/// Curriculum Development Button
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("curriculumDevelopmentButton")]
-		public virtual string CurriculumDevelopmentButton => global::Umbraco.Cms.Web.Common.PublishedModels.LatestNewsProperty.GetCurriculumDevelopmentButton(this, _publishedValueFallback);
-
-		///<summary>
-		/// Diversity and Inclusion Button
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("diversityAndInclusionButton")]
-		public virtual string DiversityAndInclusionButton => global::Umbraco.Cms.Web.Common.PublishedModels.LatestNewsProperty.GetDiversityAndInclusionButton(this, _publishedValueFallback);
-
-		///<summary>
-		/// Latest News Button
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("latestNewsButton")]
-		public virtual string LatestNewsButton => global::Umbraco.Cms.Web.Common.PublishedModels.LatestNewsProperty.GetLatestNewsButton(this, _publishedValueFallback);
-
-		///<summary>
-		/// MainContentAI
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("mainContentAI")]
-		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentAI => global::Umbraco.Cms.Web.Common.PublishedModels.LatestNewsProperty.GetMainContentAI(this, _publishedValueFallback);
-
-		///<summary>
-		/// MainContentCommunityEngagement
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("mainContentCommunityEngagement")]
-		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentCommunityEngagement => global::Umbraco.Cms.Web.Common.PublishedModels.LatestNewsProperty.GetMainContentCommunityEngagement(this, _publishedValueFallback);
-
-		///<summary>
-		/// MainContentCurriculumDevelopment
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("mainContentCurriculumDevelopment")]
-		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentCurriculumDevelopment => global::Umbraco.Cms.Web.Common.PublishedModels.LatestNewsProperty.GetMainContentCurriculumDevelopment(this, _publishedValueFallback);
-
-		///<summary>
-		/// MainContentDiversityAndInclusion
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("mainContentDiversityAndInclusion")]
-		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentDiversityAndInclusion => global::Umbraco.Cms.Web.Common.PublishedModels.LatestNewsProperty.GetMainContentDiversityAndInclusion(this, _publishedValueFallback);
+		[ImplementPropertyType("mainContentCategory")]
+		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentCategory => global::Umbraco.Cms.Web.Common.PublishedModels.LatestNewsProperty.GetMainContentCategory(this, _publishedValueFallback);
 
 		///<summary>
 		/// Main Content LatestNews
@@ -168,53 +112,5 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("mainContentLatestNews")]
 		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentLatestNews => global::Umbraco.Cms.Web.Common.PublishedModels.LatestNewsProperty.GetMainContentLatestNews(this, _publishedValueFallback);
-
-		///<summary>
-		/// MainContentMentalHealth
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("mainContentMentalHealth")]
-		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentMentalHealth => global::Umbraco.Cms.Web.Common.PublishedModels.LatestNewsProperty.GetMainContentMentalHealth(this, _publishedValueFallback);
-
-		///<summary>
-		/// MainContentResearchAndStudies
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("mainContentResearchAndStudies")]
-		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentResearchAndStudies => global::Umbraco.Cms.Web.Common.PublishedModels.LatestNewsProperty.GetMainContentResearchAndStudies(this, _publishedValueFallback);
-
-		///<summary>
-		/// Main Content Technology
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("mainContentTechnology")]
-		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentTechnology => global::Umbraco.Cms.Web.Common.PublishedModels.LatestNewsProperty.GetMainContentTechnology(this, _publishedValueFallback);
-
-		///<summary>
-		/// Mental Health Button
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("mentalHealthButton")]
-		public virtual string MentalHealthButton => global::Umbraco.Cms.Web.Common.PublishedModels.LatestNewsProperty.GetMentalHealthButton(this, _publishedValueFallback);
-
-		///<summary>
-		/// ResearchAndStudieButton
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("researchAndStudieButton")]
-		public virtual string ResearchAndStudieButton => global::Umbraco.Cms.Web.Common.PublishedModels.LatestNewsProperty.GetResearchAndStudieButton(this, _publishedValueFallback);
-
-		///<summary>
-		/// Technology Button
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("technologyButton")]
-		public virtual string TechnologyButton => global::Umbraco.Cms.Web.Common.PublishedModels.LatestNewsProperty.GetTechnologyButton(this, _publishedValueFallback);
 	}
 }

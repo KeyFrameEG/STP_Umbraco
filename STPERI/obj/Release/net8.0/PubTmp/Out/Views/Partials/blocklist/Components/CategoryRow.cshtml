@@ -1,0 +1,29 @@
+   @inherits UmbracoViewPage<BlockListItem>
+   @using Microsoft.AspNetCore.Http
+   @inject IHttpContextAccessor HttpContextAccessor
+    @{
+      var row = (CategoryRow)Model.Content;
+      @*var settings = (CategoryRowSettings)Model.Settings;
+      if(settings?.Hide ?? false){return;}*@
+      if(row.CategoryItems == null || !row.CategoryItems.Any()) return; 
+    }
+
+     
+            @foreach (var item in row.CategoryItems)
+            {
+                  var rowItem = (CategoryItem)item.Content;
+                  <li class="nav-item" role="presentation">
+                        <button class="nav-link" 
+                              id="@rowItem.Title.Replace(" ", "")" 
+                              data-bs-toggle="tab" 
+                              data-bs-target="#@rowItem.Title.Replace(" ", "")-pane" 
+                              type="button" 
+                              role="tab" 
+                              aria-controls="@rowItem.Title.Replace(" ", "")-pane" 
+                              aria-selected="true" 
+                              data-Category="@rowItem.Category" 
+                              onclick="setActiveTab('@rowItem.Title.Replace(" ", "")', 'myTabGroup')">
+                        @rowItem.Title
+                        </button>
+                  </li>
+            }

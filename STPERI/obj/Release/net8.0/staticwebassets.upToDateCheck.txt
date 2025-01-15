@@ -96,6 +96,7 @@ wwwroot\assets\images\potential.svg
 wwwroot\assets\images\publication-icon.png
 wwwroot\assets\images\Rnker.png
 wwwroot\assets\images\robbot.svg
+wwwroot\assets\images\send-stp.svg
 wwwroot\assets\images\service1.jpg
 wwwroot\assets\images\service2.jpg
 wwwroot\assets\images\service3.jpg

@@ -8,15 +8,21 @@
 
     <div class="innerbanner fitlayout">
 
-         <div class="logonewsholder mx-3 aos-item" data-aos="fade-up">
-            <img alt="اليوم السابع" src="@Model.ElyoumElsabeaImage.Url()" />
-         </div>
+         @if (!string.IsNullOrEmpty(Model.ElyoumElsabeaImage?.Url()))
+          {
+              <div class="logonewsholder mx-3 aos-item" data-aos="fade-up">
+                  <img alt="اليوم السابع" src="@Model.ElyoumElsabeaImage.Url()" />
+              </div>
+          }
+
         <div class="clearfix"></div>
         <h3 class="px-3 aos-item" data-aos="fade-up">@Model.TitleHeaderNewsPaper</h3>
-    <div class="clearfix"></div>
-        <span class="px-3 aos-item" data-aos="fade-up">
+        <div class="clearfix"></div>
+        <span class="px-3 category">
           @Model.DescriptionHeader
         </span>
+        
+        <p class="date"><i class="feather icon-calendar"></i>@Model.EventDate</p>
         <img alt="" src="@Model.BannerImage.Url()" />
     </div>
 
@@ -66,3 +72,7 @@
       </div>
 
     </div>
+
+    <style>
+      
+    </style>

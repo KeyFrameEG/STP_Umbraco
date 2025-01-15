@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oJvMiy9yYSUdhcfopOXFAZ3+nqr6fmW9d2MH+hTGzoQ=",
+  "Hash": "imMFbAmxyDLz4OlRqOO+HDnCbOTYF//PEm2chfu+sb8=",
   "Source": "STPERI",
   "BasePath": "_content/STPERI",
   "Mode": "Default",
@@ -60616,8 +60616,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "nbi7dgm1uf",
-      "Integrity": "g2Ww7A8235QBES5SdDwZc8HJI5UktFdrwoQFiYXQ3Kc=",
+      "Fingerprint": "8pu5mhxse8",
+      "Integrity": "rPSaRIcDtLYlIy85ZFLy0569YC2wCRbZEY33Kau+31E=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\dist\\css\\layout.css"
@@ -62385,6 +62385,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\robbot.svg"
+    },
+    {
+      "Identity": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\send-stp.svg",
+      "SourceId": "STPERI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\",
+      "BasePath": "_content/STPERI",
+      "RelativePath": "assets/images/send-stp#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h4fuqy9koe",
+      "Integrity": "EVr+7JtschVCWgTIem5LKWjdgtoA0N7vEdh5uPtqeLQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\send-stp.svg"
     },
     {
       "Identity": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\service1.jpg",
@@ -73154,6 +73175,51 @@
       ]
     },
     {
+      "Route": "assets/dist/css/layout.8pu5mhxse8.css",
+      "AssetFile": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\css\\layout.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "113267"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rPSaRIcDtLYlIy85ZFLy0569YC2wCRbZEY33Kau+31E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 09:03:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8pu5mhxse8"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/dist/css/layout.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rPSaRIcDtLYlIy85ZFLy0569YC2wCRbZEY33Kau+31E="
+        }
+      ]
+    },
+    {
       "Route": "assets/dist/css/layout.css",
       "AssetFile": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\css\\layout.css",
       "Selectors": [],
@@ -73164,7 +73230,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "111539"
+          "Value": "113267"
         },
         {
           "Name": "Content-Type",
@@ -73172,11 +73238,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"g2Ww7A8235QBES5SdDwZc8HJI5UktFdrwoQFiYXQ3Kc=\""
+          "Value": "\"rPSaRIcDtLYlIy85ZFLy0569YC2wCRbZEY33Kau+31E=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 17:08:38 GMT"
+          "Value": "Tue, 14 Jan 2025 09:03:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -73186,52 +73252,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-g2Ww7A8235QBES5SdDwZc8HJI5UktFdrwoQFiYXQ3Kc="
-        }
-      ]
-    },
-    {
-      "Route": "assets/dist/css/layout.nbi7dgm1uf.css",
-      "AssetFile": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\dist\\css\\layout.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "111539"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"g2Ww7A8235QBES5SdDwZc8HJI5UktFdrwoQFiYXQ3Kc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 17:08:38 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "nbi7dgm1uf"
-        },
-        {
-          "Name": "label",
-          "Value": "assets/dist/css/layout.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-g2Ww7A8235QBES5SdDwZc8HJI5UktFdrwoQFiYXQ3Kc="
+          "Value": "sha256-rPSaRIcDtLYlIy85ZFLy0569YC2wCRbZEY33Kau+31E="
         }
       ]
     },
@@ -80120,6 +80141,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-1Stv9W5v6KQ8eU5AYtYLtt+i/xtQ5cmp6VX+WEKkMEk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/send-stp.h4fuqy9koe.svg",
+      "AssetFile": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\send-stp.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "344"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EVr+7JtschVCWgTIem5LKWjdgtoA0N7vEdh5uPtqeLQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 10:46:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h4fuqy9koe"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/send-stp.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EVr+7JtschVCWgTIem5LKWjdgtoA0N7vEdh5uPtqeLQ="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/send-stp.svg",
+      "AssetFile": "C:\\Users\\LOQ\\Desktop\\Madina\\STP_Umbraco-master\\STPERI\\wwwroot\\assets\\images\\send-stp.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "344"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EVr+7JtschVCWgTIem5LKWjdgtoA0N7vEdh5uPtqeLQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 10:46:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EVr+7JtschVCWgTIem5LKWjdgtoA0N7vEdh5uPtqeLQ="
         }
       ]
     },

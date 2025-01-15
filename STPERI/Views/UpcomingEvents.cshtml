@@ -12,7 +12,7 @@
     <img alt="" src="@Model.BannerImage.Url()" />
 </div>
 
-
+@*
 <div class="w-bg fitlayout pt-4 mb-4 paddingabove">
     <div class="container-fluid">
         <div class="row">
@@ -41,7 +41,7 @@
                         <button class="nav-link" id="DiversityAndInclusion-tab" data-bs-toggle="tab" data-bs-target="#DiversityAndInclusion-tab-pane" type="button" role="tab" aria-controls="DiversityAndInclusion-tab-pane" aria-selected="false" onclick="setActiveTab('DiversityAndInclusion-tab', 'myTabGroup')" tabindex="-1">@Model.DiversityAndInclusionButton</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="AI-tab" data-bs-toggle="tab" data-bs-target="#AI-tab-pane" type="button" role="tab" aria-controls="AI-tab-pane" aria-selected="false" onclick="setActiveTab('AI-tab', 'myTabGroup')" tabindex="-1">@Model.MentalHealthButton</button>
+                        <button class="nav-link" id="AI-tab" data-bs-toggle="tab" data-bs-target="#AI-tab-pane" type="button" role="tab" aria-controls="AI-tab-pane" aria-selected="false" onclick="setActiveTab('AI-tab', 'myTabGroup')" tabindex="-1">@Model.AIbutton</button>
                     </li>
                 </ul>
             </div>
@@ -54,7 +54,7 @@
 
                 <!-- Research And Studies Tab Content -->
                 <div class="tab-pane fade" id="Research-tab-pane" role="tabpanel" aria-labelledby="Research-tab">
-                    @Html.GetBlockListHtml(Model, "mainContentResearchAndStudies")
+                    @Html.GetBlockListHtml(Model, "MainContentResearchAndStudies")
                 </div>
 
                 <!-- Technology Tab Content -->
@@ -93,6 +93,8 @@
     </div>
 </div>
 
+
+
 <script>
     // This is to set the active tab based on the selected button (for handling active states)
     function setActiveTab(tabId, groupId) {
@@ -100,4 +102,87 @@
         tabs.forEach(tab => tab.classList.remove('active'));
         document.getElementById(tabId).classList.add('active');
     }
+</script>
+*@
+
+@*
+<script>
+    // This is to set the active tab based on the selected button (for handling active states)
+    function setActiveTab(tabId, groupId) {
+        var tabs = document.querySelectorAll(`#${groupId} .nav-link`);
+        tabs.forEach(tab => tab.classList.remove('active'));
+        document.getElementById(tabId).classList.add('active');
+    }
+</script>
+*@
+
+
+<div class="w-bg fitlayout pt-4 mb-4 paddingabove">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 aos-item" data-aos="fade-down">
+                <h2 class="migatitle">@Model.Subtitle</h2>
+                <ul class="nav nav-tabs labseri mb-3" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" 
+                                id="All" 
+                                data-bs-toggle="tab" 
+                                data-bs-target="#All-pane" 
+                                type="button" 
+                                role="tab" 
+                                aria-controls="All-pane" 
+                                data-Category="All" 
+                                onclick="setActiveTab('All', 'myTabGroup')">
+                            @Model.AllButton
+                        </button>
+                    </li>
+                    @Html.GetBlockListHtml(Model, "MainContentCategory")
+                </ul>
+
+                <div class="tab-content" id="myTabContent">
+                    <!-- Latest News Tab Content -->
+                    <div class="tab-pane fade show active" id="LatestNew-pane" role="tabpanel" aria-labelledby="LatestNew">
+                        @Html.GetBlockListHtml(Model, "MainContentLatestNews")
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function setActiveTab(tabId, groupId) {
+        // Handle active tab UI
+        var tabs = document.querySelectorAll(`#${groupId} .nav-link`);
+        tabs.forEach(tab => tab.classList.remove('active'));
+        document.getElementById(tabId).classList.add('active');
+
+        // Get the Category from the active tab
+        var activeTab = document.getElementById(tabId);
+        var category = activeTab.getAttribute('data-Category');
+
+        // Filter news based on Category
+        var newsItems = document.querySelectorAll('.news-container .news-item');
+        newsItems.forEach(news => {
+
+            const newsCategory = news.getAttribute('data-Category')?.replace(/\s+/g, '');
+            const selectedCategory = category?.replace(/\s+/g, '');
+
+
+            if (news.getAttribute('data-Category') === category || selectedCategory === 'All') {
+                news.style.display = 'block'; // Show matching news
+            } else {
+                news.style.display = 'none'; // Hide non-matching news
+            }
+        });
+    }
+
+    // Set default filter for the active tab on page load
+    document.addEventListener('DOMContentLoaded', function () {
+        var activeTab = document.querySelector('.nav-link.active');
+        if (activeTab) {
+            var tabId = activeTab.id;
+            setActiveTab(tabId, 'myTabGroup');
+        }
+    });
 </script>

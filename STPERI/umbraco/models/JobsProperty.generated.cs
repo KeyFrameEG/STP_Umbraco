@@ -18,24 +18,9 @@ using Umbraco.Extensions;
 
 namespace Umbraco.Cms.Web.Common.PublishedModels
 {
-	// Mixin Content Type with alias "jobsProperty"
-	/// <summary>Jobs Property</summary>
-	public partial interface IJobsProperty : IPublishedElement
-	{
-		/// <summary>ApplyJobs</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		global::Umbraco.Cms.Core.Strings.IHtmlEncodedString ApplyJobs { get; }
-
-		/// <summary>Development & IT</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		global::Umbraco.Cms.Core.Models.Blocks.BlockListModel DevelopmentIT { get; }
-	}
-
 	/// <summary>Jobs Property</summary>
 	[PublishedModel("jobsProperty")]
-	public partial class JobsProperty : PublishedElementModel, IJobsProperty
+	public partial class JobsProperty : PublishedElementModel
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -65,17 +50,36 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		// properties
 
 		///<summary>
+		/// Admin & Customer Support
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("adminCustomerSupport")]
+		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel AdminCustomerSupport => this.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(_publishedValueFallback, "adminCustomerSupport");
+
+		///<summary>
+		/// Admin & Customer Support Button
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("adminCustomerSupportButton")]
+		public virtual string AdminCustomerSupportButton => this.Value<string>(_publishedValueFallback, "adminCustomerSupportButton");
+
+		///<summary>
 		/// ApplyJobs
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("applyJobs")]
-		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString ApplyJobs => GetApplyJobs(this, _publishedValueFallback);
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString ApplyJobs => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "applyJobs");
 
-		/// <summary>Static getter for ApplyJobs</summary>
+		///<summary>
+		/// Development & IT button
+		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static global::Umbraco.Cms.Core.Strings.IHtmlEncodedString GetApplyJobs(IJobsProperty that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(publishedValueFallback, "applyJobs");
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("developmentButton")]
+		public virtual string DevelopmentButton => this.Value<string>(_publishedValueFallback, "developmentButton");
 
 		///<summary>
 		/// Development & IT: Development & IT
@@ -83,11 +87,70 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("developmentIT")]
-		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel DevelopmentIT => GetDevelopmentIT(this, _publishedValueFallback);
+		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel DevelopmentIT => this.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(_publishedValueFallback, "developmentIT");
 
-		/// <summary>Static getter for Development & IT</summary>
+		///<summary>
+		/// Engineering & Architecture
+		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
-		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static global::Umbraco.Cms.Core.Models.Blocks.BlockListModel GetDevelopmentIT(IJobsProperty that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(publishedValueFallback, "developmentIT");
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("engineeringArchitecture")]
+		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel EngineeringArchitecture => this.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(_publishedValueFallback, "engineeringArchitecture");
+
+		///<summary>
+		/// Engineering & Architecture Button
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("engineeringArchitectureButton")]
+		public virtual string EngineeringArchitectureButton => this.Value<string>(_publishedValueFallback, "engineeringArchitectureButton");
+
+		///<summary>
+		/// Finance & Accounting
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("financeAccounting")]
+		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel FinanceAccounting => this.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(_publishedValueFallback, "financeAccounting");
+
+		///<summary>
+		/// Finance & Accounting Button
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("financeAccountingButton")]
+		public virtual string FinanceAccountingButton => this.Value<string>(_publishedValueFallback, "financeAccountingButton");
+
+		///<summary>
+		/// Sales & Marketing
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("salesMarketing")]
+		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel SalesMarketing => this.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(_publishedValueFallback, "salesMarketing");
+
+		///<summary>
+		/// Sales & Marketing Button
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("salesMarketingButton")]
+		public virtual string SalesMarketingButton => this.Value<string>(_publishedValueFallback, "salesMarketingButton");
+
+		///<summary>
+		/// Writing & Translation
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("writingTranslation")]
+		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel WritingTranslation => this.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(_publishedValueFallback, "writingTranslation");
+
+		///<summary>
+		/// Writing & Translation Button
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("writingTranslationButton")]
+		public virtual string WritingTranslationButton => this.Value<string>(_publishedValueFallback, "writingTranslationButton");
 	}
 }

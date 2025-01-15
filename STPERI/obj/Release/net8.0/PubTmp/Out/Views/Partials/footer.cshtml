@@ -76,25 +76,22 @@
 
           <div class="chatbox">
             <button class="closerobot"><i class="feather icon-x"></i></button>
-            <div class="chatheader">
-                <img alt="" src="assets/images/robbot.svg" />
-                Chat with Us
-            </div>
-            <div class="chatrows" id="chatRows">
+             <div class="chatheader">
+                <img alt="" src="assets//images/robbot.svg">
+                Chat with Us 
+             </div>
+             <div class="chatrows">
                 <div class="datechat">
-                    28 08 2024
+                    @(DateTime.Now.ToString("dd MM yyyy"))
                 </div>
-                <div class="robotside">
-                    <img alt="" src="assets/images/robbot.svg" />
-                    <div class="outputchat"><span>Hi, How Can I help you?</span></div>
-                    <small>11:00 AM</small>
-                </div>
-            </div>
+
+
+             </div>
             <div class="typeingchat">
-                <input type="text" id="searchInput" placeholder="Message" oninput="searchChat()" />
-                <button onclick="sendMessage()"><img alt="" src="assets/images/send-stp.svg" /></button>
+                <input id="chatInput" type="text" placeholder="Message">
+                <button id="sendChat"><img alt="" src="assets/images/send-stp.svg"></button>
             </div>
-        </div>
+          </div>
 
             <div class="row">
 
@@ -135,56 +132,70 @@
         </div>
     </footer>
 
-    <script>
-    // Function to handle sending a search message in the chat
-    function sendMessage() {
-        var input = document.getElementById('searchInput');
-        var searchTerm = input.value;
-        
-        if (searchTerm.trim()) {
-            // Simulate adding the user's query to the chat window
-            var chatRows = document.getElementById('chatRows');
-            var userSide = document.createElement('div');
-            userSide.classList.add('clientside');
-            userSide.innerHTML = `<span>${searchTerm}</span><small>11:00 AM</small>`;
-            chatRows.appendChild(userSide);
-
-            // Simulate the bot processing the search term
-            searchChat(searchTerm);
-        }
-        input.value = ''; // Clear the input after sending
+<style>
+    .robotside small, .clientside small {
+        background: transparent !important;
+        position: relative;
+        top: 0;
+        right: 0;
+        height: 0;
     }
+</style>
 
-    // Function to handle search and show results in the chat
-    function searchChat(searchTerm) {
-        if (!searchTerm) return;
 
-        // Assume `searchResults` is an array of search results for the given searchTerm
-        var searchResults = getSearchResults(searchTerm);
+<script>
+document.getElementById('sendChat').addEventListener('click', function () {
+    const chatInput = document.getElementById('chatInput');
+    const query = chatInput.value;
 
-        var chatRows = document.getElementById('chatRows');
-        var botSide = document.createElement('div');
-        botSide.classList.add('robotside');
-        botSide.innerHTML = `<img alt="" src="assets/images/robbot.svg" /><div class="outputchat"><span>Here are the results for "${searchTerm}":</span>`;
+    if (query.trim() !== "") {
+        fetch(`/search?q=${encodeURIComponent(query)}`)
+            .then(response => response.text())
+            .then(data => {
+                // Parse the search results and display them in the chat.
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(data, 'text/html');
+                const results = doc.querySelectorAll('.row ul li');
+                const chatRows = document.querySelector('.chatrows');
 
-        if (searchResults.length > 0) {
-            searchResults.forEach(function(result) {
-                botSide.innerHTML += `<div><a href="${result.url}">${result.name}</a></div>`;
+                // Add user query to the chat
+                chatRows.innerHTML += `
+                    <div class="clientside">
+                        <span>${query}</span>
+                        <small>${new Date().toLocaleTimeString()}</small>
+                    </div>
+                `;
+
+                // Add results to the chat
+                if (results.length > 0) {
+                    let resultHTML = '<div class="robotside"><img alt="" src="assets/images/robbot.svg"><div class="outputchat"><span>Here are your results:</span><div class="clearfix"></div>';
+
+                    results.forEach(result => {
+                        resultHTML += `<a href="${result.querySelector('a').href}">${result.querySelector('a').innerText}</a><div class="clearfix"></div>`;
+                    });
+
+                    resultHTML += '</div><small>' + new Date().toLocaleTimeString() + '</small></div>';
+                    chatRows.innerHTML += resultHTML;
+                } else {
+                    chatRows.innerHTML += `
+                        <div class="robotside">
+                            <img alt="" src="assets/images/robbot.svg">
+                            <div class="outputchat"><span>No results found for "${query}"</span></div>
+                            <small>${new Date().toLocaleTimeString()}</small>
+                        </div>
+                    `;
+                }
+
+                // Scroll to the latest chat
+                chatRows.scrollTop = chatRows.scrollHeight;
+
+                // Clear the input field
+                chatInput.value = "";
+            })
+            .catch(error => {
+                console.error('Error fetching search results:', error);
             });
-        } else {
-            botSide.innerHTML += `<p>No results found for "${searchTerm}".</p>`;
-        }
-
-        botSide.innerHTML += `</div><small>11:00 AM</small>`;
-        chatRows.appendChild(botSide);
     }
+});
 
-    // Simulated search function, you can replace this with actual search logic from your backend (Examine)
-    function getSearchResults(searchTerm) {
-        // For this demo, just return some fake results
-        return [
-            { name: "Home", url: "#" },
-            { name: "CentralLabsDetails", url: "#" }
-        ];
-    }
 </script>

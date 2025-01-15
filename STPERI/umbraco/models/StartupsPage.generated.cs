@@ -298,6 +298,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string ServicesProvided => global::Umbraco.Cms.Web.Common.PublishedModels.StartupProperties.GetServicesProvided(this, _publishedValueFallback);
 
 		///<summary>
+		/// Services Provided List
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("servicesProvidedList")]
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString ServicesProvidedList => global::Umbraco.Cms.Web.Common.PublishedModels.StartupProperties.GetServicesProvidedList(this, _publishedValueFallback);
+
+		///<summary>
 		/// ThirdProduct
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]

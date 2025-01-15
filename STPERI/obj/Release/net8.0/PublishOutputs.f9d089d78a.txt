@@ -47,6 +47,7 @@ C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\obj\Release\net8.0\PubTmp\
 C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\obj\Release\net8.0\PubTmp\Out\Views\EwasteLabsPage.cshtml
 C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\obj\Release\net8.0\PubTmp\Out\Views\FAQ.cshtml
 C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\obj\Release\net8.0\PubTmp\Out\Views\HomePage.cshtml
+C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\obj\Release\net8.0\PubTmp\Out\Views\HostingConferences.cshtml
 C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\obj\Release\net8.0\PubTmp\Out\Views\HostingConferencesDetails1.cshtml
 C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\obj\Release\net8.0\PubTmp\Out\Views\HostingConferencesDetails2.cshtml
 C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\obj\Release\net8.0\PubTmp\Out\Views\HuaweiPartner.cshtml
@@ -94,6 +95,7 @@ C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\obj\Release\net8.0\PubTmp\
 C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\obj\Release\net8.0\PubTmp\Out\Views\Partials\blockgrid\default.cshtml
 C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\obj\Release\net8.0\PubTmp\Out\Views\Partials\blockgrid\items.cshtml
 C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\obj\Release\net8.0\PubTmp\Out\Views\Partials\blocklist\Components\AllstartupsRow.cshtml
+C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\obj\Release\net8.0\PubTmp\Out\Views\Partials\blocklist\Components\CategoryRow.cshtml
 C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\obj\Release\net8.0\PubTmp\Out\Views\Partials\blocklist\Components\CentralLabsDetailsRow.cshtml
 C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\obj\Release\net8.0\PubTmp\Out\Views\Partials\blocklist\Components\CentralLabsRow.cshtml
 C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\obj\Release\net8.0\PubTmp\Out\Views\Partials\blocklist\Components\ChairmenRow.cshtml
@@ -198,6 +200,7 @@ C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\obj\Release\net8.0\PubTmp\
 C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\obj\Release\net8.0\PubTmp\Out\Views\Trainingdetails.cshtml
 C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\obj\Release\net8.0\PubTmp\Out\Views\Trainingdetails2Page.cshtml
 C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\obj\Release\net8.0\PubTmp\Out\Views\UpcomingEvents.cshtml
+C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\obj\Release\net8.0\PubTmp\Out\Views\UpcomingEventsDetails.cshtml
 C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\obj\Release\net8.0\PubTmp\Out\Views\VisitorMap.cshtml
 C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\obj\Release\net8.0\PubTmp\Out\Views\WebsiteHosting.cshtml
 C:\Users\LOQ\Desktop\Madina\STP_Umbraco-master\STPERI\obj\Release\net8.0\PubTmp\Out\Views\WebsiteHostingDetails1.cshtml

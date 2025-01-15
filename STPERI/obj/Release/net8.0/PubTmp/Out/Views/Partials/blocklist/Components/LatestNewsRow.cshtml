@@ -8,6 +8,10 @@
     if (settings?.Hide ?? false) { return; }
     if (row.LatestNewsItems == null || !row.LatestNewsItems.Any()) return;
 
+    // Pass the key to determine the design
+    var designKey = ViewData["BlockListKey"]?.ToString() ?? string.Empty;
+    var designKey2 = ViewData["BlockListKey2"]?.ToString() ?? string.Empty;
+
     // Detect the current page
     var currentUrl = HttpContextAccessor.HttpContext.Request.Path.ToString();
     var isUpcomingEventsPage = currentUrl.Contains("UpcomingEvents", StringComparison.OrdinalIgnoreCase);
@@ -31,16 +35,81 @@
         .ToList();
 }
 
-<div class="row">
+@if (designKey != "UpcomingEventsHome" || designKey2 != "EventsHome")
+{
+    <div class="news-container">
+    <div class="row">
+        @foreach (var item in itemsForPage)
+        {
+            var rowItem = (LatestNewsItem)item.Content;
+
+            // Conditional design for UpcomingEvents page
+            if (isUpcomingEventsPage)
+            {
+                <!-- Upcoming Events Design -->
+                <div class="col-md-6 mb-3 aos-item aos-init aos-animate"  data-Category="@rowItem.Category" data-aos="zoom-in">
+                    <div class="upcomingEvents">
+                        <a href="@rowItem.RedirectUrl"></a>
+                        <b>@row.Title</b>
+                        <div class="upcomingimg">
+                            <img alt="Upcoming Title" src="@rowItem.Image.Url()" />
+                        </div>
+                        <div class="upcomingdata">
+                            <h4>@rowItem.Title</h4>
+                            <span><i class="feather icon-calendar"></i> @rowItem.Date</span>
+                            <span><i class="feather icon-clock"></i>@rowItem.DateFormat</span>
+                            <span><i class="feather icon-map-pin"></i> place of meeting will add here later</span>
+                        </div>
+                    </div>
+                </div>
+            }
+            else if (isJobsPage)
+            {
+                <!-- Jobs Page Design -->
+                <div class="col-md-12 mb-4 aos-item aos-init aos-animate"  data-Category="@rowItem.Category"  data-aos="zoom-in">
+                        <div class="jobsection">
+                            <h3>@rowItem.Title</h3>
+                            <span><i class="feather icon-calendar"></i>@rowItem.Date</span>
+                            <small>@row.Title</small>
+                            <div class="jobDetails">@rowItem.Description</div>
+                            <a href="#apply">Apply Now <i class="feather icon-arrow-down mx-1"></i></a>
+                        </div>
+                </div>
+            }
+            else if (designKey != "UpcomingEventsHome" || designKey2 != "EventsHome")
+            {
+                <!-- Default News Design -->
+                <div class="col-md-6 mb-3 aos-item news-item" 
+                    data-Category="@rowItem.Category" 
+                    data-aos="zoom-in">
+                    <div class="newslist d-flex align-items-end">
+                        <a href="@rowItem.RedirectUrl"></a>
+                        <small>@row.Title</small>
+                        <strong>@rowItem.Date</strong>
+                        <div class="overlaynewslist">
+                            <h4>@rowItem.Title</h4>
+                            <span>@rowItem.Description</span>
+                        </div>
+                        <img alt="News Title" src="@rowItem.Image.Url()" />
+                    </div>
+                </div>
+            }
+        }
+
+
+    </div>
+    </div>
+}
+else 
+{
     @foreach (var item in itemsForPage)
     {
         var rowItem = (LatestNewsItem)item.Content;
 
-        // Conditional design for UpcomingEvents page
-        if (isUpcomingEventsPage)
+        if (designKey == "UpcomingEventsHome")
         {
             <!-- Upcoming Events Design -->
-            <div class="col-md-6 mb-3 aos-item aos-init aos-animate" data-aos="zoom-in">
+            <div class="col-lg-4 upcomingHome mb-md-0 mb-4">
                 <div class="upcomingEvents">
                     <a href="@rowItem.RedirectUrl"></a>
                     <b>Research and Studies</b>
@@ -50,71 +119,52 @@
                     <div class="upcomingdata">
                         <h4>@rowItem.Title</h4>
                         <span><i class="feather icon-calendar"></i> @rowItem.Date</span>
-                        <span><i class="feather icon-clock"></i>2.00PM to 5.00PM</span>
-                        <span><i class="feather icon-map-pin"></i> place of meeting will add here later</span>
+                        <span><i class="feather icon-clock"></i> 2.00PM to 5.00PM</span>
+                        <span><i class="feather icon-map-pin"></i> Place of meeting will be added later</span>
                     </div>
                 </div>
             </div>
         }
-        else if (isJobsPage)
+        else if (designKey2 == "EventsHome")
         {
-            <!-- Jobs Page Design -->
-            <div class="col-md-12 mb-4 aos-item aos-init aos-animate" data-aos="zoom-in">
-                 <div class="jobsection">
-                      <h3>@rowItem.Title</h3>
-                      <span><i class="feather icon-calendar"></i>@rowItem.Date</span>
-                      <small>Development &amp; IT</small>
-                      <div class="jobDetails">@rowItem.Description</div>
-                      <a href="@rowItem.RedirectUrl">Apply Now <i class="feather icon-arrow-down mx-1"></i></a>
-                 </div>
-            </div>
-        }
-        else
-        {
-            <!-- Default News Design -->
-            <div class="col-md-6 mb-3 aos-item" data-aos="zoom-in">
-                <div class="newslist d-flex align-items-end">
+            <!-- Events Design -->
+            <div class="col-lg-4 upcomingHome mb-md-0 mb-4">
+                <div class="upcomingEvents">
                     <a href="@rowItem.RedirectUrl"></a>
-                    <small>@row.Title</small>
-                    <strong>@rowItem.Date</strong>
-                    <div class="overlaynewslist">
-                        <h4>@rowItem.Title</h4>
-                        <span>@rowItem.Description</span>
+                    <b>Research and Studies</b>
+                    <div class="upcomingimg">
+                        <img alt="Upcoming Title" src="@rowItem.Image.Url()" />
                     </div>
-                    <img alt="News Title" src="@rowItem.Image.Url()" />
+                    <div class="upcomingdata">
+                        <h4>@rowItem.Title</h4>
+                        <span><i class="feather icon-calendar"></i> @rowItem.Date</span>
+                        <span><i class="feather icon-clock"></i> 2.00PM to 5.00PM</span>
+                        <span><i class="feather icon-map-pin"></i> Place of meeting will be added later</span>
+                    </div>
                 </div>
             </div>
         }
-    }
-</div>
 
-<div class="row">
-    <div class="col-12 text-center">
-        <nav aria-label="Page navigation">
-            <ul class="pagination mt-5 justify-content-center">
-                @for (int i = 1; i <= totalPages; i++)
-                {
-                    <li class="page-item @(i == currentPage ? "active" : "")">
-                        <a class="page-link" href="?page=@i">@i</a>
-                    </li>
-                }
-            </ul>
-        </nav>
+    }
+
+}
+
+
+
+@if (designKey != "UpcomingEventsHome")
+{
+    <div class="row">
+        <div class="col-12 text-center">
+            <nav aria-label="Page navigation">
+                <ul class="pagination mt-5 justify-content-center">
+                    @for (int i = 1; i <= totalPages; i++)
+                    {
+                        <li class="page-item @(i == currentPage ? "active" : "")">
+                            <a class="page-link" href="?page=@i">@i</a>
+                        </li>
+                    }
+                </ul>
+            </nav>
+        </div>
     </div>
-</div>
-
-<style>
-    small{
-        position: absolute;
-        z-index: 3;
-        background: rgb(238 120 35);
-        padding: 0 20px;
-        height: 36px;
-        line-height: 36px;
-        color: #fff;
-        font-weight: 400;
-        font-size: 16px;
-        top: 20px;
-        right: 20px;
-    }
-</style>
+}

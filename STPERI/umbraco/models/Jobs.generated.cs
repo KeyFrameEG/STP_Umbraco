@@ -20,7 +20,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 {
 	/// <summary>Jobs</summary>
 	[PublishedModel("jobs")]
-	public partial class Jobs : PublishedContentModel, IHeaderProperties, IJobsProperty
+	public partial class Jobs : PublishedContentModel, IHeaderProperties, ILatestNewsProperty
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -90,19 +90,27 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string Title => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetTitle(this, _publishedValueFallback);
 
 		///<summary>
-		/// ApplyJobs
+		/// AllButton
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("applyJobs")]
-		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString ApplyJobs => global::Umbraco.Cms.Web.Common.PublishedModels.JobsProperty.GetApplyJobs(this, _publishedValueFallback);
+		[ImplementPropertyType("allButton")]
+		public virtual string AllButton => global::Umbraco.Cms.Web.Common.PublishedModels.LatestNewsProperty.GetAllButton(this, _publishedValueFallback);
 
 		///<summary>
-		/// Development & IT: Development & IT
+		/// MainContentCategory
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("developmentIT")]
-		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel DevelopmentIT => global::Umbraco.Cms.Web.Common.PublishedModels.JobsProperty.GetDevelopmentIT(this, _publishedValueFallback);
+		[ImplementPropertyType("mainContentCategory")]
+		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentCategory => global::Umbraco.Cms.Web.Common.PublishedModels.LatestNewsProperty.GetMainContentCategory(this, _publishedValueFallback);
+
+		///<summary>
+		/// Main Content LatestNews
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.3.2+696a711")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("mainContentLatestNews")]
+		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainContentLatestNews => global::Umbraco.Cms.Web.Common.PublishedModels.LatestNewsProperty.GetMainContentLatestNews(this, _publishedValueFallback);
 	}
 }
